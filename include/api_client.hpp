@@ -103,7 +103,13 @@
      bool isApiAvailable();
  
  private:
-     const std::string baseUrl = "http://api.gios.gov.pl/pjp-api/rest";
+     // Potencjalne adresy API GIOŚ
+     const std::vector<std::string> apiUrls = {
+         "http://api.gios.gov.pl/pjp-api/rest",
+         "https://api.gios.gov.pl/pjp-api/rest",
+         "http://powietrze.gios.gov.pl/pjp/api"
+     };
+     std::string baseUrl;
      
      /**
       * @brief Funkcja pomocnicza do wykonywania zapytań HTTP
