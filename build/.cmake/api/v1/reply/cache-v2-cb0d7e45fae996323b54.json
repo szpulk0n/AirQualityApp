@@ -191,10 +191,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
@@ -1332,6 +1332,18 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/msys64/mingw64/include"
+		},
+		{
+			"name" : "Qt5Charts_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt5Charts."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/msys64/mingw64/lib/cmake/Qt5Charts"
 		},
 		{
 			"name" : "Qt5Concurrent_DIR",

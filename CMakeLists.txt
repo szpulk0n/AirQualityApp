@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Automatyczne znajdowanie wymaganych pakietów
-find_package(Qt5 COMPONENTS Core Widgets Concurrent REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets Concurrent Charts REQUIRED)
 find_package(CURL REQUIRED)
 find_package(nlohmann_json 3.9.0 REQUIRED)
 
@@ -42,6 +42,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt5::Core
     Qt5::Widgets
     Qt5::Concurrent
+    Qt5::Charts
     CURL::libcurl
     nlohmann_json::nlohmann_json
 )

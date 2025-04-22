@@ -349,6 +349,62 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/condition_variable \
  C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_futex.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_thread.h \
+ C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+ C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+ C:/msys64/mingw64/include/QtCore/qdatetime.h \
+ C:/msys64/mingw64/include/QtCore/qcalendar.h \
+ C:/msys64/mingw64/include/QtCharts/QChartView \
+ C:/msys64/mingw64/include/QtCharts/qchartview.h \
+ C:/msys64/mingw64/include/QtCharts/QAbstractAxis \
+ C:/msys64/mingw64/include/QtCharts/qabstractaxis.h \
+ C:/msys64/mingw64/include/QtCharts/QChartGlobal \
+ C:/msys64/mingw64/include/QtCharts/qchartglobal.h \
+ C:/msys64/mingw64/include/QtCore/QtGlobal \
+ C:/msys64/mingw64/include/QtCore/qglobal.h \
+ C:/msys64/mingw64/include/QtGui/QPen \
+ C:/msys64/mingw64/include/QtGui/qpen.h \
+ C:/msys64/mingw64/include/QtGui/QFont \
+ C:/msys64/mingw64/include/QtGui/qfont.h \
+ C:/msys64/mingw64/include/QtCore/QVariant \
+ C:/msys64/mingw64/include/QtCore/qvariant.h \
+ C:/msys64/mingw64/include/QtCharts/QAbstractSeries \
+ C:/msys64/mingw64/include/QtCharts/qabstractseries.h \
+ C:/msys64/mingw64/include/QtCore/QObject \
+ C:/msys64/mingw64/include/QtCore/qobject.h \
+ C:/msys64/mingw64/include/QtCharts/QChart \
+ C:/msys64/mingw64/include/QtCharts/qchart.h \
+ C:/msys64/mingw64/include/QtCharts/QLegend \
+ C:/msys64/mingw64/include/QtCharts/qlegend.h \
+ C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicswidget.h \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
+ C:/msys64/mingw64/include/QtGui/qevent.h \
+ C:/msys64/mingw64/include/QtCore/qurl.h \
+ C:/msys64/mingw64/include/QtCore/qfile.h \
+ C:/msys64/mingw64/include/QtCore/qfiledevice.h \
+ C:/msys64/mingw64/include/QtGui/qvector2d.h \
+ C:/msys64/mingw64/include/QtGui/qtouchdevice.h \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
+ C:/msys64/mingw64/include/QtGui/qpainterpath.h \
+ C:/msys64/mingw64/include/QtGui/QBrush \
+ C:/msys64/mingw64/include/QtGui/qbrush.h \
+ C:/msys64/mingw64/include/QtCore/QMargins \
+ C:/msys64/mingw64/include/QtCore/qmargins.h \
+ C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicsview.h \
+ C:/msys64/mingw64/include/QtGui/qpainter.h \
+ C:/msys64/mingw64/include/QtGui/qtextoption.h \
+ C:/msys64/mingw64/include/QtGui/qpen.h \
+ C:/msys64/mingw64/include/QtWidgets/qscrollarea.h \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicsscene.h \
+ C:/msys64/mingw64/include/QtCharts/QLineSeries \
+ C:/msys64/mingw64/include/QtCharts/qlineseries.h \
+ C:/msys64/mingw64/include/QtCharts/QXYSeries \
+ C:/msys64/mingw64/include/QtCharts/qxyseries.h \
+ C:/msys64/mingw64/include/QtCharts/QDateTimeAxis \
+ C:/msys64/mingw64/include/QtCharts/qdatetimeaxis.h \
+ C:/msys64/mingw64/include/QtCharts/QValueAxis \
+ C:/msys64/mingw64/include/QtCharts/qvalueaxis.h \
  C:/Programming/AirQualityApp/include/api_client.hpp \
  C:/msys64/mingw64/include/nlohmann/json.hpp \
  C:/msys64/mingw64/include/nlohmann/adl_serializer.hpp \

@@ -1,77 +1,17 @@
 AirQualityApp_autogen/timestamp: \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCXXInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeCompilerIdDetection.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerSupport.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineRCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeFindBinUtils.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeMinGWFindMake.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeParseArguments.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeParseImplicitLinkInfo.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeParseLibraryArchitecture.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeRCCompiler.cmake.in \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeRCInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeSystem.cmake.in \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeTestCompilerCommon.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeTestRCCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Borland-DetermineCompiler.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-FindBinUtils.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/TI-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindCURL.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindOpenSSL.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake \
@@ -79,15 +19,11 @@ AirQualityApp_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindZLIB.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeInspectCXXLinker.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/FeatureTesting.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Linker/GNU.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake \
-	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Determine-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake \
@@ -106,7 +42,31 @@ AirQualityApp_autogen/timestamp: \
 	C:/Programming/AirQualityApp/main.cpp \
 	C:/Programming/AirQualityApp/src/api_client.cpp \
 	C:/Programming/AirQualityApp/src/main_window.cpp \
+	C:/msys64/mingw64/include/QtCharts/QAbstractAxis \
+	C:/msys64/mingw64/include/QtCharts/QAbstractSeries \
+	C:/msys64/mingw64/include/QtCharts/QChart \
+	C:/msys64/mingw64/include/QtCharts/QChartGlobal \
+	C:/msys64/mingw64/include/QtCharts/QChartView \
+	C:/msys64/mingw64/include/QtCharts/QDateTimeAxis \
+	C:/msys64/mingw64/include/QtCharts/QLegend \
+	C:/msys64/mingw64/include/QtCharts/QLineSeries \
+	C:/msys64/mingw64/include/QtCharts/QValueAxis \
+	C:/msys64/mingw64/include/QtCharts/QXYSeries \
+	C:/msys64/mingw64/include/QtCharts/qabstractaxis.h \
+	C:/msys64/mingw64/include/QtCharts/qabstractseries.h \
+	C:/msys64/mingw64/include/QtCharts/qchart.h \
+	C:/msys64/mingw64/include/QtCharts/qchartglobal.h \
+	C:/msys64/mingw64/include/QtCharts/qchartview.h \
+	C:/msys64/mingw64/include/QtCharts/qdatetimeaxis.h \
+	C:/msys64/mingw64/include/QtCharts/qlegend.h \
+	C:/msys64/mingw64/include/QtCharts/qlineseries.h \
+	C:/msys64/mingw64/include/QtCharts/qvalueaxis.h \
+	C:/msys64/mingw64/include/QtCharts/qxyseries.h \
+	C:/msys64/mingw64/include/QtCore/QMargins \
+	C:/msys64/mingw64/include/QtCore/QObject \
 	C:/msys64/mingw64/include/QtCore/QThread \
+	C:/msys64/mingw64/include/QtCore/QVariant \
+	C:/msys64/mingw64/include/QtCore/QtGlobal \
 	C:/msys64/mingw64/include/QtCore/qabstractitemmodel.h \
 	C:/msys64/mingw64/include/QtCore/qalgorithms.h \
 	C:/msys64/mingw64/include/QtCore/qarraydata.h \
@@ -115,14 +75,19 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qbasicatomic.h \
 	C:/msys64/mingw64/include/QtCore/qbytearray.h \
 	C:/msys64/mingw64/include/QtCore/qbytearraylist.h \
+	C:/msys64/mingw64/include/QtCore/qcalendar.h \
 	C:/msys64/mingw64/include/QtCore/qchar.h \
 	C:/msys64/mingw64/include/QtCore/qcompilerdetection.h \
 	C:/msys64/mingw64/include/QtCore/qconfig.h \
 	C:/msys64/mingw64/include/QtCore/qcontainerfwd.h \
 	C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h \
+	C:/msys64/mingw64/include/QtCore/qcoreevent.h \
 	C:/msys64/mingw64/include/QtCore/qdatastream.h \
+	C:/msys64/mingw64/include/QtCore/qdatetime.h \
 	C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h \
 	C:/msys64/mingw64/include/QtCore/qelapsedtimer.h \
+	C:/msys64/mingw64/include/QtCore/qfile.h \
+	C:/msys64/mingw64/include/QtCore/qfiledevice.h \
 	C:/msys64/mingw64/include/QtCore/qflags.h \
 	C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
 	C:/msys64/mingw64/include/QtCore/qglobal.h \
@@ -169,13 +134,18 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qtcore-config.h \
 	C:/msys64/mingw64/include/QtCore/qthread.h \
 	C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
+	C:/msys64/mingw64/include/QtCore/qurl.h \
 	C:/msys64/mingw64/include/QtCore/qvariant.h \
 	C:/msys64/mingw64/include/QtCore/qvarlengtharray.h \
 	C:/msys64/mingw64/include/QtCore/qvector.h \
 	C:/msys64/mingw64/include/QtCore/qversiontagging.h \
+	C:/msys64/mingw64/include/QtGui/QBrush \
+	C:/msys64/mingw64/include/QtGui/QFont \
+	C:/msys64/mingw64/include/QtGui/QPen \
 	C:/msys64/mingw64/include/QtGui/qbrush.h \
 	C:/msys64/mingw64/include/QtGui/qcolor.h \
 	C:/msys64/mingw64/include/QtGui/qcursor.h \
+	C:/msys64/mingw64/include/QtGui/qevent.h \
 	C:/msys64/mingw64/include/QtGui/qfont.h \
 	C:/msys64/mingw64/include/QtGui/qfontinfo.h \
 	C:/msys64/mingw64/include/QtGui/qfontmetrics.h \
@@ -184,20 +154,29 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtGui/qkeysequence.h \
 	C:/msys64/mingw64/include/QtGui/qmatrix.h \
 	C:/msys64/mingw64/include/QtGui/qpaintdevice.h \
+	C:/msys64/mingw64/include/QtGui/qpainter.h \
+	C:/msys64/mingw64/include/QtGui/qpainterpath.h \
 	C:/msys64/mingw64/include/QtGui/qpalette.h \
+	C:/msys64/mingw64/include/QtGui/qpen.h \
 	C:/msys64/mingw64/include/QtGui/qpixelformat.h \
 	C:/msys64/mingw64/include/QtGui/qpixmap.h \
 	C:/msys64/mingw64/include/QtGui/qpolygon.h \
 	C:/msys64/mingw64/include/QtGui/qregion.h \
 	C:/msys64/mingw64/include/QtGui/qrgb.h \
 	C:/msys64/mingw64/include/QtGui/qrgba64.h \
+	C:/msys64/mingw64/include/QtGui/qtextoption.h \
 	C:/msys64/mingw64/include/QtGui/qtgui-config.h \
 	C:/msys64/mingw64/include/QtGui/qtguiglobal.h \
+	C:/msys64/mingw64/include/QtGui/qtouchdevice.h \
 	C:/msys64/mingw64/include/QtGui/qtransform.h \
 	C:/msys64/mingw64/include/QtGui/qvalidator.h \
+	C:/msys64/mingw64/include/QtGui/qvector2d.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
 	C:/msys64/mingw64/include/QtWidgets/QComboBox \
+	C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+	C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
+	C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
 	C:/msys64/mingw64/include/QtWidgets/QGroupBox \
 	C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
 	C:/msys64/mingw64/include/QtWidgets/QHeaderView \
@@ -215,7 +194,13 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtWidgets/qabstractspinbox.h \
 	C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
 	C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
+	C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
 	C:/msys64/mingw64/include/QtWidgets/qframe.h \
+	C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
+	C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
+	C:/msys64/mingw64/include/QtWidgets/qgraphicsscene.h \
+	C:/msys64/mingw64/include/QtWidgets/qgraphicsview.h \
+	C:/msys64/mingw64/include/QtWidgets/qgraphicswidget.h \
 	C:/msys64/mingw64/include/QtWidgets/qgridlayout.h \
 	C:/msys64/mingw64/include/QtWidgets/qgroupbox.h \
 	C:/msys64/mingw64/include/QtWidgets/qheaderview.h \
@@ -225,6 +210,7 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
 	C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
 	C:/msys64/mingw64/include/QtWidgets/qrubberband.h \
+	C:/msys64/mingw64/include/QtWidgets/qscrollarea.h \
 	C:/msys64/mingw64/include/QtWidgets/qsizepolicy.h \
 	C:/msys64/mingw64/include/QtWidgets/qslider.h \
 	C:/msys64/mingw64/include/QtWidgets/qstatusbar.h \
@@ -542,6 +528,8 @@ AirQualityApp_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt5/Qt5Config.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5/Qt5ConfigVersion.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5/Qt5ModuleLocation.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt5Charts/Qt5ChartsConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake \

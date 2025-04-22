@@ -153,9 +153,10 @@ AirQualityApp.exe: CMakeFiles/AirQualityApp.dir/main.cpp.obj
 AirQualityApp.exe: CMakeFiles/AirQualityApp.dir/src/api_client.cpp.obj
 AirQualityApp.exe: CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj
 AirQualityApp.exe: CMakeFiles/AirQualityApp.dir/build.make
-AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Widgets.dll.a
 AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Concurrent.dll.a
+AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Charts.dll.a
 AirQualityApp.exe: C:/msys64/mingw64/lib/libcurl.dll.a
+AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Widgets.dll.a
 AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Gui.dll.a
 AirQualityApp.exe: C:/msys64/mingw64/lib/libQt5Core.dll.a
 AirQualityApp.exe: CMakeFiles/AirQualityApp.dir/linkLibs.rsp

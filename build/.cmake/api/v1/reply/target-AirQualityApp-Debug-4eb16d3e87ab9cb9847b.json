@@ -96,6 +96,10 @@
 			[
 				{
 					"backtrace" : 2,
+					"define" : "QT_CHARTS_LIB"
+				},
+				{
+					"backtrace" : 2,
 					"define" : "QT_CONCURRENT_LIB"
 				},
 				{
@@ -145,6 +149,11 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "C:/msys64/mingw64/include/QtConcurrent"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/msys64/mingw64/include/QtCharts"
 				}
 			],
 			"language" : "CXX",
@@ -169,11 +178,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "AirQualityApp_autogen::@6890427a1f51a3e7e1df"
+			"id" : "AirQualityApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "AirQualityApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "AirQualityApp_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "AirQualityApp::@6890427a1f51a3e7e1df",
@@ -187,17 +196,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\msys64\\mingw64\\lib\\libQt5Widgets.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
 				"fragment" : "C:\\msys64\\mingw64\\lib\\libQt5Concurrent.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "C:\\msys64\\mingw64\\lib\\libQt5Charts.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "C:\\msys64\\mingw64\\lib\\libcurl.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\msys64\\mingw64\\lib\\libQt5Widgets.dll.a",
 				"role" : "libraries"
 			},
 			{

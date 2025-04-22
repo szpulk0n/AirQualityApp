@@ -17,7 +17,14 @@
  #include <QGroupBox>
  #include <QHeaderView>
  #include <QThread>
+ #include <QDateEdit>
+ #include <QtCharts/QChartView>
+ #include <QtCharts/QLineSeries>
+ #include <QtCharts/QDateTimeAxis>
+ #include <QtCharts/QValueAxis>
  #include <memory>
+ 
+ QT_CHARTS_USE_NAMESPACE
  
  #include "api_client.hpp"
  
@@ -61,6 +68,16 @@
       * @brief Odświeża dane pomiarowe
       */
      void refreshData();
+     
+     /**
+      * @brief Wyświetla wykres danych
+      */
+     void showChart();
+     
+     /**
+      * @brief Filtruje dane według zakresu dat
+      */
+     void onFilterClicked();
  
  private:
      // Komponenty UI
@@ -69,6 +86,11 @@
      QPushButton *refreshButton;
      QTableWidget *dataTable;
      QLabel *statusLabel;
+     QChartView *chartView;
+     QDateEdit *startDateEdit;
+     QDateEdit *endDateEdit;
+     QPushButton *filterButton;
+     QPushButton *showChartButton;
      
      // Dane
      std::unique_ptr<ApiClient> apiClient;
@@ -85,6 +107,16 @@
       * @brief Wypełnia tabelę danymi pomiarowymi
       */
      void fillDataTable();
+     
+     /**
+      * @brief Tworzy wykres z danych pomiarowych
+      */
+     void createChart();
+     
+     /**
+      * @brief Filtruje dane pomiarowe według zakresu dat
+      */
+     void filterData();
  };
  
  #endif // MAIN_WINDOW_HPP

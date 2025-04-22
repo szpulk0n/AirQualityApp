@@ -5,7 +5,31 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/Programming/AirQualityApp/build/AirQualityApp_autogen/moc_predefs.h
  mdp:C:/Programming/AirQualityApp/include/api_client.hpp
  mdp:C:/Programming/AirQualityApp/include/main_window.hpp
+ mdp:C:/msys64/mingw64/include/QtCharts/QAbstractAxis
+ mdp:C:/msys64/mingw64/include/QtCharts/QAbstractSeries
+ mdp:C:/msys64/mingw64/include/QtCharts/QChart
+ mdp:C:/msys64/mingw64/include/QtCharts/QChartGlobal
+ mdp:C:/msys64/mingw64/include/QtCharts/QChartView
+ mdp:C:/msys64/mingw64/include/QtCharts/QDateTimeAxis
+ mdp:C:/msys64/mingw64/include/QtCharts/QLegend
+ mdp:C:/msys64/mingw64/include/QtCharts/QLineSeries
+ mdp:C:/msys64/mingw64/include/QtCharts/QValueAxis
+ mdp:C:/msys64/mingw64/include/QtCharts/QXYSeries
+ mdp:C:/msys64/mingw64/include/QtCharts/qabstractaxis.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qabstractseries.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qchart.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qchartglobal.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qchartview.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qdatetimeaxis.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qlegend.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qlineseries.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qvalueaxis.h
+ mdp:C:/msys64/mingw64/include/QtCharts/qxyseries.h
+ mdp:C:/msys64/mingw64/include/QtCore/QMargins
+ mdp:C:/msys64/mingw64/include/QtCore/QObject
  mdp:C:/msys64/mingw64/include/QtCore/QThread
+ mdp:C:/msys64/mingw64/include/QtCore/QVariant
+ mdp:C:/msys64/mingw64/include/QtCore/QtGlobal
  mdp:C:/msys64/mingw64/include/QtCore/qabstractitemmodel.h
  mdp:C:/msys64/mingw64/include/QtCore/qalgorithms.h
  mdp:C:/msys64/mingw64/include/QtCore/qarraydata.h
@@ -14,14 +38,19 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qbasicatomic.h
  mdp:C:/msys64/mingw64/include/QtCore/qbytearray.h
  mdp:C:/msys64/mingw64/include/QtCore/qbytearraylist.h
+ mdp:C:/msys64/mingw64/include/QtCore/qcalendar.h
  mdp:C:/msys64/mingw64/include/QtCore/qchar.h
  mdp:C:/msys64/mingw64/include/QtCore/qcompilerdetection.h
  mdp:C:/msys64/mingw64/include/QtCore/qconfig.h
  mdp:C:/msys64/mingw64/include/QtCore/qcontainerfwd.h
  mdp:C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h
+ mdp:C:/msys64/mingw64/include/QtCore/qcoreevent.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatastream.h
+ mdp:C:/msys64/mingw64/include/QtCore/qdatetime.h
  mdp:C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h
  mdp:C:/msys64/mingw64/include/QtCore/qelapsedtimer.h
+ mdp:C:/msys64/mingw64/include/QtCore/qfile.h
+ mdp:C:/msys64/mingw64/include/QtCore/qfiledevice.h
  mdp:C:/msys64/mingw64/include/QtCore/qflags.h
  mdp:C:/msys64/mingw64/include/QtCore/qgenericatomic.h
  mdp:C:/msys64/mingw64/include/QtCore/qglobal.h
@@ -68,13 +97,18 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qtcore-config.h
  mdp:C:/msys64/mingw64/include/QtCore/qthread.h
  mdp:C:/msys64/mingw64/include/QtCore/qtypeinfo.h
+ mdp:C:/msys64/mingw64/include/QtCore/qurl.h
  mdp:C:/msys64/mingw64/include/QtCore/qvariant.h
  mdp:C:/msys64/mingw64/include/QtCore/qvarlengtharray.h
  mdp:C:/msys64/mingw64/include/QtCore/qvector.h
  mdp:C:/msys64/mingw64/include/QtCore/qversiontagging.h
+ mdp:C:/msys64/mingw64/include/QtGui/QBrush
+ mdp:C:/msys64/mingw64/include/QtGui/QFont
+ mdp:C:/msys64/mingw64/include/QtGui/QPen
  mdp:C:/msys64/mingw64/include/QtGui/qbrush.h
  mdp:C:/msys64/mingw64/include/QtGui/qcolor.h
  mdp:C:/msys64/mingw64/include/QtGui/qcursor.h
+ mdp:C:/msys64/mingw64/include/QtGui/qevent.h
  mdp:C:/msys64/mingw64/include/QtGui/qfont.h
  mdp:C:/msys64/mingw64/include/QtGui/qfontinfo.h
  mdp:C:/msys64/mingw64/include/QtGui/qfontmetrics.h
@@ -83,20 +117,29 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtGui/qkeysequence.h
  mdp:C:/msys64/mingw64/include/QtGui/qmatrix.h
  mdp:C:/msys64/mingw64/include/QtGui/qpaintdevice.h
+ mdp:C:/msys64/mingw64/include/QtGui/qpainter.h
+ mdp:C:/msys64/mingw64/include/QtGui/qpainterpath.h
  mdp:C:/msys64/mingw64/include/QtGui/qpalette.h
+ mdp:C:/msys64/mingw64/include/QtGui/qpen.h
  mdp:C:/msys64/mingw64/include/QtGui/qpixelformat.h
  mdp:C:/msys64/mingw64/include/QtGui/qpixmap.h
  mdp:C:/msys64/mingw64/include/QtGui/qpolygon.h
  mdp:C:/msys64/mingw64/include/QtGui/qregion.h
  mdp:C:/msys64/mingw64/include/QtGui/qrgb.h
  mdp:C:/msys64/mingw64/include/QtGui/qrgba64.h
+ mdp:C:/msys64/mingw64/include/QtGui/qtextoption.h
  mdp:C:/msys64/mingw64/include/QtGui/qtgui-config.h
  mdp:C:/msys64/mingw64/include/QtGui/qtguiglobal.h
+ mdp:C:/msys64/mingw64/include/QtGui/qtouchdevice.h
  mdp:C:/msys64/mingw64/include/QtGui/qtransform.h
  mdp:C:/msys64/mingw64/include/QtGui/qvalidator.h
+ mdp:C:/msys64/mingw64/include/QtGui/qvector2d.h
  mdp:C:/msys64/mingw64/include/QtGui/qwindowdefs.h
  mdp:C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h
  mdp:C:/msys64/mingw64/include/QtWidgets/QComboBox
+ mdp:C:/msys64/mingw64/include/QtWidgets/QDateEdit
+ mdp:C:/msys64/mingw64/include/QtWidgets/QGraphicsView
+ mdp:C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget
  mdp:C:/msys64/mingw64/include/QtWidgets/QGroupBox
  mdp:C:/msys64/mingw64/include/QtWidgets/QHBoxLayout
  mdp:C:/msys64/mingw64/include/QtWidgets/QHeaderView
@@ -114,7 +157,13 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtWidgets/qabstractspinbox.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qboxlayout.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qcombobox.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qframe.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qgraphicsscene.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qgraphicsview.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qgraphicswidget.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qgridlayout.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qgroupbox.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qheaderview.h
@@ -124,6 +173,7 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtWidgets/qmainwindow.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qpushbutton.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qrubberband.h
+ mdp:C:/msys64/mingw64/include/QtWidgets/qscrollarea.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qsizepolicy.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qslider.h
  mdp:C:/msys64/mingw64/include/QtWidgets/qstatusbar.h

@@ -35,8 +35,8 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/msys64/mingw64/bin/g++.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/mingw64/bin/g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -247,6 +247,9 @@ LIB_EAY:FILEPATH=C:/msys64/mingw64/lib/libcrypto.dll.a
 
 //Path to a file.
 OPENSSL_INCLUDE_DIR:PATH=C:/msys64/mingw64/include
+
+//The directory containing a CMake configuration file for Qt5Charts.
+Qt5Charts_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Charts
 
 //The directory containing a CMake configuration file for Qt5Concurrent.
 Qt5Concurrent_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Concurrent
