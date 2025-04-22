@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Programming/AirQualityApp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/AirQualityApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AirQualityApp.dir\\AirQualityApp_autogen\\mocs_compilation.cpp.obj -c C:\\Programming\\AirQualityApp\\build\\AirQualityApp_autogen\\mocs_compilation.cpp",
+  "file": "C:/Programming/AirQualityApp/build/AirQualityApp_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Programming/AirQualityApp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/AirQualityApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AirQualityApp.dir\\main.cpp.obj -c C:\\Programming\\AirQualityApp\\main.cpp",
+  "file": "C:/Programming/AirQualityApp/main.cpp",
+  "output": "CMakeFiles/AirQualityApp.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Programming/AirQualityApp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/AirQualityApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AirQualityApp.dir\\src\\api_client.cpp.obj -c C:\\Programming\\AirQualityApp\\src\\api_client.cpp",
+  "file": "C:/Programming/AirQualityApp/src/api_client.cpp",
+  "output": "CMakeFiles/AirQualityApp.dir/src/api_client.cpp.obj"
+},
+{
+  "directory": "C:/Programming/AirQualityApp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/AirQualityApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AirQualityApp.dir\\src\\main_window.cpp.obj -c C:\\Programming\\AirQualityApp\\src\\main_window.cpp",
+  "file": "C:/Programming/AirQualityApp/src/main_window.cpp",
+  "output": "CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj"
+}
+]

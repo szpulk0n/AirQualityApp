@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\AirQualityApp.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\AirQualityApp.dir/objects.a @CMakeFiles\AirQualityApp.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\AirQualityApp.dir/objects.a -Wl,--no-whole-archive -o AirQualityApp.exe -Wl,--out-implib,libAirQualityApp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AirQualityApp.dir\linkLibs.rsp

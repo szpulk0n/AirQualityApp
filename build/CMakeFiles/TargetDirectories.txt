@@ -1,0 +1,5 @@
+C:/Programming/AirQualityApp/build/CMakeFiles/AirQualityApp.dir
+C:/Programming/AirQualityApp/build/CMakeFiles/edit_cache.dir
+C:/Programming/AirQualityApp/build/CMakeFiles/rebuild_cache.dir
+C:/Programming/AirQualityApp/build/CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir
+C:/Programming/AirQualityApp/build/CMakeFiles/AirQualityApp_autogen.dir
