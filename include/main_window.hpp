@@ -73,11 +73,6 @@
       * @brief Wyświetla wykres danych
       */
      void showChart();
-     
-     /**
-      * @brief Filtruje dane według zakresu dat
-      */
-     void onFilterClicked();
  
  private:
      // Komponenty UI
@@ -87,9 +82,6 @@
      QTableWidget *dataTable;
      QLabel *statusLabel;
      QChartView *chartView;
-     QDateEdit *startDateEdit;
-     QDateEdit *endDateEdit;
-     QPushButton *filterButton;
      QPushButton *showChartButton;
      
      // Dane
@@ -112,11 +104,6 @@
       * @brief Tworzy wykres z danych pomiarowych
       */
      void createChart();
-     
-     /**
-      * @brief Filtruje dane pomiarowe według zakresu dat
-      */
-     void filterData();
  };
  
  #endif // MAIN_WINDOW_HPP

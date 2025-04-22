@@ -57,22 +57,6 @@
      sensorLayout->addWidget(sensorLabel);
      sensorLayout->addWidget(sensorComboBox);
      
-     // Filtry dat
-     QHBoxLayout *dateFilterLayout = new QHBoxLayout();
-     QLabel *startDateLabel = new QLabel("Data początkowa:", this);
-     startDateEdit = new QDateEdit(QDate::currentDate().addDays(-7), this);
-     startDateEdit->setCalendarPopup(true);
-     QLabel *endDateLabel = new QLabel("Data końcowa:", this);
-     endDateEdit = new QDateEdit(QDate::currentDate(), this);
-     endDateEdit->setCalendarPopup(true);
-     filterButton = new QPushButton("Filtruj", this);
-     
-     dateFilterLayout->addWidget(startDateLabel);
-     dateFilterLayout->addWidget(startDateEdit);
-     dateFilterLayout->addWidget(endDateLabel);
-     dateFilterLayout->addWidget(endDateEdit);
-     dateFilterLayout->addWidget(filterButton);
-     
      // Przyciski
      QHBoxLayout *buttonLayout = new QHBoxLayout();
      refreshButton = new QPushButton("Odśwież dane", this);
@@ -85,7 +69,6 @@
      // Dodanie elementów do grupy wyboru
      selectionLayout->addLayout(stationLayout);
      selectionLayout->addLayout(sensorLayout);
-     selectionLayout->addLayout(dateFilterLayout);
      selectionLayout->addLayout(buttonLayout);
      
      // Tabwidget dla tabeli i wykresu
@@ -125,7 +108,6 @@
      connect(sensorComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onSensorSelected);
      connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
      connect(showChartButton, &QPushButton::clicked, this, &MainWindow::showChart);
-     connect(filterButton, &QPushButton::clicked, this, &MainWindow::onFilterClicked);
  }
  
  void MainWindow::loadStations() {
@@ -274,27 +256,6 @@
      
      // Sortowanie po dacie (malejąco)
      dataTable->sortItems(0, Qt::DescendingOrder);
-     
-     // Zaktualizuj zakres dat w kontrolkach
-     if (!measurements.empty()) {
-         // Znajdź najstarszą i najnowszą datę
-         QDateTime oldestDate = QDateTime::currentDateTime();
-         QDateTime newestDate = QDateTime::fromMSecsSinceEpoch(0);
-         
-         for (const auto& measurement : measurements) {
-             QDateTime date = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
-             if (date < oldestDate) {
-                 oldestDate = date;
-             }
-             if (date > newestDate) {
-                 newestDate = date;
-             }
-         }
-         
-         // Ustaw zakres dat w kontrolkach
-         startDateEdit->setDateTime(oldestDate);
-         endDateEdit->setDateTime(newestDate);
-     }
  }
  
  void MainWindow::createChart() {
@@ -374,15 +335,28 @@
          minValue = minValue - margin;
          maxValue = maxValue + margin;
          
+         // Określenie zakresu dat dla tytułu
+         QDateTime minDateTime = QDateTime::fromMSecsSinceEpoch(minTime);
+         QDateTime maxDateTime = QDateTime::fromMSecsSinceEpoch(maxTime);
+         QString dateRangeStr = QString("Okres: %1 - %2").arg(
+             minDateTime.toString("dd.MM.yyyy"),
+             maxDateTime.toString("dd.MM.yyyy")
+         );
+         
          // Dodanie serii do wykresu
          chart->addSeries(series);
-         chart->setTitle(QString("Pomiary: %1 (%2)").arg(paramName).arg(paramFormula));
+         // Połączenie tytułu z zakresem dat
+         chart->setTitle(QString("Pomiary: %1 (%2)\n%3").arg(
+             paramName,
+             paramFormula,
+             dateRangeStr
+         ));
          
          // Osie wykresu
          QDateTimeAxis *axisX = new QDateTimeAxis;
-         axisX->setTickCount(10);
-         axisX->setFormat("dd.MM.yyyy\nhh:mm");
-         axisX->setTitleText("Data i czas");
+         axisX->setTickCount(8); // Mniej punktów na osi
+         axisX->setFormat("hh:mm"); // Tylko godzina i minuty
+         axisX->setTitleText("Czas pomiaru");
          
          QValueAxis *axisY = new QValueAxis;
          axisY->setLabelFormat("%.2f");
@@ -423,49 +397,4 @@
      
      // Wyświetl informację w pasku statusu
      statusLabel->setText("Wykres został zaktualizowany");
- }
- 
- void MainWindow::filterData() {
-     if (measurements.empty()) {
-         return;
-     }
-     
-     QDateTime startDate = startDateEdit->dateTime();
-     QDateTime endDate = endDateEdit->dateTime();
-     
-     // Filtrowanie pomiarów
-     std::vector<Measurement> filteredMeasurements;
-     
-     for (const auto& measurement : measurements) {
-         QDateTime measurementDate = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
-         
-         if (measurementDate >= startDate && measurementDate <= endDate) {
-             filteredMeasurements.push_back(measurement);
-         }
-     }
-     
-     // Aktualizacja tabeli i wykresu
-     if (filteredMeasurements.empty()) {
-         QMessageBox::information(this, "Informacja", "Brak danych w wybranym zakresie dat");
-         return;
-     }
-     
-     // Tymczasowo zastąp measurements przefiltrowanymi danymi
-     std::vector<Measurement> originalMeasurements = measurements;
-     measurements = filteredMeasurements;
-     
-     // Aktualizacja tabeli
-     fillDataTable();
-     
-     // Aktualizacja wykresu
-     if (chartView->chart()->series().size() > 0) {
-         createChart();
-     }
-     
-     // Przywróć oryginalne dane
-     measurements = originalMeasurements;
- }
- 
- void MainWindow::onFilterClicked() {
-     filterData();
  }
