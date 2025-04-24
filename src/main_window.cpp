@@ -357,7 +357,7 @@
          axisX->setTickCount(8); // Mniej punktów na osi
          axisX->setFormat("hh:mm"); // Tylko godzina i minuty
          axisX->setTitleText("Czas pomiaru");
-         
+
          QValueAxis *axisY = new QValueAxis;
          axisY->setLabelFormat("%.2f");
          axisY->setTitleText(paramFormula);

@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monitor Jakości Powietrza: Dokumentacja klasy ApiClient</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Monitor Jakości Powietrza<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do monitorowania jakości powietrza korzystająca z API GIOŚ</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_api_client.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_api_client-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy ApiClient</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa klienta API GIOŚ  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="api__client_8hpp_source.html">api_client.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagram współpracy dla ApiClient:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client__coll__graph.png" border="0" usemap="#a_api_client_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a7576910c0aee4b187826fb82e227dac5" id="r_a7576910c0aee4b187826fb82e227dac5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7576910c0aee4b187826fb82e227dac5">ApiClient</a> ()</td></tr>
+<tr class="memdesc:a7576910c0aee4b187826fb82e227dac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <br /></td></tr>
+<tr class="separator:a7576910c0aee4b187826fb82e227dac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fae42eee49854da3247d72d01c165d" id="r_ab4fae42eee49854da3247d72d01c165d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4fae42eee49854da3247d72d01c165d">~ApiClient</a> ()</td></tr>
+<tr class="memdesc:ab4fae42eee49854da3247d72d01c165d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
+<tr class="separator:ab4fae42eee49854da3247d72d01c165d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfea4e3ec12a59d0f7fe183418b97ac9" id="r_abfea4e3ec12a59d0f7fe183418b97ac9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_station.html">Station</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfea4e3ec12a59d0f7fe183418b97ac9">getAllStations</a> ()</td></tr>
+<tr class="memdesc:abfea4e3ec12a59d0f7fe183418b97ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera listę wszystkich stacji pomiarowych.  <br /></td></tr>
+<tr class="separator:abfea4e3ec12a59d0f7fe183418b97ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158be0172993d4bd4199a406cd9a2fb7" id="r_a158be0172993d4bd4199a406cd9a2fb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a158be0172993d4bd4199a406cd9a2fb7">saveStationsToFile</a> (const std::string &amp;filename=&quot;data/stations.json&quot;)</td></tr>
+<tr class="memdesc:a158be0172993d4bd4199a406cd9a2fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje stacje do pliku JSON.  <br /></td></tr>
+<tr class="separator:a158be0172993d4bd4199a406cd9a2fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bee557f151fa351876bede3d82b764" id="r_a06bee557f151fa351876bede3d82b764"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_station.html">Station</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06bee557f151fa351876bede3d82b764">loadStationsFromFile</a> (const std::string &amp;filename=&quot;data/stations.json&quot;)</td></tr>
+<tr class="memdesc:a06bee557f151fa351876bede3d82b764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje stacje z pliku JSON.  <br /></td></tr>
+<tr class="separator:a06bee557f151fa351876bede3d82b764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c752410f1e0db8daac98aab833eca0" id="r_a55c752410f1e0db8daac98aab833eca0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_sensor.html">Sensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55c752410f1e0db8daac98aab833eca0">getSensors</a> (int stationId)</td></tr>
+<tr class="memdesc:a55c752410f1e0db8daac98aab833eca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera listę czujników dla danej stacji.  <br /></td></tr>
+<tr class="separator:a55c752410f1e0db8daac98aab833eca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4158277aaf81cd9acf1b6a474eec4460" id="r_a4158277aaf81cd9acf1b6a474eec4460"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_measurement.html">Measurement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4158277aaf81cd9acf1b6a474eec4460">getMeasurements</a> (int sensorId)</td></tr>
+<tr class="memdesc:a4158277aaf81cd9acf1b6a474eec4460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera dane pomiarowe dla danego czujnika.  <br /></td></tr>
+<tr class="separator:a4158277aaf81cd9acf1b6a474eec4460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c25a00068032e5d76caf31861f43bf" id="r_a74c25a00068032e5d76caf31861f43bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c25a00068032e5d76caf31861f43bf">isApiAvailable</a> ()</td></tr>
+<tr class="memdesc:a74c25a00068032e5d76caf31861f43bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy połączenie z API jest dostępne.  <br /></td></tr>
+<tr class="separator:a74c25a00068032e5d76caf31861f43bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a85e749188e733b82d0366dfabdfa7532" id="r_a85e749188e733b82d0366dfabdfa7532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e749188e733b82d0366dfabdfa7532">makeRequest</a> (const std::string &amp;endpoint)</td></tr>
+<tr class="memdesc:a85e749188e733b82d0366dfabdfa7532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja pomocnicza do wykonywania zapytań HTTP.  <br /></td></tr>
+<tr class="separator:a85e749188e733b82d0366dfabdfa7532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a60e4e195c86cc7097a89d4bcf2c3a66b" id="r_a60e4e195c86cc7097a89d4bcf2c3a66b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60e4e195c86cc7097a89d4bcf2c3a66b">apiUrls</a></td></tr>
+<tr class="separator:a60e4e195c86cc7097a89d4bcf2c3a66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af880c6f5d51fc502f0e576c72381b6c7" id="r_af880c6f5d51fc502f0e576c72381b6c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a></td></tr>
+<tr class="separator:af880c6f5d51fc502f0e576c72381b6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa klienta API GIOŚ </p>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8hpp_source.html#l00053">53</a> pliku <a class="el" href="api__client_8hpp_source.html">api_client.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a7576910c0aee4b187826fb82e227dac5" name="a7576910c0aee4b187826fb82e227dac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7576910c0aee4b187826fb82e227dac5">&#9670;&#160;</a></span>ApiClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApiClient::ApiClient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00018">18</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                      {</div>
+<div class="line"><span class="lineno">   19</span>     <span class="comment">// Inicjalizacja libcurl</span></div>
+<div class="line"><span class="lineno">   20</span>     curl_global_init(CURL_GLOBAL_DEFAULT);</div>
+<div class="line"><span class="lineno">   21</span>     </div>
+<div class="line"><span class="lineno">   22</span>     <span class="comment">// Spróbujmy znaleźć działający URL API</span></div>
+<div class="line"><span class="lineno">   23</span>     <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; url : <a class="code hl_variable" href="#a60e4e195c86cc7097a89d4bcf2c3a66b">apiUrls</a>) {</div>
+<div class="line"><span class="lineno">   24</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Testowanie API URL: &quot;</span> &lt;&lt; url &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   25</span>         <a class="code hl_variable" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a> = url;</div>
+<div class="line"><span class="lineno">   26</span>         </div>
+<div class="line"><span class="lineno">   27</span>         <span class="keywordflow">if</span> (<a class="code hl_function" href="#a74c25a00068032e5d76caf31861f43bf">isApiAvailable</a>()) {</div>
+<div class="line"><span class="lineno">   28</span>             std::cout &lt;&lt; <span class="stringliteral">&quot;Znaleziono działający URL API: &quot;</span> &lt;&lt; url &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   29</span>             <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   30</span>         }</div>
+<div class="line"><span class="lineno">   31</span>     }</div>
+<div class="line"><span class="lineno">   32</span>     </div>
+<div class="line"><span class="lineno">   33</span>     <span class="comment">// Jeśli żaden URL nie działa, użyjmy domyślnego</span></div>
+<div class="line"><span class="lineno">   34</span>     <a class="code hl_variable" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a> = <span class="stringliteral">&quot;http://api.gios.gov.pl/pjp-api/rest&quot;</span>;</div>
+<div class="line"><span class="lineno">   35</span>     std::cout &lt;&lt; <span class="stringliteral">&quot;Żaden URL API nie działa. Ustawiono domyślny: &quot;</span> &lt;&lt; <a class="code hl_variable" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   36</span> }</div>
+<div class="ttc" id="aclass_api_client_html_a60e4e195c86cc7097a89d4bcf2c3a66b"><div class="ttname"><a href="#a60e4e195c86cc7097a89d4bcf2c3a66b">ApiClient::apiUrls</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; apiUrls</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00107">api_client.hpp:107</a></div></div>
+<div class="ttc" id="aclass_api_client_html_a74c25a00068032e5d76caf31861f43bf"><div class="ttname"><a href="#a74c25a00068032e5d76caf31861f43bf">ApiClient::isApiAvailable</a></div><div class="ttdeci">bool isApiAvailable()</div><div class="ttdoc">Sprawdza czy połączenie z API jest dostępne.</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8cpp_source.html#l00100">api_client.cpp:100</a></div></div>
+<div class="ttc" id="aclass_api_client_html_af880c6f5d51fc502f0e576c72381b6c7"><div class="ttname"><a href="#af880c6f5d51fc502f0e576c72381b6c7">ApiClient::baseUrl</a></div><div class="ttdeci">std::string baseUrl</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00112">api_client.hpp:112</a></div></div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a7576910c0aee4b187826fb82e227dac5_cgraph.png" border="0" usemap="#aclass_api_client_a7576910c0aee4b187826fb82e227dac5_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ab4fae42eee49854da3247d72d01c165d" name="ab4fae42eee49854da3247d72d01c165d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fae42eee49854da3247d72d01c165d">&#9670;&#160;</a></span>~ApiClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApiClient::~ApiClient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00038">38</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                       {</div>
+<div class="line"><span class="lineno">   39</span>     <span class="comment">// Czyszczenie zasobów libcurl</span></div>
+<div class="line"><span class="lineno">   40</span>     curl_global_cleanup();</div>
+<div class="line"><span class="lineno">   41</span> }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="abfea4e3ec12a59d0f7fe183418b97ac9" name="abfea4e3ec12a59d0f7fe183418b97ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfea4e3ec12a59d0f7fe183418b97ac9">&#9670;&#160;</a></span>getAllStations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_station.html">Station</a> &gt; ApiClient::getAllStations </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera listę wszystkich stacji pomiarowych. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor struktur <a class="el" href="struct_station.html" title="Struktura reprezentująca stację pomiarową">Station</a> </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00142">142</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>                                              {</div>
+<div class="line"><span class="lineno">  143</span>     std::vector&lt;Station&gt; stations;</div>
+<div class="line"><span class="lineno">  144</span>     </div>
+<div class="line"><span class="lineno">  145</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  146</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Próba pobrania stacji pomiarowych...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  147</span>         <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> response = <a class="code hl_function" href="#a85e749188e733b82d0366dfabdfa7532">makeRequest</a>(<span class="stringliteral">&quot;/station/findAll&quot;</span>);</div>
+<div class="line"><span class="lineno">  148</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Otrzymano odpowiedź. Liczba stacji: &quot;</span> &lt;&lt; response.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  149</span>         </div>
+<div class="line"><span class="lineno">  150</span>         <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : response) {</div>
+<div class="line"><span class="lineno">  151</span>             Station station;</div>
+<div class="line"><span class="lineno">  152</span>             </div>
+<div class="line"><span class="lineno">  153</span>             <span class="comment">// Konwersja id na liczbę</span></div>
+<div class="line"><span class="lineno">  154</span>             station.<a class="code hl_variable" href="struct_station.html#a4144cd1a5a69d5900f473ea9d792b3fe">id</a> = item[<span class="stringliteral">&quot;id&quot;</span>].get&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><span class="lineno">  155</span>             station.<a class="code hl_variable" href="struct_station.html#a683cec6eec5fd580717ee57a2e1644fb">name</a> = item[<span class="stringliteral">&quot;stationName&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  156</span>             </div>
+<div class="line"><span class="lineno">  157</span>             <span class="comment">// Konwersja współrzędnych geograficznych ze stringów na liczby</span></div>
+<div class="line"><span class="lineno">  158</span>             <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;gegrLat&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  159</span>                 station.<a class="code hl_variable" href="struct_station.html#ac81d0930184d2377b2bd42f4fcc175cc">lat</a> = std::stod(item[<span class="stringliteral">&quot;gegrLat&quot;</span>].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">  160</span>             }</div>
+<div class="line"><span class="lineno">  161</span>             <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;gegrLon&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  162</span>                 station.<a class="code hl_variable" href="struct_station.html#aac2e0cc376c0d46a7379fdaf2290273d">lon</a> = std::stod(item[<span class="stringliteral">&quot;gegrLon&quot;</span>].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">  163</span>             }</div>
+<div class="line"><span class="lineno">  164</span>             </div>
+<div class="line"><span class="lineno">  165</span>             <span class="comment">// Pobieranie informacji o mieście i adresie</span></div>
+<div class="line"><span class="lineno">  166</span>             <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;city&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  167</span>                 station.<a class="code hl_variable" href="struct_station.html#a17174c051d4ebe2fe19f37a60a12c0a1">city</a> = item[<span class="stringliteral">&quot;city&quot;</span>][<span class="stringliteral">&quot;name&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  168</span>                 </div>
+<div class="line"><span class="lineno">  169</span>                 <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;city&quot;</span>][<span class="stringliteral">&quot;commune&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  170</span>                     station.<a class="code hl_variable" href="struct_station.html#a73edb2bbc71713f61c61494da596db3d">province</a> = item[<span class="stringliteral">&quot;city&quot;</span>][<span class="stringliteral">&quot;commune&quot;</span>][<span class="stringliteral">&quot;provinceName&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  171</span>                 }</div>
+<div class="line"><span class="lineno">  172</span>             }</div>
+<div class="line"><span class="lineno">  173</span>             </div>
+<div class="line"><span class="lineno">  174</span>             <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;addressStreet&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  175</span>                 station.<a class="code hl_variable" href="struct_station.html#a435debdf2b75d1603b5a72a0c2a6fdec">address</a> = item[<span class="stringliteral">&quot;addressStreet&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  176</span>             }</div>
+<div class="line"><span class="lineno">  177</span>             </div>
+<div class="line"><span class="lineno">  178</span>             stations.push_back(station);</div>
+<div class="line"><span class="lineno">  179</span>         }</div>
+<div class="line"><span class="lineno">  180</span>         </div>
+<div class="line"><span class="lineno">  181</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Przetworzono &quot;</span> &lt;&lt; stations.size() &lt;&lt; <span class="stringliteral">&quot; stacji pomiarowych&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  182</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  183</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas pobierania stacji: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  184</span>     }</div>
+<div class="line"><span class="lineno">  185</span>     </div>
+<div class="line"><span class="lineno">  186</span>     <span class="keywordflow">return</span> stations;</div>
+<div class="line"><span class="lineno">  187</span> }</div>
+<div class="ttc" id="aapi__client_8hpp_html_ab701e3ac61a85b337ec5c1abaad6742d"><div class="ttname"><a href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00015">api_client.hpp:15</a></div></div>
+<div class="ttc" id="aclass_api_client_html_a85e749188e733b82d0366dfabdfa7532"><div class="ttname"><a href="#a85e749188e733b82d0366dfabdfa7532">ApiClient::makeRequest</a></div><div class="ttdeci">json makeRequest(const std::string &amp;endpoint)</div><div class="ttdoc">Funkcja pomocnicza do wykonywania zapytań HTTP.</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8cpp_source.html#l00043">api_client.cpp:43</a></div></div>
+<div class="ttc" id="astruct_station_html_a17174c051d4ebe2fe19f37a60a12c0a1"><div class="ttname"><a href="struct_station.html#a17174c051d4ebe2fe19f37a60a12c0a1">Station::city</a></div><div class="ttdeci">std::string city</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00025">api_client.hpp:25</a></div></div>
+<div class="ttc" id="astruct_station_html_a4144cd1a5a69d5900f473ea9d792b3fe"><div class="ttname"><a href="struct_station.html#a4144cd1a5a69d5900f473ea9d792b3fe">Station::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00021">api_client.hpp:21</a></div></div>
+<div class="ttc" id="astruct_station_html_a435debdf2b75d1603b5a72a0c2a6fdec"><div class="ttname"><a href="struct_station.html#a435debdf2b75d1603b5a72a0c2a6fdec">Station::address</a></div><div class="ttdeci">std::string address</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00026">api_client.hpp:26</a></div></div>
+<div class="ttc" id="astruct_station_html_a683cec6eec5fd580717ee57a2e1644fb"><div class="ttname"><a href="struct_station.html#a683cec6eec5fd580717ee57a2e1644fb">Station::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00022">api_client.hpp:22</a></div></div>
+<div class="ttc" id="astruct_station_html_a73edb2bbc71713f61c61494da596db3d"><div class="ttname"><a href="struct_station.html#a73edb2bbc71713f61c61494da596db3d">Station::province</a></div><div class="ttdeci">std::string province</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00027">api_client.hpp:27</a></div></div>
+<div class="ttc" id="astruct_station_html_aac2e0cc376c0d46a7379fdaf2290273d"><div class="ttname"><a href="struct_station.html#aac2e0cc376c0d46a7379fdaf2290273d">Station::lon</a></div><div class="ttdeci">double lon</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00024">api_client.hpp:24</a></div></div>
+<div class="ttc" id="astruct_station_html_ac81d0930184d2377b2bd42f4fcc175cc"><div class="ttname"><a href="struct_station.html#ac81d0930184d2377b2bd42f4fcc175cc">Station::lat</a></div><div class="ttdeci">double lat</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00023">api_client.hpp:23</a></div></div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_abfea4e3ec12a59d0f7fe183418b97ac9_cgraph.png" border="0" usemap="#aclass_api_client_abfea4e3ec12a59d0f7fe183418b97ac9_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Oto graf wywoływań tej funkcji:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_abfea4e3ec12a59d0f7fe183418b97ac9_icgraph.png" border="0" usemap="#aclass_api_client_abfea4e3ec12a59d0f7fe183418b97ac9_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4158277aaf81cd9acf1b6a474eec4460" name="a4158277aaf81cd9acf1b6a474eec4460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4158277aaf81cd9acf1b6a474eec4460">&#9670;&#160;</a></span>getMeasurements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_measurement.html">Measurement</a> &gt; ApiClient::getMeasurements </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera dane pomiarowe dla danego czujnika. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID czujnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor struktur <a class="el" href="struct_measurement.html" title="Struktura reprezentująca pomiar.">Measurement</a> </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00282">282</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  282</span>                                                               {</div>
+<div class="line"><span class="lineno">  283</span>     std::vector&lt;Measurement&gt; measurements;</div>
+<div class="line"><span class="lineno">  284</span>     </div>
+<div class="line"><span class="lineno">  285</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  286</span>         <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> response = <a class="code hl_function" href="#a85e749188e733b82d0366dfabdfa7532">makeRequest</a>(<span class="stringliteral">&quot;/data/getData/&quot;</span> + std::to_string(sensorId));</div>
+<div class="line"><span class="lineno">  287</span>         </div>
+<div class="line"><span class="lineno">  288</span>         <span class="keywordflow">if</span> (response.contains(<span class="stringliteral">&quot;values&quot;</span>) &amp;&amp; response[<span class="stringliteral">&quot;values&quot;</span>].is_array()) {</div>
+<div class="line"><span class="lineno">  289</span>             <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : response[<span class="stringliteral">&quot;values&quot;</span>]) {</div>
+<div class="line"><span class="lineno">  290</span>                 <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;value&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  291</span>                     Measurement measurement;</div>
+<div class="line"><span class="lineno">  292</span>                     measurement.<a class="code hl_variable" href="struct_measurement.html#a49e15c2628cc9660bbb602ceb6dbbbe4">date</a> = item[<span class="stringliteral">&quot;date&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  293</span>                     </div>
+<div class="line"><span class="lineno">  294</span>                     <span class="comment">// Konwersja wartości ze stringa na liczbę</span></div>
+<div class="line"><span class="lineno">  295</span>                     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  296</span>                         <span class="keywordflow">if</span> (item[<span class="stringliteral">&quot;value&quot;</span>].is_string()) {</div>
+<div class="line"><span class="lineno">  297</span>                             measurement.<a class="code hl_variable" href="struct_measurement.html#a823f1a4e614b8d87fa80b58b88207504">value</a> = std::stod(item[<span class="stringliteral">&quot;value&quot;</span>].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">  298</span>                         } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  299</span>                             measurement.<a class="code hl_variable" href="struct_measurement.html#a823f1a4e614b8d87fa80b58b88207504">value</a> = item[<span class="stringliteral">&quot;value&quot;</span>].get&lt;<span class="keywordtype">double</span>&gt;();</div>
+<div class="line"><span class="lineno">  300</span>                         }</div>
+<div class="line"><span class="lineno">  301</span>                         measurements.push_back(measurement);</div>
+<div class="line"><span class="lineno">  302</span>                     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  303</span>                         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd konwersji wartości: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  304</span>                     }</div>
+<div class="line"><span class="lineno">  305</span>                 }</div>
+<div class="line"><span class="lineno">  306</span>             }</div>
+<div class="line"><span class="lineno">  307</span>         }</div>
+<div class="line"><span class="lineno">  308</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  309</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas pobierania pomiarów: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  310</span>     }</div>
+<div class="line"><span class="lineno">  311</span>     </div>
+<div class="line"><span class="lineno">  312</span>     <span class="keywordflow">return</span> measurements;</div>
+<div class="line"><span class="lineno">  313</span> }</div>
+<div class="ttc" id="astruct_measurement_html_a49e15c2628cc9660bbb602ceb6dbbbe4"><div class="ttname"><a href="struct_measurement.html#a49e15c2628cc9660bbb602ceb6dbbbe4">Measurement::date</a></div><div class="ttdeci">std::string date</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00046">api_client.hpp:46</a></div></div>
+<div class="ttc" id="astruct_measurement_html_a823f1a4e614b8d87fa80b58b88207504"><div class="ttname"><a href="struct_measurement.html#a823f1a4e614b8d87fa80b58b88207504">Measurement::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00047">api_client.hpp:47</a></div></div>
+</div><!-- fragment --><div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a4158277aaf81cd9acf1b6a474eec4460_cgraph.png" border="0" usemap="#aclass_api_client_a4158277aaf81cd9acf1b6a474eec4460_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a55c752410f1e0db8daac98aab833eca0" name="a55c752410f1e0db8daac98aab833eca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c752410f1e0db8daac98aab833eca0">&#9670;&#160;</a></span>getSensors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_sensor.html">Sensor</a> &gt; ApiClient::getSensors </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pobiera listę czujników dla danej stacji. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor struktur <a class="el" href="struct_sensor.html" title="Struktura reprezentująca czujnik pomiarowy.">Sensor</a> </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00255">255</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  255</span>                                                      {</div>
+<div class="line"><span class="lineno">  256</span>     std::vector&lt;Sensor&gt; sensors;</div>
+<div class="line"><span class="lineno">  257</span>     </div>
+<div class="line"><span class="lineno">  258</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  259</span>         <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> response = <a class="code hl_function" href="#a85e749188e733b82d0366dfabdfa7532">makeRequest</a>(<span class="stringliteral">&quot;/station/sensors/&quot;</span> + std::to_string(stationId));</div>
+<div class="line"><span class="lineno">  260</span>         </div>
+<div class="line"><span class="lineno">  261</span>         <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : response) {</div>
+<div class="line"><span class="lineno">  262</span>             Sensor sensor;</div>
+<div class="line"><span class="lineno">  263</span>             sensor.<a class="code hl_variable" href="struct_sensor.html#a234572fa1d52f50a2a3fe349022bd9bd">id</a> = item[<span class="stringliteral">&quot;id&quot;</span>].get&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><span class="lineno">  264</span>             sensor.<a class="code hl_variable" href="struct_sensor.html#aca0077c550e028e9dfd7f3cd8c9911e5">stationId</a> = item[<span class="stringliteral">&quot;stationId&quot;</span>].get&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><span class="lineno">  265</span>             </div>
+<div class="line"><span class="lineno">  266</span>             <span class="keywordflow">if</span> (!item[<span class="stringliteral">&quot;param&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  267</span>                 sensor.<a class="code hl_variable" href="struct_sensor.html#a89220decdd391781a721ee7d0bb35c6a">paramName</a> = item[<span class="stringliteral">&quot;param&quot;</span>][<span class="stringliteral">&quot;paramName&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  268</span>                 sensor.<a class="code hl_variable" href="struct_sensor.html#a7cfee4446706287e36c5150062541647">paramFormula</a> = item[<span class="stringliteral">&quot;param&quot;</span>][<span class="stringliteral">&quot;paramFormula&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  269</span>                 sensor.<a class="code hl_variable" href="struct_sensor.html#aca7e280e8730c0ca8089bb37ae935b29">paramCode</a> = item[<span class="stringliteral">&quot;param&quot;</span>][<span class="stringliteral">&quot;paramCode&quot;</span>].get&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">  270</span>                 sensor.<a class="code hl_variable" href="struct_sensor.html#a4cf845ea43f51942856f2d7a288a08f8">paramId</a> = item[<span class="stringliteral">&quot;param&quot;</span>][<span class="stringliteral">&quot;idParam&quot;</span>].get&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><span class="lineno">  271</span>             }</div>
+<div class="line"><span class="lineno">  272</span>             </div>
+<div class="line"><span class="lineno">  273</span>             sensors.push_back(sensor);</div>
+<div class="line"><span class="lineno">  274</span>         }</div>
+<div class="line"><span class="lineno">  275</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  276</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas pobierania czujników: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  277</span>     }</div>
+<div class="line"><span class="lineno">  278</span>     </div>
+<div class="line"><span class="lineno">  279</span>     <span class="keywordflow">return</span> sensors;</div>
+<div class="line"><span class="lineno">  280</span> }</div>
+<div class="ttc" id="astruct_sensor_html_a234572fa1d52f50a2a3fe349022bd9bd"><div class="ttname"><a href="struct_sensor.html#a234572fa1d52f50a2a3fe349022bd9bd">Sensor::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00034">api_client.hpp:34</a></div></div>
+<div class="ttc" id="astruct_sensor_html_a4cf845ea43f51942856f2d7a288a08f8"><div class="ttname"><a href="struct_sensor.html#a4cf845ea43f51942856f2d7a288a08f8">Sensor::paramId</a></div><div class="ttdeci">int paramId</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00039">api_client.hpp:39</a></div></div>
+<div class="ttc" id="astruct_sensor_html_a7cfee4446706287e36c5150062541647"><div class="ttname"><a href="struct_sensor.html#a7cfee4446706287e36c5150062541647">Sensor::paramFormula</a></div><div class="ttdeci">std::string paramFormula</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00037">api_client.hpp:37</a></div></div>
+<div class="ttc" id="astruct_sensor_html_a89220decdd391781a721ee7d0bb35c6a"><div class="ttname"><a href="struct_sensor.html#a89220decdd391781a721ee7d0bb35c6a">Sensor::paramName</a></div><div class="ttdeci">std::string paramName</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00036">api_client.hpp:36</a></div></div>
+<div class="ttc" id="astruct_sensor_html_aca0077c550e028e9dfd7f3cd8c9911e5"><div class="ttname"><a href="struct_sensor.html#aca0077c550e028e9dfd7f3cd8c9911e5">Sensor::stationId</a></div><div class="ttdeci">int stationId</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00035">api_client.hpp:35</a></div></div>
+<div class="ttc" id="astruct_sensor_html_aca7e280e8730c0ca8089bb37ae935b29"><div class="ttname"><a href="struct_sensor.html#aca7e280e8730c0ca8089bb37ae935b29">Sensor::paramCode</a></div><div class="ttdeci">std::string paramCode</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8hpp_source.html#l00038">api_client.hpp:38</a></div></div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a55c752410f1e0db8daac98aab833eca0_cgraph.png" border="0" usemap="#aclass_api_client_a55c752410f1e0db8daac98aab833eca0_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a74c25a00068032e5d76caf31861f43bf" name="a74c25a00068032e5d76caf31861f43bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c25a00068032e5d76caf31861f43bf">&#9670;&#160;</a></span>isApiAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApiClient::isApiAvailable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy połączenie z API jest dostępne. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>true jeśli API jest dostępne, false w przeciwnym wypadku </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00100">100</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>                                {</div>
+<div class="line"><span class="lineno">  101</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  102</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Sprawdzanie dostępności API...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  103</span>         </div>
+<div class="line"><span class="lineno">  104</span>         <span class="comment">// Inicjalizacja CURL</span></div>
+<div class="line"><span class="lineno">  105</span>         CURL* curl = curl_easy_init();</div>
+<div class="line"><span class="lineno">  106</span>         <span class="keywordflow">if</span> (!curl) {</div>
+<div class="line"><span class="lineno">  107</span>             std::cerr &lt;&lt; <span class="stringliteral">&quot;Nie można zainicjalizować CURL&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  108</span>             <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  109</span>         }</div>
+<div class="line"><span class="lineno">  110</span>         </div>
+<div class="line"><span class="lineno">  111</span>         <span class="comment">// Przygotowanie zapytania</span></div>
+<div class="line"><span class="lineno">  112</span>         std::string url = <a class="code hl_variable" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a> + <span class="stringliteral">&quot;/station/findAll&quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;Testowanie URL: &quot;</span> &lt;&lt; url &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  114</span>         </div>
+<div class="line"><span class="lineno">  115</span>         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());</div>
+<div class="line"><span class="lineno">  116</span>         curl_easy_setopt(curl, CURLOPT_NOBODY, 1L); <span class="comment">// Tylko nagłówek odpowiedzi</span></div>
+<div class="line"><span class="lineno">  117</span>         curl_easy_setopt(curl, CURLOPT_TIMEOUT, 5L); <span class="comment">// 5 sekund timeout</span></div>
+<div class="line"><span class="lineno">  118</span>         curl_easy_setopt(curl, CURLOPT_USERAGENT, <span class="stringliteral">&quot;AirQualityApp/1.0&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);</div>
+<div class="line"><span class="lineno">  120</span>         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);</div>
+<div class="line"><span class="lineno">  121</span>         </div>
+<div class="line"><span class="lineno">  122</span>         <span class="comment">// Wykonanie zapytania</span></div>
+<div class="line"><span class="lineno">  123</span>         CURLcode res = curl_easy_perform(curl);</div>
+<div class="line"><span class="lineno">  124</span>         </div>
+<div class="line"><span class="lineno">  125</span>         <span class="comment">// Sprawdzenie kodu odpowiedzi HTTP</span></div>
+<div class="line"><span class="lineno">  126</span>         <span class="keywordtype">long</span> http_code = 0;</div>
+<div class="line"><span class="lineno">  127</span>         curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &amp;http_code);</div>
+<div class="line"><span class="lineno">  128</span>         </div>
+<div class="line"><span class="lineno">  129</span>         <span class="comment">// Zwolnienie zasobów</span></div>
+<div class="line"><span class="lineno">  130</span>         curl_easy_cleanup(curl);</div>
+<div class="line"><span class="lineno">  131</span>         </div>
+<div class="line"><span class="lineno">  132</span>         <span class="comment">// Sprawdzenie wyniku</span></div>
+<div class="line"><span class="lineno">  133</span>         <span class="keywordtype">bool</span> success = (res == CURLE_OK &amp;&amp; http_code == 200);</div>
+<div class="line"><span class="lineno">  134</span>         std::cout &lt;&lt; <span class="stringliteral">&quot;API dostępne: &quot;</span> &lt;&lt; (success ? <span class="stringliteral">&quot;TAK&quot;</span> : <span class="stringliteral">&quot;NIE&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;, kod HTTP: &quot;</span> &lt;&lt; http_code &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  135</span>         <span class="keywordflow">return</span> success;</div>
+<div class="line"><span class="lineno">  136</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  137</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas sprawdzania dostępności API: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  138</span>         <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  139</span>     }</div>
+<div class="line"><span class="lineno">  140</span> }</div>
+</div><!-- fragment --><div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Oto graf wywoływań tej funkcji:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a74c25a00068032e5d76caf31861f43bf_icgraph.png" border="0" usemap="#aclass_api_client_a74c25a00068032e5d76caf31861f43bf_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a06bee557f151fa351876bede3d82b764" name="a06bee557f151fa351876bede3d82b764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06bee557f151fa351876bede3d82b764">&#9670;&#160;</a></span>loadStationsFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_station.html">Station</a> &gt; ApiClient::loadStationsFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;data/stations.json&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje stacje z pliku JSON. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Nazwa pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor struktur <a class="el" href="struct_station.html" title="Struktura reprezentująca stację pomiarową">Station</a> </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00223">223</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  223</span>                                                                             {</div>
+<div class="line"><span class="lineno">  224</span>     std::vector&lt;Station&gt; stations;</div>
+<div class="line"><span class="lineno">  225</span>     </div>
+<div class="line"><span class="lineno">  226</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  227</span>         std::ifstream file(filename);</div>
+<div class="line"><span class="lineno">  228</span>         <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><span class="lineno">  229</span>             std::cerr &lt;&lt; <span class="stringliteral">&quot;Nie można otworzyć pliku: &quot;</span> &lt;&lt; filename &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  230</span>             <span class="keywordflow">return</span> stations;</div>
+<div class="line"><span class="lineno">  231</span>         }</div>
+<div class="line"><span class="lineno">  232</span>         </div>
+<div class="line"><span class="lineno">  233</span>         <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> stationsJson;</div>
+<div class="line"><span class="lineno">  234</span>         file &gt;&gt; stationsJson;</div>
+<div class="line"><span class="lineno">  235</span>         </div>
+<div class="line"><span class="lineno">  236</span>         <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : stationsJson) {</div>
+<div class="line"><span class="lineno">  237</span>             Station station;</div>
+<div class="line"><span class="lineno">  238</span>             station.<a class="code hl_variable" href="struct_station.html#a4144cd1a5a69d5900f473ea9d792b3fe">id</a> = item[<span class="stringliteral">&quot;id&quot;</span>];</div>
+<div class="line"><span class="lineno">  239</span>             station.<a class="code hl_variable" href="struct_station.html#a683cec6eec5fd580717ee57a2e1644fb">name</a> = item[<span class="stringliteral">&quot;name&quot;</span>];</div>
+<div class="line"><span class="lineno">  240</span>             station.<a class="code hl_variable" href="struct_station.html#ac81d0930184d2377b2bd42f4fcc175cc">lat</a> = item[<span class="stringliteral">&quot;lat&quot;</span>];</div>
+<div class="line"><span class="lineno">  241</span>             station.<a class="code hl_variable" href="struct_station.html#aac2e0cc376c0d46a7379fdaf2290273d">lon</a> = item[<span class="stringliteral">&quot;lon&quot;</span>];</div>
+<div class="line"><span class="lineno">  242</span>             station.<a class="code hl_variable" href="struct_station.html#a17174c051d4ebe2fe19f37a60a12c0a1">city</a> = item[<span class="stringliteral">&quot;city&quot;</span>];</div>
+<div class="line"><span class="lineno">  243</span>             station.<a class="code hl_variable" href="struct_station.html#a435debdf2b75d1603b5a72a0c2a6fdec">address</a> = item[<span class="stringliteral">&quot;address&quot;</span>];</div>
+<div class="line"><span class="lineno">  244</span>             station.<a class="code hl_variable" href="struct_station.html#a73edb2bbc71713f61c61494da596db3d">province</a> = item[<span class="stringliteral">&quot;province&quot;</span>];</div>
+<div class="line"><span class="lineno">  245</span>             </div>
+<div class="line"><span class="lineno">  246</span>             stations.push_back(station);</div>
+<div class="line"><span class="lineno">  247</span>         }</div>
+<div class="line"><span class="lineno">  248</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  249</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas wczytywania stacji z pliku: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  250</span>     }</div>
+<div class="line"><span class="lineno">  251</span>     </div>
+<div class="line"><span class="lineno">  252</span>     <span class="keywordflow">return</span> stations;</div>
+<div class="line"><span class="lineno">  253</span> }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85e749188e733b82d0366dfabdfa7532" name="a85e749188e733b82d0366dfabdfa7532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e749188e733b82d0366dfabdfa7532">&#9670;&#160;</a></span>makeRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> ApiClient::makeRequest </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>endpoint</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja pomocnicza do wykonywania zapytań HTTP. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>Endpoint API </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Odpowiedź w formacie JSON </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00043">43</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                                      {</div>
+<div class="line"><span class="lineno">   44</span>     CURL* curl;</div>
+<div class="line"><span class="lineno">   45</span>     CURLcode res;</div>
+<div class="line"><span class="lineno">   46</span>     std::string readBuffer;</div>
+<div class="line"><span class="lineno">   47</span>     <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> responseJson;</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>     curl = curl_easy_init();</div>
+<div class="line"><span class="lineno">   50</span>     <span class="keywordflow">if</span> (!curl) {</div>
+<div class="line"><span class="lineno">   51</span>         <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Błąd inicjalizacji libcurl&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>     }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>     std::string url = <a class="code hl_variable" href="#af880c6f5d51fc502f0e576c72381b6c7">baseUrl</a> + endpoint;</div>
+<div class="line"><span class="lineno">   55</span>     std::cout &lt;&lt; <span class="stringliteral">&quot;Wykonywanie zapytania do: &quot;</span> &lt;&lt; url &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   56</span>     </div>
+<div class="line"><span class="lineno">   57</span>     curl_easy_setopt(curl, CURLOPT_URL, url.c_str());</div>
+<div class="line"><span class="lineno">   58</span>     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, <a class="code hl_function" href="api__client_8cpp.html#ab54064eb3c1650bc846b7731da4b07b1">WriteCallback</a>);</div>
+<div class="line"><span class="lineno">   59</span>     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &amp;readBuffer);</div>
+<div class="line"><span class="lineno">   60</span>     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10); <span class="comment">// Timeout 10 sekund</span></div>
+<div class="line"><span class="lineno">   61</span>     </div>
+<div class="line"><span class="lineno">   62</span>     <span class="comment">// Dodanie User-Agent</span></div>
+<div class="line"><span class="lineno">   63</span>     curl_easy_setopt(curl, CURLOPT_USERAGENT, <span class="stringliteral">&quot;AirQualityApp/1.0&quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span>     </div>
+<div class="line"><span class="lineno">   65</span>     <span class="comment">// Opcjonalnie wyłączenie weryfikacji SSL, jeśli używamy HTTPS</span></div>
+<div class="line"><span class="lineno">   66</span>     curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);</div>
+<div class="line"><span class="lineno">   67</span>     curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);</div>
+<div class="line"><span class="lineno">   68</span>     </div>
+<div class="line"><span class="lineno">   69</span>     <span class="comment">// Wykonanie zapytania</span></div>
+<div class="line"><span class="lineno">   70</span>     res = curl_easy_perform(curl);</div>
+<div class="line"><span class="lineno">   71</span>     </div>
+<div class="line"><span class="lineno">   72</span>     <span class="comment">// Sprawdzenie czy zapytanie się powiodło</span></div>
+<div class="line"><span class="lineno">   73</span>     <span class="keywordflow">if</span> (res != CURLE_OK) {</div>
+<div class="line"><span class="lineno">   74</span>         std::string errorMsg = <span class="stringliteral">&quot;Błąd podczas wykonywania zapytania: &quot;</span> + std::string(curl_easy_strerror(res));</div>
+<div class="line"><span class="lineno">   75</span>         std::cerr &lt;&lt; errorMsg &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   76</span>         curl_easy_cleanup(curl);</div>
+<div class="line"><span class="lineno">   77</span>         <span class="keywordflow">throw</span> std::runtime_error(errorMsg);</div>
+<div class="line"><span class="lineno">   78</span>     }</div>
+<div class="line"><span class="lineno">   79</span>     </div>
+<div class="line"><span class="lineno">   80</span>     <span class="comment">// Wyświetlenie odpowiedzi</span></div>
+<div class="line"><span class="lineno">   81</span>     std::cout &lt;&lt; <span class="stringliteral">&quot;Otrzymana odpowiedź (pierwsze 200 znaków): &quot;</span> &lt;&lt; readBuffer.substr(0, 200) &lt;&lt; <span class="stringliteral">&quot;...&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   82</span>     </div>
+<div class="line"><span class="lineno">   83</span>     <span class="comment">// Czyszczenie zasobów</span></div>
+<div class="line"><span class="lineno">   84</span>     curl_easy_cleanup(curl);</div>
+<div class="line"><span class="lineno">   85</span>     </div>
+<div class="line"><span class="lineno">   86</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   87</span>         <span class="keywordflow">if</span> (readBuffer.empty()) {</div>
+<div class="line"><span class="lineno">   88</span>             <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Pusta odpowiedź z API&quot;</span>);</div>
+<div class="line"><span class="lineno">   89</span>         }</div>
+<div class="line"><span class="lineno">   90</span>         responseJson = json::parse(readBuffer);</div>
+<div class="line"><span class="lineno">   91</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> json::parse_error&amp; e) {</div>
+<div class="line"><span class="lineno">   92</span>         std::string errorMsg = <span class="stringliteral">&quot;Błąd parsowania JSON: &quot;</span> + std::string(e.what()) + <span class="stringliteral">&quot;\nOdpowiedź: &quot;</span> + readBuffer;</div>
+<div class="line"><span class="lineno">   93</span>         std::cerr &lt;&lt; errorMsg &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   94</span>         <span class="keywordflow">throw</span> std::runtime_error(errorMsg);</div>
+<div class="line"><span class="lineno">   95</span>     }</div>
+<div class="line"><span class="lineno">   96</span>     </div>
+<div class="line"><span class="lineno">   97</span>     <span class="keywordflow">return</span> responseJson;</div>
+<div class="line"><span class="lineno">   98</span> }</div>
+<div class="ttc" id="aapi__client_8cpp_html_ab54064eb3c1650bc846b7731da4b07b1"><div class="ttname"><a href="api__client_8cpp.html#ab54064eb3c1650bc846b7731da4b07b1">WriteCallback</a></div><div class="ttdeci">static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp)</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8cpp_source.html#l00013">api_client.cpp:13</a></div></div>
+</div><!-- fragment --><div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a85e749188e733b82d0366dfabdfa7532_cgraph.png" border="0" usemap="#aclass_api_client_a85e749188e733b82d0366dfabdfa7532_cgraph" alt=""/></div>
+</div>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Oto graf wywoływań tej funkcji:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a85e749188e733b82d0366dfabdfa7532_icgraph.png" border="0" usemap="#aclass_api_client_a85e749188e733b82d0366dfabdfa7532_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a158be0172993d4bd4199a406cd9a2fb7" name="a158be0172993d4bd4199a406cd9a2fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158be0172993d4bd4199a406cd9a2fb7">&#9670;&#160;</a></span>saveStationsToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApiClient::saveStationsToFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;data/stations.json&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapisuje stacje do pliku JSON. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Nazwa pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true jeśli operacja się powiodła, false w przeciwnym wypadku </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8cpp_source.html#l00189">189</a> pliku <a class="el" href="api__client_8cpp_source.html">api_client.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>                                                             {</div>
+<div class="line"><span class="lineno">  190</span>     <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  191</span>         std::vector&lt;Station&gt; stations = <a class="code hl_function" href="#abfea4e3ec12a59d0f7fe183418b97ac9">getAllStations</a>();</div>
+<div class="line"><span class="lineno">  192</span>         <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> stationsJson = json::array();</div>
+<div class="line"><span class="lineno">  193</span>         </div>
+<div class="line"><span class="lineno">  194</span>         <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; station : stations) {</div>
+<div class="line"><span class="lineno">  195</span>             <a class="code hl_typedef" href="api__client_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> stationJson;</div>
+<div class="line"><span class="lineno">  196</span>             stationJson[<span class="stringliteral">&quot;id&quot;</span>] = station.id;</div>
+<div class="line"><span class="lineno">  197</span>             stationJson[<span class="stringliteral">&quot;name&quot;</span>] = station.name;</div>
+<div class="line"><span class="lineno">  198</span>             stationJson[<span class="stringliteral">&quot;lat&quot;</span>] = station.lat;</div>
+<div class="line"><span class="lineno">  199</span>             stationJson[<span class="stringliteral">&quot;lon&quot;</span>] = station.lon;</div>
+<div class="line"><span class="lineno">  200</span>             stationJson[<span class="stringliteral">&quot;city&quot;</span>] = station.city;</div>
+<div class="line"><span class="lineno">  201</span>             stationJson[<span class="stringliteral">&quot;address&quot;</span>] = station.address;</div>
+<div class="line"><span class="lineno">  202</span>             stationJson[<span class="stringliteral">&quot;province&quot;</span>] = station.province;</div>
+<div class="line"><span class="lineno">  203</span>             </div>
+<div class="line"><span class="lineno">  204</span>             stationsJson.push_back(stationJson);</div>
+<div class="line"><span class="lineno">  205</span>         }</div>
+<div class="line"><span class="lineno">  206</span>         </div>
+<div class="line"><span class="lineno">  207</span>         std::ofstream file(filename);</div>
+<div class="line"><span class="lineno">  208</span>         <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><span class="lineno">  209</span>             std::cerr &lt;&lt; <span class="stringliteral">&quot;Nie można otworzyć pliku do zapisu: &quot;</span> &lt;&lt; filename &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  210</span>             <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  211</span>         }</div>
+<div class="line"><span class="lineno">  212</span>         </div>
+<div class="line"><span class="lineno">  213</span>         file &lt;&lt; stationsJson.dump(4); <span class="comment">// Pretty print z wcięciem 4 spacji</span></div>
+<div class="line"><span class="lineno">  214</span>         file.close();</div>
+<div class="line"><span class="lineno">  215</span>         </div>
+<div class="line"><span class="lineno">  216</span>         <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  217</span>     } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  218</span>         std::cerr &lt;&lt; <span class="stringliteral">&quot;Błąd podczas zapisywania stacji do pliku: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  219</span>         <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  220</span>     }</div>
+<div class="line"><span class="lineno">  221</span> }</div>
+<div class="ttc" id="aclass_api_client_html_abfea4e3ec12a59d0f7fe183418b97ac9"><div class="ttname"><a href="#abfea4e3ec12a59d0f7fe183418b97ac9">ApiClient::getAllStations</a></div><div class="ttdeci">std::vector&lt; Station &gt; getAllStations()</div><div class="ttdoc">Pobiera listę wszystkich stacji pomiarowych.</div><div class="ttdef"><b>Definicja</b> <a href="api__client_8cpp_source.html#l00142">api_client.cpp:142</a></div></div>
+</div><!-- fragment --><div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_api_client_a158be0172993d4bd4199a406cd9a2fb7_cgraph.png" border="0" usemap="#aclass_api_client_a158be0172993d4bd4199a406cd9a2fb7_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a60e4e195c86cc7097a89d4bcf2c3a66b" name="a60e4e195c86cc7097a89d4bcf2c3a66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e4e195c86cc7097a89d4bcf2c3a66b">&#9670;&#160;</a></span>apiUrls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::string&gt; ApiClient::apiUrls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">         <span class="stringliteral">&quot;http://api.gios.gov.pl/pjp-api/rest&quot;</span>,</div>
+<div class="line">         <span class="stringliteral">&quot;https://api.gios.gov.pl/pjp-api/rest&quot;</span>,</div>
+<div class="line">         <span class="stringliteral">&quot;http://powietrze.gios.gov.pl/pjp/api&quot;</span></div>
+<div class="line">     }</div>
+</div><!-- fragment -->
+<p class="definition">Definicja w linii <a class="el" href="api__client_8hpp_source.html#l00107">107</a> pliku <a class="el" href="api__client_8hpp_source.html">api_client.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                          {</div>
+<div class="line"><span class="lineno">  108</span>         <span class="stringliteral">&quot;http://api.gios.gov.pl/pjp-api/rest&quot;</span>,</div>
+<div class="line"><span class="lineno">  109</span>         <span class="stringliteral">&quot;https://api.gios.gov.pl/pjp-api/rest&quot;</span>,</div>
+<div class="line"><span class="lineno">  110</span>         <span class="stringliteral">&quot;http://powietrze.gios.gov.pl/pjp/api&quot;</span></div>
+<div class="line"><span class="lineno">  111</span>     };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af880c6f5d51fc502f0e576c72381b6c7" name="af880c6f5d51fc502f0e576c72381b6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af880c6f5d51fc502f0e576c72381b6c7">&#9670;&#160;</a></span>baseUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ApiClient::baseUrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="api__client_8hpp_source.html#l00112">112</a> pliku <a class="el" href="api__client_8hpp_source.html">api_client.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="api__client_8hpp_source.html">api_client.hpp</a></li>
+<li>src/<a class="el" href="api__client_8cpp_source.html">api_client.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_api_client.html">ApiClient</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

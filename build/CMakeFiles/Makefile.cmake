@@ -21,6 +21,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindCURL.cmake"
+  "C:/Program Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindOpenSSL.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake"
@@ -41,6 +42,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake"
   "C:/Programming/AirQualityApp/CMakeLists.txt"
+  "C:/Programming/AirQualityApp/Doxyfile.in"
   "CMakeFiles/4.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeSystem.cmake"
@@ -100,6 +102,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "Doxyfile"
   "CMakeFiles/AirQualityApp_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -107,6 +110,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/AirQualityApp.dir/DependInfo.cmake"
+  "CMakeFiles/docs.dir/DependInfo.cmake"
   "CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/AirQualityApp_autogen.dir/DependInfo.cmake"
   )

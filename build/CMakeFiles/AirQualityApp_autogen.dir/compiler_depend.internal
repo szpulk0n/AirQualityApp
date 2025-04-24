@@ -17,6 +17,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/timestamp
  C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/FindCURL.cmake
+ C:/Program Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/FindOpenSSL.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
@@ -37,6 +38,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/timestamp
  C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake
  C:/Program Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake
  C:/Programming/AirQualityApp/CMakeLists.txt
+ C:/Programming/AirQualityApp/Doxyfile.in
  C:/Programming/AirQualityApp/build/AirQualityApp_autogen/moc_predefs.h
  C:/Programming/AirQualityApp/build/CMakeFiles/4.0.1/CMakeCXXCompiler.cmake
  C:/Programming/AirQualityApp/build/CMakeFiles/4.0.1/CMakeRCCompiler.cmake

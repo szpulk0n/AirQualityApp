@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Monitor Jakości Powietrza: Plik źródłowy include/main_window.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Monitor Jakości Powietrza<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja do monitorowania jakości powietrza korzystająca z API GIOŚ</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('main__window_8hpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main_window.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main__window_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor"> #ifndef MAIN_WINDOW_HPP</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor"> #define MAIN_WINDOW_HPP</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor"> #include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor"> #include &lt;QComboBox&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor"> #include &lt;QPushButton&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor"> #include &lt;QTableWidget&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor"> #include &lt;QLabel&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor"> #include &lt;QStatusBar&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor"> #include &lt;QVBoxLayout&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor"> #include &lt;QHBoxLayout&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor"> #include &lt;QGroupBox&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor"> #include &lt;QHeaderView&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor"> #include &lt;QThread&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor"> #include &lt;QDateEdit&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor"> #include &lt;QtCharts/QChartView&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor"> #include &lt;QtCharts/QLineSeries&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor"> #include &lt;QtCharts/QDateTimeAxis&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor"> #include &lt;QtCharts/QValueAxis&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor"> #include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> QT_CHARTS_USE_NAMESPACE</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor"> #include &quot;<a class="code" href="api__client_8hpp.html">api_client.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_main_window.html">   34</a></span> <span class="keyword">class </span><a class="code hl_function" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>     Q_OBJECT</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>     <span class="keyword">explicit</span> <a class="code hl_function" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>     </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>     <a class="code hl_function" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>     <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#acacfa9bb4814ee9a259452621647393f">loadStations</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>     <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#aaf6eca17ca1d13add63fcc853d3f16cd">onStationSelected</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>     </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>     <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a90f3bfead49040b54ddd4a3d43eecbfc">onSensorSelected</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>     </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>     <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a5eac5a4179901db5313ace7cc9f34076">refreshData</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>     </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>     <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a985c951f47c1bcbb88af43c1ab4b4fd7">showChart</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>     <span class="comment">// Komponenty UI</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_main_window.html#a33601e5a65348845d31ccd8f40700fcf">   79</a></span>     QComboBox *<a class="code hl_variable" href="class_main_window.html#a33601e5a65348845d31ccd8f40700fcf">stationComboBox</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_main_window.html#a21d3adab5b0635fadd21984c1856d0fd">   80</a></span>     QComboBox *<a class="code hl_variable" href="class_main_window.html#a21d3adab5b0635fadd21984c1856d0fd">sensorComboBox</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_main_window.html#adef40a0ea29b1545803a6f21cbdb2bff">   81</a></span>     QPushButton *<a class="code hl_variable" href="class_main_window.html#adef40a0ea29b1545803a6f21cbdb2bff">refreshButton</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_main_window.html#aa78fc11c08bfaa61e1dea9dee5e1e16e">   82</a></span>     QTableWidget *<a class="code hl_variable" href="class_main_window.html#aa78fc11c08bfaa61e1dea9dee5e1e16e">dataTable</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_main_window.html#ac68fb8d23913c7e25906ad05d0e9d218">   83</a></span>     QLabel *<a class="code hl_variable" href="class_main_window.html#ac68fb8d23913c7e25906ad05d0e9d218">statusLabel</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_main_window.html#a65fb64a7b9a722f77bfc022a9f4b5e8b">   84</a></span>     QChartView *<a class="code hl_variable" href="class_main_window.html#a65fb64a7b9a722f77bfc022a9f4b5e8b">chartView</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_main_window.html#ab74cf04e54afa61098b1905a70bb201c">   85</a></span>     QPushButton *<a class="code hl_variable" href="class_main_window.html#ab74cf04e54afa61098b1905a70bb201c">showChartButton</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>     </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>     <span class="comment">// Dane</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_main_window.html#acbb3f743c6578198e8e50589bfde75e9">   88</a></span>     std::unique_ptr&lt;ApiClient&gt; <a class="code hl_variable" href="class_main_window.html#acbb3f743c6578198e8e50589bfde75e9">apiClient</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_main_window.html#a1e28912102a954fd2816d82abb867f00">   89</a></span>     std::vector&lt;Station&gt; <a class="code hl_variable" href="class_main_window.html#a1e28912102a954fd2816d82abb867f00">stations</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_main_window.html#ada32303a89f9922b840864a4560f27a9">   90</a></span>     std::vector&lt;Sensor&gt; <a class="code hl_variable" href="class_main_window.html#ada32303a89f9922b840864a4560f27a9">sensors</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_main_window.html#ade17a4a724ac6094a6723e16c2eea6a1">   91</a></span>     std::vector&lt;Measurement&gt; <a class="code hl_variable" href="class_main_window.html#ade17a4a724ac6094a6723e16c2eea6a1">measurements</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>     </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a9388168e83016e31d2668a501450bcac">initUI</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>     </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a13c092905d507965cf15d31c5d969cd2">fillDataTable</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>     </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a5bf72c652108554493460d02a8a99d5b">createChart</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> };</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor"> #endif </span><span class="comment">// MAIN_WINDOW_HPP</span></div>
+<div class="ttc" id="aapi__client_8hpp_html"><div class="ttname"><a href="api__client_8hpp.html">api_client.hpp</a></div><div class="ttdoc">Klasa klienta API do pobierania danych o jakości powietrza z GIOŚ</div></div>
+<div class="ttc" id="aclass_main_window_html_a13c092905d507965cf15d31c5d969cd2"><div class="ttname"><a href="class_main_window.html#a13c092905d507965cf15d31c5d969cd2">MainWindow::fillDataTable</a></div><div class="ttdeci">void fillDataTable()</div><div class="ttdoc">Wypełnia tabelę danymi pomiarowymi.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00236">main_window.cpp:236</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a1e28912102a954fd2816d82abb867f00"><div class="ttname"><a href="class_main_window.html#a1e28912102a954fd2816d82abb867f00">MainWindow::stations</a></div><div class="ttdeci">std::vector&lt; Station &gt; stations</div><div class="ttdef"><b>Definicja</b> <a href="#l00089">main_window.hpp:89</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a21d3adab5b0635fadd21984c1856d0fd"><div class="ttname"><a href="class_main_window.html#a21d3adab5b0635fadd21984c1856d0fd">MainWindow::sensorComboBox</a></div><div class="ttdeci">QComboBox * sensorComboBox</div><div class="ttdef"><b>Definicja</b> <a href="#l00080">main_window.hpp:80</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a33601e5a65348845d31ccd8f40700fcf"><div class="ttname"><a href="class_main_window.html#a33601e5a65348845d31ccd8f40700fcf">MainWindow::stationComboBox</a></div><div class="ttdeci">QComboBox * stationComboBox</div><div class="ttdef"><b>Definicja</b> <a href="#l00079">main_window.hpp:79</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a5bf72c652108554493460d02a8a99d5b"><div class="ttname"><a href="class_main_window.html#a5bf72c652108554493460d02a8a99d5b">MainWindow::createChart</a></div><div class="ttdeci">void createChart()</div><div class="ttdoc">Tworzy wykres z danych pomiarowych.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00261">main_window.cpp:261</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a5eac5a4179901db5313ace7cc9f34076"><div class="ttname"><a href="class_main_window.html#a5eac5a4179901db5313ace7cc9f34076">MainWindow::refreshData</a></div><div class="ttdeci">void refreshData()</div><div class="ttdoc">Odświeża dane pomiarowe.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00228">main_window.cpp:228</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a65fb64a7b9a722f77bfc022a9f4b5e8b"><div class="ttname"><a href="class_main_window.html#a65fb64a7b9a722f77bfc022a9f4b5e8b">MainWindow::chartView</a></div><div class="ttdeci">QChartView * chartView</div><div class="ttdef"><b>Definicja</b> <a href="#l00084">main_window.hpp:84</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a90f3bfead49040b54ddd4a3d43eecbfc"><div class="ttname"><a href="class_main_window.html#a90f3bfead49040b54ddd4a3d43eecbfc">MainWindow::onSensorSelected</a></div><div class="ttdeci">void onSensorSelected(int index)</div><div class="ttdoc">Slot wywoływany po wybraniu czujnika.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00198">main_window.cpp:198</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a9388168e83016e31d2668a501450bcac"><div class="ttname"><a href="class_main_window.html#a9388168e83016e31d2668a501450bcac">MainWindow::initUI</a></div><div class="ttdeci">void initUI()</div><div class="ttdoc">Inicjalizuje interfejs użytkownika.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00035">main_window.cpp:35</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a985c951f47c1bcbb88af43c1ab4b4fd7"><div class="ttname"><a href="class_main_window.html#a985c951f47c1bcbb88af43c1ab4b4fd7">MainWindow::showChart</a></div><div class="ttdeci">void showChart()</div><div class="ttdoc">Wyświetla wykres danych.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00388">main_window.cpp:388</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00018">main_window.cpp:18</a></div></div>
+<div class="ttc" id="aclass_main_window_html_aa78fc11c08bfaa61e1dea9dee5e1e16e"><div class="ttname"><a href="class_main_window.html#aa78fc11c08bfaa61e1dea9dee5e1e16e">MainWindow::dataTable</a></div><div class="ttdeci">QTableWidget * dataTable</div><div class="ttdef"><b>Definicja</b> <a href="#l00082">main_window.hpp:82</a></div></div>
+<div class="ttc" id="aclass_main_window_html_aaf6eca17ca1d13add63fcc853d3f16cd"><div class="ttname"><a href="class_main_window.html#aaf6eca17ca1d13add63fcc853d3f16cd">MainWindow::onStationSelected</a></div><div class="ttdeci">void onStationSelected(int index)</div><div class="ttdoc">Slot wywoływany po wybraniu stacji.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00166">main_window.cpp:166</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ab74cf04e54afa61098b1905a70bb201c"><div class="ttname"><a href="class_main_window.html#ab74cf04e54afa61098b1905a70bb201c">MainWindow::showChartButton</a></div><div class="ttdeci">QPushButton * showChartButton</div><div class="ttdef"><b>Definicja</b> <a href="#l00085">main_window.hpp:85</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ac68fb8d23913c7e25906ad05d0e9d218"><div class="ttname"><a href="class_main_window.html#ac68fb8d23913c7e25906ad05d0e9d218">MainWindow::statusLabel</a></div><div class="ttdeci">QLabel * statusLabel</div><div class="ttdef"><b>Definicja</b> <a href="#l00083">main_window.hpp:83</a></div></div>
+<div class="ttc" id="aclass_main_window_html_acacfa9bb4814ee9a259452621647393f"><div class="ttname"><a href="class_main_window.html#acacfa9bb4814ee9a259452621647393f">MainWindow::loadStations</a></div><div class="ttdeci">void loadStations()</div><div class="ttdoc">Wczytuje stacje pomiarowe.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00113">main_window.cpp:113</a></div></div>
+<div class="ttc" id="aclass_main_window_html_acbb3f743c6578198e8e50589bfde75e9"><div class="ttname"><a href="class_main_window.html#acbb3f743c6578198e8e50589bfde75e9">MainWindow::apiClient</a></div><div class="ttdeci">std::unique_ptr&lt; ApiClient &gt; apiClient</div><div class="ttdef"><b>Definicja</b> <a href="#l00088">main_window.hpp:88</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ada32303a89f9922b840864a4560f27a9"><div class="ttname"><a href="class_main_window.html#ada32303a89f9922b840864a4560f27a9">MainWindow::sensors</a></div><div class="ttdeci">std::vector&lt; Sensor &gt; sensors</div><div class="ttdef"><b>Definicja</b> <a href="#l00090">main_window.hpp:90</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ade17a4a724ac6094a6723e16c2eea6a1"><div class="ttname"><a href="class_main_window.html#ade17a4a724ac6094a6723e16c2eea6a1">MainWindow::measurements</a></div><div class="ttdeci">std::vector&lt; Measurement &gt; measurements</div><div class="ttdef"><b>Definicja</b> <a href="#l00091">main_window.hpp:91</a></div></div>
+<div class="ttc" id="aclass_main_window_html_adef40a0ea29b1545803a6f21cbdb2bff"><div class="ttname"><a href="class_main_window.html#adef40a0ea29b1545803a6f21cbdb2bff">MainWindow::refreshButton</a></div><div class="ttdeci">QPushButton * refreshButton</div><div class="ttdef"><b>Definicja</b> <a href="#l00081">main_window.hpp:81</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdoc">Destruktor.</div><div class="ttdef"><b>Definicja</b> <a href="main__window_8cpp_source.html#l00032">main_window.cpp:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="main__window_8hpp.html">main_window.hpp</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

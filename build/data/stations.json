@@ -1906,14 +1906,5 @@
         "lon": 14.279628,
         "name": "Świnoujście, ul. Białoruska",
         "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. 1 Maja 6",
-        "city": "Wysokie Mazowieckie",
-        "id": 20140,
-        "lat": 52.913878,
-        "lon": 22.509275,
-        "name": "Wysokie Mazowieckie, ul. 1 Maja",
-        "province": "PODLASKIE"
     }
 ]

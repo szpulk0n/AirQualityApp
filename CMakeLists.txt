@@ -49,3 +49,86 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 
 # Kopiowanie plików zasobów (jeśli istnieją)
 # file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/resources/)
+
+# ======== Konfiguracja Doxygen ========
+
+# Opcja włączenia/wyłączenia generowania dokumentacji
+option(BUILD_DOCS "Build documentation" ON)
+
+if(BUILD_DOCS)
+    # Wyszukiwanie narzędzia Doxygen
+    find_package(Doxygen)
+    
+    if(DOXYGEN_FOUND)
+        # Konfiguracja ścieżek wejściowych dla Doxygen
+        set(DOXYGEN_INPUT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/src")
+        set(DOXYGEN_OUTPUT_DIR "${CMAKE_CURRENT_BINARY_DIR}/docs")
+        set(DOXYGEN_INDEX_FILE "${DOXYGEN_OUTPUT_DIR}/html/index.html")
+        set(DOXYFILE_IN "${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in")
+        set(DOXYFILE "${CMAKE_CURRENT_BINARY_DIR}/Doxyfile")
+        
+        # Sprawdzenie czy plik Doxyfile.in istnieje
+        if(NOT EXISTS ${DOXYFILE_IN})
+            # Jeśli nie, utwórz go z konfiguracyjnymi wartościami
+            file(WRITE ${DOXYFILE_IN}
+                "PROJECT_NAME           = \"Monitor Jakości Powietrza\"\n"
+                "PROJECT_NUMBER         = ${PROJECT_VERSION}\n"
+                "PROJECT_BRIEF          = \"Aplikacja do monitorowania jakości powietrza korzystająca z API GIOŚ\"\n"
+                "OUTPUT_DIRECTORY       = @DOXYGEN_OUTPUT_DIR@\n"
+                "INPUT                  = @DOXYGEN_INPUT_DIR@\n"
+                "RECURSIVE              = YES\n"
+                "EXTRACT_ALL            = YES\n"
+                "EXTRACT_PRIVATE        = YES\n"
+                "EXTRACT_STATIC         = YES\n"
+                "FILE_PATTERNS          = *.cpp *.hpp\n"
+                "GENERATE_HTML          = YES\n"
+                "GENERATE_LATEX         = NO\n"
+                "USE_MDFILE_AS_MAINPAGE = README.md\n"
+                "HAVE_DOT               = YES\n"
+                "UML_LOOK               = YES\n"
+                "CALL_GRAPH             = YES\n"
+                "CALLER_GRAPH           = YES\n"
+                "OUTPUT_LANGUAGE        = Polish\n"
+                "OPTIMIZE_OUTPUT_FOR_C  = NO\n"
+                "GENERATE_TREEVIEW      = YES\n"
+                "INLINE_SOURCES         = YES\n"
+                "SOURCE_BROWSER         = YES\n"
+                "HTML_DYNAMIC_SECTIONS  = YES\n"
+                "GENERATE_LEGEND        = YES\n"
+            )
+        endif()
+        
+        # Zastąp zmienne w pliku Doxyfile.in i utwórz Doxyfile
+        configure_file(${DOXYFILE_IN} ${DOXYFILE} @ONLY)
+        
+        # Dodaj cel dokumentacji
+        add_custom_command(
+            OUTPUT ${DOXYGEN_INDEX_FILE}
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE}
+            MAIN_DEPENDENCY ${DOXYFILE} ${DOXYFILE_IN}
+            COMMENT "Generowanie dokumentacji API z Doxygen"
+            VERBATIM
+        )
+        
+        # Dodaj cel "docs" do budowania w CMake
+        add_custom_target(docs ALL DEPENDS ${DOXYGEN_INDEX_FILE})
+        
+        # Informacja o sukcesie
+        message(STATUS "Doxygen znaleziony. Cel 'docs' zostanie utworzony.")
+        
+        # Instalacja dokumentacji (opcjonalnie)
+        install(DIRECTORY ${DOXYGEN_OUTPUT_DIR}/html
+                DESTINATION share/doc/${PROJECT_NAME}
+                COMPONENT docs
+                OPTIONAL
+        )
+    else()
+        # Jeśli Doxygen nie jest zainstalowany
+        message(STATUS "Doxygen nie znaleziony. Dokumentacja nie zostanie wygenerowana.")
+    endif()
+else()
+    # Jeśli opcja BUILD_DOCS jest wyłączona
+    message(STATUS "Generowanie dokumentacji wyłączone.")
+endif()
+
+# ======== Koniec konfiguracji Doxygen ========

@@ -96,7 +96,11 @@
 		"C:/msys64/mingw64/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake",
 		"C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake",
-		"C:/msys64/mingw64/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake"
+		"C:/msys64/mingw64/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake",
+		"C:/Program Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake",
+		"C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake",
+		"C:/Programming/AirQualityApp/Doxyfile.in"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Programming/AirQualityApp",
 	"CROSS_CONFIG" : false,

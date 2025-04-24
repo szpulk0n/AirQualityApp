@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = C:\Programming\AirQualityApp\build
 
 # The main recursive "all" target.
 all: CMakeFiles/AirQualityApp.dir/all
+all: CMakeFiles/docs.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/AirQualityApp.dir/codegen
+codegen: CMakeFiles/docs.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/AirQualityApp.dir/clean
+clean: CMakeFiles/docs.dir/clean
 clean: CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/AirQualityApp_autogen.dir/clean
 .PHONY : clean
@@ -83,8 +86,8 @@ clean: CMakeFiles/AirQualityApp_autogen.dir/clean
 # Target rules for target CMakeFiles/AirQualityApp.dir
 
 # All Build rule for target.
-CMakeFiles/AirQualityApp.dir/all: CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir/all
 CMakeFiles/AirQualityApp.dir/all: CMakeFiles/AirQualityApp_autogen.dir/all
+CMakeFiles/AirQualityApp.dir/all: CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityApp.dir\build.make CMakeFiles/AirQualityApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityApp.dir\build.make CMakeFiles/AirQualityApp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\AirQualityApp\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target AirQualityApp"
@@ -111,6 +114,38 @@ CMakeFiles/AirQualityApp.dir/codegen: CMakeFiles/AirQualityApp_autogen_timestamp
 CMakeFiles/AirQualityApp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityApp.dir\build.make CMakeFiles/AirQualityApp.dir/clean
 .PHONY : CMakeFiles/AirQualityApp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/docs.dir
+
+# All Build rule for target.
+CMakeFiles/docs.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\docs.dir\build.make CMakeFiles/docs.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\docs.dir\build.make CMakeFiles/docs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\AirQualityApp\build\CMakeFiles --progress-num=8 "Built target docs"
+.PHONY : CMakeFiles/docs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/docs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\AirQualityApp\build\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/docs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\AirQualityApp\build\CMakeFiles 0
+.PHONY : CMakeFiles/docs.dir/rule
+
+# Convenience name for target.
+docs: CMakeFiles/docs.dir/rule
+.PHONY : docs
+
+# codegen rule for target.
+CMakeFiles/docs.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\docs.dir\build.make CMakeFiles/docs.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Programming\AirQualityApp\build\CMakeFiles --progress-num=8 "Finished codegen for target docs"
+.PHONY : CMakeFiles/docs.dir/codegen
+
+# clean rule for target.
+CMakeFiles/docs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\docs.dir\build.make CMakeFiles/docs.dir/clean
+.PHONY : CMakeFiles/docs.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/AirQualityApp_autogen_timestamp_deps.dir

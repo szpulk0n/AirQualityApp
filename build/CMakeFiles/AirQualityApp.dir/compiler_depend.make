@@ -16,6 +16,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindCURL.cmake \
+  C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindOpenSSL.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake \
@@ -36,6 +37,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake \
   C:/Program\ Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake \
   C:/Programming/AirQualityApp/CMakeLists.txt \
+  C:/Programming/AirQualityApp/Doxyfile.in \
   AirQualityApp_autogen/moc_predefs.h \
   CMakeFiles/4.0.1/CMakeCXXCompiler.cmake \
   CMakeFiles/4.0.1/CMakeRCCompiler.cmake \
@@ -2846,6 +2848,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h:
 
 C:/msys64/mingw64/include/QtCharts/qchartview.h:
 
+C:/Programming/AirQualityApp/Doxyfile.in:
+
 C:/msys64/mingw64/include/QtWidgets/qsplashscreen.h:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake:
@@ -2988,6 +2992,32 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformati
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clwbintrin.h:
 
+C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/alloc_traits.h:
+
+C:/Programming/AirQualityApp/src/api_client.cpp:
+
+C:/msys64/mingw64/include/QtCore/qpluginloader.h:
+
+C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindDoxygen.cmake:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h:
+
+C:/msys64/mingw64/include/QtCore/qstringliteral.h:
+
+C:/msys64/mingw64/include/lzexpand.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h:
+
+CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
+
+C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
+
 C:/msys64/mingw64/include/corecrt_startup.h:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindOpenSSL.cmake:
@@ -3083,28 +3113,6 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmak
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake:
 
 C:/Programming/AirQualityApp/CMakeLists.txt:
-
-C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/alloc_traits.h:
-
-C:/Programming/AirQualityApp/src/api_client.cpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h:
-
-C:/msys64/mingw64/include/QtCore/qstringliteral.h:
-
-C:/msys64/mingw64/include/lzexpand.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h:
-
-CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
-
-C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/cwctype:
 
@@ -3427,8 +3435,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h:
 C:/msys64/mingw64/include/QtCore/qset.h:
 
 C:/msys64/mingw64/include/QtWidgets/qwidget.h:
-
-C:/msys64/mingw64/include/stddef.h:
 
 C:/msys64/mingw64/include/QtCore/qsharedpointer.h:
 
@@ -3994,12 +4000,6 @@ C:/msys64/mingw64/include/errno.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
-
-C:/msys64/mingw64/include/stdarg.h:
-
-C:/msys64/mingw64/include/sysinfoapi.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h:
@@ -4266,6 +4266,14 @@ C:/msys64/mingw64/include/signal.h:
 
 C:/msys64/mingw64/include/libloaderapi.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
+
+C:/msys64/mingw64/include/stdarg.h:
+
+C:/msys64/mingw64/include/sysinfoapi.h:
+
+C:/msys64/mingw64/include/stddef.h:
+
 C:/msys64/mingw64/include/stdint.h:
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake:
@@ -4338,11 +4346,11 @@ C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmak
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake:
 
-C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
 
 C:/msys64/mingw64/include/QtCore/qtsan_impl.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
+C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake:
 
 C:/msys64/mingw64/include/timezoneapi.h:
 
@@ -4846,8 +4854,6 @@ C:/msys64/mingw64/include/QtCore/qdiriterator.h:
 
 C:/msys64/mingw64/include/QtCore/qendian.h:
 
-C:/msys64/mingw64/include/QtCore/qtypetraits.h:
-
 C:/msys64/mingw64/include/QtCore/qhistorystate.h:
 
 C:/msys64/mingw64/include/QtCore/qmessageauthenticationcode.h:
@@ -4857,8 +4863,6 @@ C:/msys64/mingw64/include/QtCore/qmimetype.h:
 C:/msys64/mingw64/include/QtCore/qparallelanimationgroup.h:
 
 C:/msys64/mingw64/include/QtCore/qplugin.h:
-
-C:/msys64/mingw64/include/QtCore/qpluginloader.h:
 
 C:/msys64/mingw64/include/QtCore/qprocess.h:
 
@@ -4891,6 +4895,8 @@ C:/msys64/mingw64/include/QtCore/qthreadstorage.h:
 C:/msys64/mingw64/include/QtCore/qtranslator.h:
 
 C:/msys64/mingw64/include/QtCore/qtransposeproxymodel.h:
+
+C:/msys64/mingw64/include/QtCore/qtypetraits.h:
 
 C:/msys64/mingw64/include/QtCore/quuid.h:
 
