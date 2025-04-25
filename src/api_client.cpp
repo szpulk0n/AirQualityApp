@@ -8,6 +8,16 @@
  #include <fstream>
  #include <iostream>
  #include <stdexcept>
+ #include <unordered_map>
+ 
+ // Definicje kodów kolorów ANSI
+ #define COLOR_RESET   "\033[0m"
+ #define COLOR_RED     "\033[31m"
+ #define COLOR_GREEN   "\033[32m"
+ #define COLOR_YELLOW  "\033[33m"
+ #define COLOR_BLUE    "\033[34m"
+ #define COLOR_MAGENTA "\033[35m"
+ #define COLOR_CYAN    "\033[36m"
  
  // Funkcja pomocnicza do zapisywania odpowiedzi z libcurl
  static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
@@ -15,32 +25,36 @@
      return size * nmemb;
  }
  
- ApiClient::ApiClient() {
+ ApiClient::ApiClient() : verbose(true) {
      // Inicjalizacja libcurl
      curl_global_init(CURL_GLOBAL_DEFAULT);
      
-     // Spróbujmy znaleźć działający URL API
-     for (const auto& url : apiUrls) {
-         std::cout << "Testowanie API URL: " << url << std::endl;
-         baseUrl = url;
-         
-         if (isApiAvailable()) {
-             std::cout << "Znaleziono działający URL API: " << url << std::endl;
-             return;
-         }
-     }
-     
-     // Jeśli żaden URL nie działa, użyjmy domyślnego
+     // Używamy tylko podstawowego adresu URL API
      baseUrl = "http://api.gios.gov.pl/pjp-api/rest";
-     std::cout << "Żaden URL API nie działa. Ustawiono domyślny: " << baseUrl << std::endl;
+     if (verbose) std::cout << COLOR_CYAN << "Inicjalizacja API z URL: " << baseUrl << COLOR_RESET << std::endl;
  }
  
  ApiClient::~ApiClient() {
      // Czyszczenie zasobów libcurl
      curl_global_cleanup();
  }
+
+ void ApiClient::setVerbose(bool enabled) {
+     verbose = enabled;
+ }
+ 
+ bool ApiClient::isVerbose() const {
+     return verbose;
+ }
  
  json ApiClient::makeRequest(const std::string& endpoint) {
+     // Sprawdź cache
+     auto cacheIt = responseCache.find(endpoint);
+     if (cacheIt != responseCache.end()) {
+         if (verbose) std::cout << COLOR_BLUE << "Uzywam danych z cache dla: " << endpoint << COLOR_RESET << std::endl;
+         return cacheIt->second;
+     }
+     
      CURL* curl;
      CURLcode res;
      std::string readBuffer;
@@ -48,11 +62,11 @@
  
      curl = curl_easy_init();
      if (!curl) {
-         throw std::runtime_error("Błąd inicjalizacji libcurl");
+         throw std::runtime_error("Blad inicjalizacji libcurl");
      }
  
      std::string url = baseUrl + endpoint;
-     std::cout << "Wykonywanie zapytania do: " << url << std::endl;
+     if (verbose) std::cout << COLOR_BLUE << "Wykonywanie zapytania do: " << url << COLOR_RESET << std::endl;
      
      curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
      curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
@@ -71,26 +85,31 @@
      
      // Sprawdzenie czy zapytanie się powiodło
      if (res != CURLE_OK) {
-         std::string errorMsg = "Błąd podczas wykonywania zapytania: " + std::string(curl_easy_strerror(res));
-         std::cerr << errorMsg << std::endl;
+         std::string errorMsg = "Blad podczas wykonywania zapytania: " + std::string(curl_easy_strerror(res));
+         std::cerr << COLOR_RED << errorMsg << COLOR_RESET << std::endl;
          curl_easy_cleanup(curl);
          throw std::runtime_error(errorMsg);
      }
      
      // Wyświetlenie odpowiedzi
-     std::cout << "Otrzymana odpowiedź (pierwsze 200 znaków): " << readBuffer.substr(0, 200) << "..." << std::endl;
+     if (verbose) std::cout << COLOR_GREEN << "Otrzymana odpowiedz (pierwsze 200 znakow): " << COLOR_RESET 
+               << readBuffer.substr(0, 200) << "..." << std::endl;
      
      // Czyszczenie zasobów
      curl_easy_cleanup(curl);
      
      try {
          if (readBuffer.empty()) {
-             throw std::runtime_error("Pusta odpowiedź z API");
+             throw std::runtime_error("Pusta odpowiedz z API");
          }
          responseJson = json::parse(readBuffer);
+         
+         // Zapisz do cache
+         responseCache[endpoint] = responseJson;
+         
      } catch (const json::parse_error& e) {
-         std::string errorMsg = "Błąd parsowania JSON: " + std::string(e.what()) + "\nOdpowiedź: " + readBuffer;
-         std::cerr << errorMsg << std::endl;
+         std::string errorMsg = "Blad parsowania JSON: " + std::string(e.what()) + "\nOdpowiedz: " + readBuffer;
+         std::cerr << COLOR_RED << errorMsg << COLOR_RESET << std::endl;
          throw std::runtime_error(errorMsg);
      }
      
@@ -99,18 +118,18 @@
  
  bool ApiClient::isApiAvailable() {
      try {
-         std::cout << "Sprawdzanie dostępności API..." << std::endl;
+         if (verbose) std::cout << COLOR_CYAN << "Sprawdzanie dostepnosci API..." << COLOR_RESET << std::endl;
          
          // Inicjalizacja CURL
          CURL* curl = curl_easy_init();
          if (!curl) {
-             std::cerr << "Nie można zainicjalizować CURL" << std::endl;
+             std::cerr << COLOR_RED << "Nie mozna zainicjalizowac CURL" << COLOR_RESET << std::endl;
              return false;
          }
          
          // Przygotowanie zapytania
          std::string url = baseUrl + "/station/findAll";
-         std::cout << "Testowanie URL: " << url << std::endl;
+         if (verbose) std::cout << COLOR_CYAN << "Testowanie URL: " << url << COLOR_RESET << std::endl;
          
          curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
          curl_easy_setopt(curl, CURLOPT_NOBODY, 1L); // Tylko nagłówek odpowiedzi
@@ -131,21 +150,40 @@
          
          // Sprawdzenie wyniku
          bool success = (res == CURLE_OK && http_code == 200);
-         std::cout << "API dostępne: " << (success ? "TAK" : "NIE") << ", kod HTTP: " << http_code << std::endl;
+         if (verbose) {
+             if (success) {
+                 std::cout << COLOR_GREEN << "API dostepne: TAK, kod HTTP: " << http_code << COLOR_RESET << std::endl;
+             } else {
+                 std::cout << COLOR_RED << "API niedostepne, kod HTTP: " << http_code << COLOR_RESET << std::endl;
+             }
+         }
          return success;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas sprawdzania dostępności API: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas sprawdzania dostepnosci API: " << e.what() << COLOR_RESET << std::endl;
          return false;
      }
  }
  
+ void ApiClient::clearCache() {
+     responseCache.clear();
+     cachedStations.clear();
+     sensorCache.clear();
+     measurementCache.clear();
+ }
+ 
  std::vector<Station> ApiClient::getAllStations() {
+     // Jeśli mamy w cache, zwróć od razu
+     if (!cachedStations.empty()) {
+         if (verbose) std::cout << COLOR_CYAN << "Uzywam zachowanych stacji z cache (" << cachedStations.size() << " stacji)" << COLOR_RESET << std::endl;
+         return cachedStations;
+     }
+     
      std::vector<Station> stations;
      
      try {
-         std::cout << "Próba pobrania stacji pomiarowych..." << std::endl;
+         if (verbose) std::cout << COLOR_CYAN << "Proba pobrania stacji pomiarowych..." << COLOR_RESET << std::endl;
          json response = makeRequest("/station/findAll");
-         std::cout << "Otrzymano odpowiedź. Liczba stacji: " << response.size() << std::endl;
+         if (verbose) std::cout << COLOR_GREEN << "Otrzymano odpowiedz. Liczba stacji: " << response.size() << COLOR_RESET << std::endl;
          
          for (const auto& item : response) {
              Station station;
@@ -178,9 +216,12 @@
              stations.push_back(station);
          }
          
-         std::cout << "Przetworzono " << stations.size() << " stacji pomiarowych" << std::endl;
+         if (verbose) std::cout << COLOR_GREEN << "Przetworzono " << stations.size() << " stacji pomiarowych" << COLOR_RESET << std::endl;
+         
+         // Zapisz do cache
+         cachedStations = stations;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas pobierania stacji: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas pobierania stacji: " << e.what() << COLOR_RESET << std::endl;
      }
      
      return stations;
@@ -206,16 +247,17 @@
          
          std::ofstream file(filename);
          if (!file.is_open()) {
-             std::cerr << "Nie można otworzyć pliku do zapisu: " << filename << std::endl;
+             std::cerr << COLOR_RED << "Nie mozna otworzyc pliku do zapisu: " << filename << COLOR_RESET << std::endl;
              return false;
          }
          
          file << stationsJson.dump(4); // Pretty print z wcięciem 4 spacji
          file.close();
          
+         std::cout << COLOR_GREEN << "Zapisano dane stacji do pliku: " << filename << COLOR_RESET << std::endl;
          return true;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas zapisywania stacji do pliku: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas zapisywania stacji do pliku: " << e.what() << COLOR_RESET << std::endl;
          return false;
      }
  }
@@ -226,7 +268,7 @@
      try {
          std::ifstream file(filename);
          if (!file.is_open()) {
-             std::cerr << "Nie można otworzyć pliku: " << filename << std::endl;
+             std::cerr << COLOR_RED << "Nie mozna otworzyc pliku: " << filename << COLOR_RESET << std::endl;
              return stations;
          }
          
@@ -245,17 +287,30 @@
              
              stations.push_back(station);
          }
+         
+         // Zapisz wczytane stacje do cache
+         cachedStations = stations;
+         
+         std::cout << COLOR_GREEN << "Wczytano " << stations.size() << " stacji z pliku: " << filename << COLOR_RESET << std::endl;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas wczytywania stacji z pliku: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas wczytywania stacji z pliku: " << e.what() << COLOR_RESET << std::endl;
      }
      
      return stations;
  }
  
  std::vector<Sensor> ApiClient::getSensors(int stationId) {
+     // Sprawdź cache
+     auto cacheIt = sensorCache.find(stationId);
+     if (cacheIt != sensorCache.end()) {
+         if (verbose) std::cout << COLOR_CYAN << "Uzywam zachowanych czujnikow z cache dla stacji ID: " << stationId << COLOR_RESET << std::endl;
+         return cacheIt->second;
+     }
+     
      std::vector<Sensor> sensors;
      
      try {
+         if (verbose) std::cout << COLOR_CYAN << "Pobieranie czujnikow dla stacji ID: " << stationId << COLOR_RESET << std::endl;
          json response = makeRequest("/station/sensors/" + std::to_string(stationId));
          
          for (const auto& item : response) {
@@ -272,17 +327,30 @@
              
              sensors.push_back(sensor);
          }
+         
+         // Zapisz do cache
+         sensorCache[stationId] = sensors;
+         
+         if (verbose) std::cout << COLOR_GREEN << "Znaleziono " << sensors.size() << " czujnikow" << COLOR_RESET << std::endl;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas pobierania czujników: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas pobierania czujnikow: " << e.what() << COLOR_RESET << std::endl;
      }
      
      return sensors;
  }
  
  std::vector<Measurement> ApiClient::getMeasurements(int sensorId) {
+     // Sprawdź cache
+     auto cacheIt = measurementCache.find(sensorId);
+     if (cacheIt != measurementCache.end()) {
+         if (verbose) std::cout << COLOR_CYAN << "Uzywam zachowanych pomiarow z cache dla czujnika ID: " << sensorId << COLOR_RESET << std::endl;
+         return cacheIt->second;
+     }
+     
      std::vector<Measurement> measurements;
      
      try {
+         if (verbose) std::cout << COLOR_CYAN << "Pobieranie pomiarow dla czujnika ID: " << sensorId << COLOR_RESET << std::endl;
          json response = makeRequest("/data/getData/" + std::to_string(sensorId));
          
          if (response.contains("values") && response["values"].is_array()) {
@@ -300,13 +368,18 @@
                          }
                          measurements.push_back(measurement);
                      } catch (const std::exception& e) {
-                         std::cerr << "Błąd konwersji wartości: " << e.what() << std::endl;
+                         std::cerr << COLOR_RED << "Blad konwersji wartosci: " << e.what() << COLOR_RESET << std::endl;
                      }
                  }
              }
          }
+         
+         // Zapisz do cache
+         measurementCache[sensorId] = measurements;
+         
+         if (verbose) std::cout << COLOR_GREEN << "Znaleziono " << measurements.size() << " pomiarow" << COLOR_RESET << std::endl;
      } catch (const std::exception& e) {
-         std::cerr << "Błąd podczas pobierania pomiarów: " << e.what() << std::endl;
+         std::cerr << COLOR_RED << "Blad podczas pobierania pomiarow: " << e.what() << COLOR_RESET << std::endl;
      }
      
      return measurements;

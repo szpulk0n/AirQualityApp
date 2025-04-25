@@ -639,6 +639,15 @@
         "province": "ZACHODNIOPOMORSKIE"
     },
     {
+        "address": "",
+        "city": "Wilczopole",
+        "id": 282,
+        "lat": 51.163542,
+        "lon": 22.598608,
+        "name": "Wilczopole",
+        "province": "LUBELSKIE"
+    },
+    {
         "address": "ul. Okrzei",
         "city": "Włocławek",
         "id": 225,
@@ -672,15 +681,6 @@
         "lat": 51.115933,
         "lon": 17.141125,
         "name": "Wrocław, ul. Bartnicza",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Wyb. J.Conrada-Korzeniowskiego 18",
-        "city": "Wrocław",
-        "id": 117,
-        "lat": 51.129378,
-        "lon": 17.02925,
-        "name": "Wrocław, wyb. Conrada-Korzeniowskiego",
         "province": "DOLNOŚLĄSKIE"
     },
     {

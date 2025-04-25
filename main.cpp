@@ -23,8 +23,8 @@
      MainWindow mainWindow;
      
      // Pokazanie głównego okna po krótkim opóźnieniu
-     QTimer::singleShot(1500, &splash, &QSplashScreen::close);
-     QTimer::singleShot(1500, &mainWindow, &MainWindow::show);
+     //QTimer::singleShot(0, &splash, &QSplashScreen::close);
+     QTimer::singleShot(0, &mainWindow, &MainWindow::show);
      
      return app.exec();
  }
