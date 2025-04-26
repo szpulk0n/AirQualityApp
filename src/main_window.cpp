@@ -73,14 +73,11 @@
      // Przyciski
      QHBoxLayout *buttonLayout = new QHBoxLayout();
      refreshButton = new QPushButton("Odśwież dane", this);
-     //showChartButton = new QPushButton("Pokaż wykres", this);
      saveButton = new QPushButton("Zapisz dane", this);
      openSavedButton = new QPushButton("Przeglądaj zapisane dane", this);
-     //showChartButton->setEnabled(false);
      saveButton->setEnabled(false);
      
      buttonLayout->addWidget(refreshButton);
-     //buttonLayout->addWidget(showChartButton);
      buttonLayout->addWidget(saveButton);
      buttonLayout->addWidget(openSavedButton);
      
@@ -125,7 +122,6 @@
      connect(stationComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onStationSelected);
      connect(sensorComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onSensorSelected);
      connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
-     //connect(showChartButton, &QPushButton::clicked, this, &MainWindow::showChart);
      connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveMeasurements);
      connect(openSavedButton, &QPushButton::clicked, this, &MainWindow::openSavedMeasurements);
  }
@@ -232,7 +228,6 @@
          QMessageBox::warning(this, "Informacja", "Brak pomiarów dla wybranego czujnika");
          dataTable->setRowCount(0);
          statusLabel->setText("Brak danych pomiarowych");
-         //showChartButton->setEnabled(false);
          saveButton->setEnabled(false);
          return;
      }
@@ -241,7 +236,6 @@
      fillDataTable();
      
      // Aktywacja przycisków
-     //showChartButton->setEnabled(true);
      saveButton->setEnabled(true);
      
      statusLabel->setText("Gotowy");
@@ -253,7 +247,6 @@
      if (sensorIndex >= 0 && sensorIndex < static_cast<int>(sensors.size())) {
          onSensorSelected(sensorIndex);
      }
-     createChart();
  }
  
  void MainWindow::fillDataTable() {
@@ -279,41 +272,27 @@
      
      // Sortowanie po dacie (malejąco)
      dataTable->sortItems(0, Qt::DescendingOrder);
-     createChart();
+     
+     // Pobierz informacje o wybranym czujniku i stwórz wykres
+     int sensorIndex = sensorComboBox->currentIndex();
+     if (sensorIndex >= 0 && sensorIndex < static_cast<int>(sensors.size())) {
+         QString paramName = QString::fromUtf8(sensors[sensorIndex].paramName.c_str());
+         QString paramFormula = QString::fromUtf8(sensors[sensorIndex].paramFormula.c_str());
+         displayChart(paramName, paramFormula, false);
+     }
  }
  
- void MainWindow::createChart() {
+ bool MainWindow::displayChart(const QString& paramName, const QString& paramFormula, bool switchToChartTab) {
     if (measurements.empty()) {
         QMessageBox::information(this, "Informacja", "Brak danych do wyświetlenia na wykresie");
-        return;
-    }
-    
-    // Pobranie nazwy parametru
-    int sensorIndex = sensorComboBox->currentIndex();
-    if (sensorIndex < 0 || sensorIndex >= static_cast<int>(sensors.size())) {
-        // Zamiast wyświetlać błąd, spróbujmy użyć danych z pliku
-        // który właśnie otworzyliśmy
-        if (sensors.empty()) {
-            QMessageBox::warning(this, "Błąd", "Brak danych o parametrach");
-            return;
-        }
-        
-        // Użyj ostatniego dodanego sensora, który prawdopodobnie pochodzi z wczytanego pliku
-        sensorIndex = sensors.size() - 1;
-        
-        // Debug info
-        qDebug() << "Brak wybranego parametru, używam ostatniego dostępnego:" 
-                 << QString::fromStdString(sensors[sensorIndex].paramName);
+        return false;
     }
     
     // Sprawdź czy chartView jest poprawnie zainicjalizowany
     if (!chartView) {
         QMessageBox::critical(this, "Błąd", "Błąd komponentu wykresu");
-        return;
+        return false;
     }
-    
-    QString paramName = QString::fromUtf8(sensors[sensorIndex].paramName.c_str());
-    QString paramFormula = QString::fromUtf8(sensors[sensorIndex].paramFormula.c_str());
     
     // Utwórz wykres
     QChart *chart = new QChart();
@@ -361,7 +340,7 @@
             QMessageBox::warning(this, "Błąd", "Nie udało się utworzyć punktów wykresu");
             delete series;
             delete chart;
-            return;
+            return false;
         }
         
         // Dodanie marginesu do zakresu wartości
@@ -380,6 +359,7 @@
         
         // Dodanie serii do wykresu
         chart->addSeries(series);
+        
         // Połączenie tytułu z zakresem dat
         chart->setTitle(QString("Pomiary: %1 (%2)\n%3").arg(
             paramName,
@@ -389,8 +369,9 @@
         
         // Osie wykresu
         QDateTimeAxis *axisX = new QDateTimeAxis;
-        axisX->setTickCount(8); // Mniej punktów na osi
-        axisX->setFormat("hh:mm"); // Tylko godzina i minuty
+        axisX->setTickCount(8);
+        axisX->setFormat("dd.MM.yy hh:mm");
+        axisX->setLabelsAngle(-45);
         axisX->setTitleText("Czas pomiaru");
 
         QValueAxis *axisY = new QValueAxis;
@@ -412,28 +393,26 @@
         // Animacja
         chart->setAnimationOptions(QChart::SeriesAnimations);
         
+        // Przełącz na zakładkę z wykresem jeśli wymagane
+        if (switchToChartTab) {
+            QList<QTabWidget*> tabWidgets = findChildren<QTabWidget*>();
+            if (!tabWidgets.isEmpty()) {
+                tabWidgets.first()->setCurrentIndex(1); // Indeks 1 to zakładka z wykresem
+            }
+        }
+        
+        // Wyświetl informację w pasku statusu
+        statusLabel->setText("Wykres został zaktualizowany");
+        
         qDebug() << "Wykres utworzony pomyślnie";
+        return true;
     }
     catch (const std::exception& e) {
         QMessageBox::critical(this, "Błąd", QString("Wystąpił błąd podczas tworzenia wykresu: %1").arg(e.what()));
         delete chart;
+        return false;
     }
 }
- 
- void MainWindow::showChart() {
-    
-    createChart();
-     
-     // Przełącz na zakładkę z wykresem
-     // Znajdź QTabWidget i przełącz na zakładkę z wykresem (indeks 1)
-     QList<QTabWidget*> tabWidgets = findChildren<QTabWidget*>();
-     if (!tabWidgets.isEmpty()) {
-         tabWidgets.first()->setCurrentIndex(1);
-     }
-     
-     // Wyświetl informację w pasku statusu
-     statusLabel->setText("Wykres został zaktualizowany");
- }
 
 void MainWindow::saveMeasurements() {
     // Sprawdzenie czy są dane do zapisania
@@ -571,9 +550,7 @@ QDialog* MainWindow::createSavedMeasurementsDialog() {
     
     // Przyciski
     QHBoxLayout* buttonLayout = new QHBoxLayout();
-    QPushButton* refreshButton = new QPushButton("Odśwież listę", dialog);
     QPushButton* closeButton = new QPushButton("Zamknij", dialog);
-    buttonLayout->addWidget(refreshButton);
     buttonLayout->addStretch();
     buttonLayout->addWidget(closeButton);
     layout->addLayout(buttonLayout);
@@ -607,7 +584,6 @@ QDialog* MainWindow::createSavedMeasurementsDialog() {
     fillFileList();
     
     // Połączenie sygnałów i slotów
-    connect(refreshButton, &QPushButton::clicked, fillFileList);
     connect(closeButton, &QPushButton::clicked, dialog, &QDialog::accept);
     connect(fileList, &QListWidget::itemDoubleClicked, this, &MainWindow::loadSavedMeasurement);
     
@@ -626,41 +602,197 @@ void MainWindow::loadSavedMeasurement(QListWidgetItem* item) {
         return;
     }
     
+    // Zamknij dialog
+    item->listWidget()->window()->close();
+    
+    // Wyczyść istniejące dane
+    dataTable->setRowCount(0);
+    
     // Wczytaj dane z pliku
-    if (loadMeasurementsFromJSON(filePath)) {
-        // Ustaw informacje o stacji i czujniku
-        statusLabel->setText(QString("Wczytano zapisane dane z pliku: %1").arg(filePath));
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::critical(this, "Błąd", 
+            QString("Nie można otworzyć pliku: %1").arg(filePath));
+        return;
+    }
+    
+    // Odczyt zawartości pliku z poprawnym kodowaniem
+    QTextStream in(&file);
+    in.setCodec("UTF-8");
+    QString jsonString = in.readAll();
+    file.close();
+    
+    try {
+        // Parsowanie JSON
+        json jsonData = json::parse(jsonString.toStdString());
         
-        // Ważne: upewnij się, że sensory i stacje są dostępne
+        // Pobranie metadanych o stacji
+        QString stationName;
+        QString stationCity;
+        QString stationProvince;
+        int stationId = -1;
+        double stationLat = 0.0;
+        double stationLon = 0.0;
+        
+        if (jsonData.contains("metadata") && jsonData["metadata"].contains("station")) {
+            auto& station = jsonData["metadata"]["station"];
+            if (station.contains("id")) stationId = station["id"].get<int>();
+            if (station.contains("name")) stationName = QString::fromUtf8(station["name"].get<std::string>().c_str());
+            if (station.contains("city")) stationCity = QString::fromUtf8(station["city"].get<std::string>().c_str());
+            if (station.contains("province")) stationProvince = QString::fromUtf8(station["province"].get<std::string>().c_str());
+            
+            if (station.contains("location")) {
+                auto& location = station["location"];
+                if (location.contains("lat")) stationLat = location["lat"].get<double>();
+                if (location.contains("lon")) stationLon = location["lon"].get<double>();
+            }
+        }
+        
+        // Pobranie metadanych o czujniku
+        QString paramName;
+        QString paramFormula;
+        QString paramCode;
+        int sensorId = -1;
+        
+        if (jsonData.contains("metadata") && jsonData["metadata"].contains("sensor")) {
+            auto& sensor = jsonData["metadata"]["sensor"];
+            if (sensor.contains("id")) sensorId = sensor["id"].get<int>();
+            if (sensor.contains("paramName")) paramName = QString::fromUtf8(sensor["paramName"].get<std::string>().c_str());
+            if (sensor.contains("paramFormula")) paramFormula = QString::fromUtf8(sensor["paramFormula"].get<std::string>().c_str());
+            if (sensor.contains("paramCode")) paramCode = QString::fromUtf8(sensor["paramCode"].get<std::string>().c_str());
+        }
+        
+        // Pobranie pomiarów
+        measurements.clear();
+        
+        if (jsonData.contains("measurements") && jsonData["measurements"].is_array()) {
+            for (const auto& item : jsonData["measurements"]) {
+                Measurement measurement;
+                measurement.date = item["date"].get<std::string>();
+                measurement.value = item["value"].get<double>();
+                measurements.push_back(measurement);
+            }
+        }
+        
         if (measurements.empty()) {
-            QMessageBox::warning(this, "Ostrzeżenie", "Wczytany plik nie zawiera pomiarów");
+            QMessageBox::warning(this, "Ostrzeżenie", "Plik nie zawiera żadnych pomiarów");
             return;
         }
         
-        // Upewnij się, że ComboBox-y pokazują wczytane dane
-        int stationIndex = stationComboBox->currentIndex();
-        int sensorIndex = sensorComboBox->currentIndex();
+        // Tymczasowa stacja i czujnik
+        Station tempStation;
+        tempStation.id = stationId;
+        tempStation.name = stationName.toUtf8().toStdString();
+        tempStation.city = stationCity.toUtf8().toStdString();
+        tempStation.province = stationProvince.toUtf8().toStdString();
+        tempStation.lat = stationLat;
+        tempStation.lon = stationLon;
         
-        // Debug info
-        qDebug() << "Indeks stacji:" << stationIndex << "z" << stations.size() << "stacji";
-        qDebug() << "Indeks sensora:" << sensorIndex << "z" << sensors.size() << "sensorów";
+        Sensor tempSensor;
+        tempSensor.id = sensorId;
+        tempSensor.paramName = paramName.toUtf8().toStdString();
+        tempSensor.paramFormula = paramFormula.toUtf8().toStdString();
+        tempSensor.paramCode = paramCode.toUtf8().toStdString();
         
-        // Wypełnij tabelę danymi
-        fillDataTable();
-        
-        // Utwórz i wyświetl wykres - nawet jeśli nie mamy wybranego sensora,
-        // poprawiona funkcja createChart() powinna sobie poradzić
-        createChart();
-        
-        // Przełącz na zakładkę z wykresem
-        QList<QTabWidget*> tabWidgets = findChildren<QTabWidget*>();
-        if (!tabWidgets.isEmpty()) {
-            tabWidgets.first()->setCurrentIndex(1); // Zakładka z wykresem
+        // Dodaj lub znajdź stację i czujnik
+        int stationIndex = -1;
+        for (size_t i = 0; i < stations.size(); i++) {
+            if (stations[i].id == stationId) {
+                stationIndex = i;
+                break;
+            }
         }
         
-        // Aktywuj przyciski
-        //showChartButton->setEnabled(true);
-        saveButton->setEnabled(true);
+        if (stationIndex == -1) {
+            stations.push_back(tempStation);
+            stationIndex = stations.size() - 1;
+        }
+        
+        int sensorIndex = -1;
+        for (size_t i = 0; i < sensors.size(); i++) {
+            if (sensors[i].id == sensorId) {
+                sensorIndex = i;
+                break;
+            }
+        }
+        
+        if (sensorIndex == -1) {
+            sensors.push_back(tempSensor);
+            sensorIndex = sensors.size() - 1;
+        }
+        
+        // Zaktualizuj ComboBox'y bez wyzwalania zdarzeń
+        stationComboBox->blockSignals(true);
+        sensorComboBox->blockSignals(true);
+        
+        // Sprawdź, czy stacja jest już w ComboBox
+        int stationComboIndex = -1;
+        for (int i = 0; i < stationComboBox->count(); i++) {
+            if (stationComboBox->itemText(i).contains(stationName)) {
+                stationComboIndex = i;
+                break;
+            }
+        }
+        
+        // Jeśli nie, dodaj ją
+        if (stationComboIndex == -1) {
+            QString displayText = QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
+                stationName, stationCity, stationProvince);
+            stationComboBox->addItem(displayText);
+            stationComboIndex = stationComboBox->count() - 1;
+        }
+        
+        // Ustaw wybraną stację
+        stationComboBox->setCurrentIndex(stationComboIndex);
+        
+        // Wypełnij ComboBox czujników na nowo
+        sensorComboBox->clear();
+        for (const auto& sensor : sensors) {
+            QString displayText = QString("%1 (%2)").arg(
+                QString::fromUtf8(sensor.paramName.c_str()),
+                QString::fromUtf8(sensor.paramFormula.c_str())
+            );
+            sensorComboBox->addItem(displayText);
+        }
+        
+        // Ustaw wybrany czujnik
+        sensorComboBox->setCurrentIndex(sensorIndex);
+        
+        // Odblokuj sygnały
+        stationComboBox->blockSignals(false);
+        sensorComboBox->blockSignals(false);
+        
+        // Wypełnij tabelę danymi
+        dataTable->setRowCount(measurements.size());
+        
+        for (size_t i = 0; i < measurements.size(); ++i) {
+            const auto& measurement = measurements[i];
+            
+            // Data i czas
+            QDateTime dateTime = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
+            QTableWidgetItem *dateItem = new QTableWidgetItem(dateTime.toString("dd.MM.yyyy hh:mm"));
+            dataTable->setItem(i, 0, dateItem);
+            
+            // Wartość
+            QTableWidgetItem *valueItem = new QTableWidgetItem(QString::number(measurement.value, 'f', 2));
+            dataTable->setItem(i, 1, valueItem);
+        }
+        
+        // Sortowanie po dacie (malejąco)
+        dataTable->sortItems(0, Qt::DescendingOrder);
+        
+        // Użyj nowej funkcji displayChart zamiast dotychczasowego kodu tworzenia wykresu
+        if (displayChart(paramName, paramFormula, true)) {
+            // Uaktywnij przyciski
+            saveButton->setEnabled(true);
+            
+            // Ustaw informację o sukcesie
+            statusLabel->setText(QString("Wczytano dane z pliku: %1").arg(filePath));
+        }
+    }
+    catch (const std::exception& e) {
+        QMessageBox::critical(this, "Błąd", 
+            QString("Wystąpił błąd podczas wczytywania pliku JSON: %1").arg(e.what()));
     }
 }
 
@@ -688,6 +820,8 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
         QString stationCity;
         QString stationProvince;
         int stationId = -1;
+        double stationLat = 0.0;
+        double stationLon = 0.0;
         
         if (jsonData.contains("metadata") && jsonData["metadata"].contains("station")) {
             auto& station = jsonData["metadata"]["station"];
@@ -695,11 +829,18 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             if (station.contains("name")) stationName = QString::fromUtf8(station["name"].get<std::string>().c_str());
             if (station.contains("city")) stationCity = QString::fromUtf8(station["city"].get<std::string>().c_str());
             if (station.contains("province")) stationProvince = QString::fromUtf8(station["province"].get<std::string>().c_str());
+            
+            if (station.contains("location")) {
+                auto& location = station["location"];
+                if (location.contains("lat")) stationLat = location["lat"].get<double>();
+                if (location.contains("lon")) stationLon = location["lon"].get<double>();
+            }
         }
         
         // Pobranie metadanych o czujniku
         QString paramName;
         QString paramFormula;
+        QString paramCode;
         int sensorId = -1;
         
         if (jsonData.contains("metadata") && jsonData["metadata"].contains("sensor")) {
@@ -707,6 +848,7 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             if (sensor.contains("id")) sensorId = sensor["id"].get<int>();
             if (sensor.contains("paramName")) paramName = QString::fromUtf8(sensor["paramName"].get<std::string>().c_str());
             if (sensor.contains("paramFormula")) paramFormula = QString::fromUtf8(sensor["paramFormula"].get<std::string>().c_str());
+            if (sensor.contains("paramCode")) paramCode = QString::fromUtf8(sensor["paramCode"].get<std::string>().c_str());
         }
         
         // Pobranie pomiarów
@@ -726,54 +868,58 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             return false;
         }
         
-        // Debug - wyświetlenie odczytanych nazw z polskimi znakami
-        qDebug() << "Odczytano stację:" << stationName;
-        qDebug() << "Miasto:" << stationCity;
-        qDebug() << "Województwo:" << stationProvince;
-        
         // Tymczasowa stacja i czujnik do pokazania w interfejsie
         Station tempStation;
         tempStation.id = stationId;
         tempStation.name = stationName.toUtf8().toStdString();
         tempStation.city = stationCity.toUtf8().toStdString();
         tempStation.province = stationProvince.toUtf8().toStdString();
+        tempStation.lat = stationLat;
+        tempStation.lon = stationLon;
         
         Sensor tempSensor;
         tempSensor.id = sensorId;
         tempSensor.paramName = paramName.toUtf8().toStdString();
         tempSensor.paramFormula = paramFormula.toUtf8().toStdString();
+        tempSensor.paramCode = paramCode.toUtf8().toStdString();
         
-        // Dodaj tymczasową stację i czujnik bez usuwania istniejących danych
-        // (zamiast zastępować całe wektory)
+        // Dodaj tymczasową stację i czujnik
         bool stationExists = false;
-        for (const auto& station : stations) {
-            if (station.id == stationId) {
+        int existingStationIndex = -1;
+        for (size_t i = 0; i < stations.size(); i++) {
+            if (stations[i].id == stationId) {
                 stationExists = true;
+                existingStationIndex = i;
                 break;
             }
         }
         
         if (!stationExists) {
             stations.push_back(tempStation);
+            existingStationIndex = stations.size() - 1;
         }
         
         bool sensorExists = false;
-        for (const auto& sensor : sensors) {
-            if (sensor.id == sensorId) {
+        int existingSensorIndex = -1;
+        for (size_t i = 0; i < sensors.size(); i++) {
+            if (sensors[i].id == sensorId) {
                 sensorExists = true;
+                existingSensorIndex = i;
                 break;
             }
         }
         
         if (!sensorExists) {
             sensors.push_back(tempSensor);
+            existingSensorIndex = sensors.size() - 1;
         }
         
-        // Zapamiętaj indeksy, żeby wybrać te elementy w interfejsie
-        int stationIndex = -1;
-        int sensorIndex = -1;
+        // Blokujemy sygnały tymczasowo, aby uniknąć niepotrzebnych wywołań
+        bool stationBlocked = stationComboBox->blockSignals(true);
+        bool sensorBlocked = sensorComboBox->blockSignals(true);
         
-        // Znajdź indeksy w ComboBox'ach
+        // Sprawdź, czy stacja i czujnik są już w ComboBox'ach
+        int stationIndex = -1;
         for (int i = 0; i < stationComboBox->count(); i++) {
             if (stationComboBox->itemText(i).contains(stationName)) {
                 stationIndex = i;
@@ -781,6 +927,35 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             }
         }
         
+        // Jeśli stacja nie istnieje w ComboBox, dodaj ją
+        if (stationIndex == -1) {
+            QString displayText = QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
+                stationName, stationCity, stationProvince);
+            stationComboBox->addItem(displayText);
+            stationIndex = stationComboBox->count() - 1;
+        }
+        
+        // Ustaw wybraną stację
+        stationComboBox->setCurrentIndex(stationIndex);
+        
+        // Wypełnij ComboBox czujników
+        sensorComboBox->clear();
+        QString selectedSensorText;
+        for (const auto& sensor : sensors) {
+            QString displayText = QString("%1 (%2)").arg(
+                QString::fromUtf8(sensor.paramName.c_str()),
+                QString::fromUtf8(sensor.paramFormula.c_str())
+            );
+            sensorComboBox->addItem(displayText);
+            
+            // Zapisz tekst dla wybranego czujnika
+            if (sensor.id == sensorId) {
+                selectedSensorText = displayText;
+            }
+        }
+        
+        // Znajdź i ustaw wybrany czujnik
+        int sensorIndex = -1;
         for (int i = 0; i < sensorComboBox->count(); i++) {
             if (sensorComboBox->itemText(i).contains(paramName)) {
                 sensorIndex = i;
@@ -788,29 +963,15 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             }
         }
         
-        // Jeśli element nie istnieje, dodaj go do ComboBox'a
-        if (stationIndex == -1) {
-            stationComboBox->addItem(QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
-                stationName, stationCity, stationProvince));
-            stationIndex = stationComboBox->count() - 1;
+        if (sensorIndex != -1) {
+            sensorComboBox->setCurrentIndex(sensorIndex);
+        } else if (existingSensorIndex != -1) {
+            sensorComboBox->setCurrentIndex(existingSensorIndex);
         }
         
-        if (sensorIndex == -1) {
-            sensorComboBox->addItem(QString("%1 (%2) [WCZYTANE Z PLIKU]").arg(
-                paramName, paramFormula));
-            sensorIndex = sensorComboBox->count() - 1;
-        }
-        
-        // Ustaw aktualnie wybrany element
-        stationComboBox->setCurrentIndex(stationIndex);
-        sensorComboBox->setCurrentIndex(sensorIndex);
-        
-        // Wypełnienie tabeli danymi
-        fillDataTable();
-        
-        // Aktywacja przycisków
-        //showChartButton->setEnabled(true);
-        saveButton->setEnabled(true);
+        // Odblokuj sygnały
+        stationComboBox->blockSignals(stationBlocked);
+        sensorComboBox->blockSignals(sensorBlocked);
         
         return true;
     }

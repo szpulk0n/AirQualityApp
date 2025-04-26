@@ -297,6 +297,15 @@
         "province": "MAZOWIECKIE"
     },
     {
+        "address": "ul. Tołstoja 2",
+        "city": "Warszawa",
+        "id": 538,
+        "lat": 52.285073,
+        "lon": 20.933018,
+        "name": "Warszawa, ul. Tołstoja",
+        "province": "MAZOWIECKIE"
+    },
+    {
         "address": "ul. Wokalna 1",
         "city": "Warszawa",
         "id": 550,
