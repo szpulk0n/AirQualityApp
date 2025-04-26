@@ -73,14 +73,14 @@
      // Przyciski
      QHBoxLayout *buttonLayout = new QHBoxLayout();
      refreshButton = new QPushButton("Odśwież dane", this);
-     showChartButton = new QPushButton("Pokaż wykres", this);
+     //showChartButton = new QPushButton("Pokaż wykres", this);
      saveButton = new QPushButton("Zapisz dane", this);
      openSavedButton = new QPushButton("Przeglądaj zapisane dane", this);
-     showChartButton->setEnabled(false);
+     //showChartButton->setEnabled(false);
      saveButton->setEnabled(false);
      
      buttonLayout->addWidget(refreshButton);
-     buttonLayout->addWidget(showChartButton);
+     //buttonLayout->addWidget(showChartButton);
      buttonLayout->addWidget(saveButton);
      buttonLayout->addWidget(openSavedButton);
      
@@ -125,7 +125,7 @@
      connect(stationComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onStationSelected);
      connect(sensorComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onSensorSelected);
      connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
-     connect(showChartButton, &QPushButton::clicked, this, &MainWindow::showChart);
+     //connect(showChartButton, &QPushButton::clicked, this, &MainWindow::showChart);
      connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveMeasurements);
      connect(openSavedButton, &QPushButton::clicked, this, &MainWindow::openSavedMeasurements);
  }
@@ -232,7 +232,7 @@
          QMessageBox::warning(this, "Informacja", "Brak pomiarów dla wybranego czujnika");
          dataTable->setRowCount(0);
          statusLabel->setText("Brak danych pomiarowych");
-         showChartButton->setEnabled(false);
+         //showChartButton->setEnabled(false);
          saveButton->setEnabled(false);
          return;
      }
@@ -241,7 +241,7 @@
      fillDataTable();
      
      // Aktywacja przycisków
-     showChartButton->setEnabled(true);
+     //showChartButton->setEnabled(true);
      saveButton->setEnabled(true);
      
      statusLabel->setText("Gotowy");
@@ -253,6 +253,7 @@
      if (sensorIndex >= 0 && sensorIndex < static_cast<int>(sensors.size())) {
          onSensorSelected(sensorIndex);
      }
+     createChart();
  }
  
  void MainWindow::fillDataTable() {
@@ -278,6 +279,7 @@
      
      // Sortowanie po dacie (malejąco)
      dataTable->sortItems(0, Qt::DescendingOrder);
+     createChart();
  }
  
  void MainWindow::createChart() {
@@ -408,7 +410,8 @@
  }
  
  void MainWindow::showChart() {
-     createChart();
+    
+    createChart();
      
      // Przełącz na zakładkę z wykresem
      // Znajdź QTabWidget i przełącz na zakładkę z wykresem (indeks 1)
@@ -618,7 +621,7 @@ void MainWindow::loadSavedMeasurement(QListWidgetItem* item) {
         }
         
         // Aktywuj przyciski
-        showChartButton->setEnabled(true);
+        //showChartButton->setEnabled(true);
         saveButton->setEnabled(true);
     }
 }
@@ -698,11 +701,11 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
         sensors = {tempSensor};
         
         // Uaktualnij comboBox'y
-        stationComboBox->clear();
+        //stationComboBox->clear();
         stationComboBox->addItem(QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
             stationName, stationCity, stationProvince));
         
-        sensorComboBox->clear();
+        //sensorComboBox->clear();
         sensorComboBox->addItem(QString("%1 (%2) [WCZYTANE Z PLIKU]").arg(
             paramName, paramFormula));
         
@@ -710,7 +713,7 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
         fillDataTable();
         
         // Aktywacja przycisków
-        showChartButton->setEnabled(true);
+        //showChartButton->setEnabled(true);
         saveButton->setEnabled(true);
         
         return true;
