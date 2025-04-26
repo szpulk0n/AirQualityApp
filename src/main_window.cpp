@@ -184,7 +184,7 @@
  }
  
  void MainWindow::onStationSelected(int index) {
-     if (index < 0 || index >= static_cast<int>(stations.size())) {
+     if  (index < 0 || index >= static_cast<int>(stations.size())) {
          return;
      }
      
@@ -283,131 +283,142 @@
  }
  
  void MainWindow::createChart() {
-     if (measurements.empty()) {
-         QMessageBox::information(this, "Informacja", "Brak danych do wyświetlenia na wykresie");
-         return;
-     }
-     
-     // Pobranie nazwy parametru
-     int sensorIndex = sensorComboBox->currentIndex();
-     if (sensorIndex < 0 || sensorIndex >= static_cast<int>(sensors.size())) {
-         QMessageBox::warning(this, "Błąd", "Nie wybrano parametru");
-         return;
-     }
-     
-     // Sprawdź czy chartView jest poprawnie zainicjalizowany
-     if (!chartView) {
-         QMessageBox::critical(this, "Błąd", "Błąd komponentu wykresu");
-         return;
-     }
-     
-     QString paramName = QString::fromStdString(sensors[sensorIndex].paramName);
-     QString paramFormula = QString::fromStdString(sensors[sensorIndex].paramFormula);
-     
-     // Utwórz wykres
-     QChart *chart = new QChart();
-     
-     try {
-         // Debug info
-         std::cout << "Tworzenie wykresu dla parametru: " << sensors[sensorIndex].paramName 
-                   << " (" << sensors[sensorIndex].paramFormula << ")" << std::endl;
-         std::cout << "Liczba pomiarów: " << measurements.size() << std::endl;
-         
-         // Utworzenie serii danych
-         QLineSeries *series = new QLineSeries();
-         series->setName(paramName);
-         
-         // Wartości min i max do ustalenia zakresu osi Y
-         double minValue = std::numeric_limits<double>::max();
-         double maxValue = std::numeric_limits<double>::lowest();
-         qint64 minTime = std::numeric_limits<qint64>::max();
-         qint64 maxTime = std::numeric_limits<qint64>::lowest();
-         
-         // Wypełnienie serii danymi
-         for (const auto& measurement : measurements) {
-             // Konwersja daty na timestamp
-             QDateTime dateTime = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
-             qint64 timestamp = dateTime.toMSecsSinceEpoch();
-             
-             // Dodanie punktu do serii
-             series->append(timestamp, measurement.value);
-             
-             // Debug info dla pierwszych 5 punktów
-             if (series->count() <= 5) {
-                 std::cout << "Punkt " << series->count() << ": " 
-                           << dateTime.toString("yyyy-MM-dd hh:mm").toStdString() 
-                           << ", wartość: " << measurement.value << std::endl;
-             }
-             
-             // Aktualizacja wartości min/max
-             minValue = std::min(minValue, measurement.value);
-             maxValue = std::max(maxValue, measurement.value);
-             minTime = std::min(minTime, timestamp);
-             maxTime = std::max(maxTime, timestamp);
-         }
-         
-         if (series->count() == 0) {
-             QMessageBox::warning(this, "Błąd", "Nie udało się utworzyć punktów wykresu");
-             delete series;
-             delete chart;
-             return;
-         }
-         
-         // Dodanie marginesu do zakresu wartości
-         double margin = (maxValue - minValue) * 0.1;
-         if (margin < 0.001) margin = 0.1; // Minimalny margines
-         minValue = minValue - margin;
-         maxValue = maxValue + margin;
-         
-         // Określenie zakresu dat dla tytułu
-         QDateTime minDateTime = QDateTime::fromMSecsSinceEpoch(minTime);
-         QDateTime maxDateTime = QDateTime::fromMSecsSinceEpoch(maxTime);
-         QString dateRangeStr = QString("Okres: %1 - %2").arg(
-             minDateTime.toString("dd.MM.yyyy"),
-             maxDateTime.toString("dd.MM.yyyy")
-         );
-         
-         // Dodanie serii do wykresu
-         chart->addSeries(series);
-         // Połączenie tytułu z zakresem dat
-         chart->setTitle(QString("Pomiary: %1 (%2)\n%3").arg(
-             paramName,
-             paramFormula,
-             dateRangeStr
-         ));
-         
-         // Osie wykresu
-         QDateTimeAxis *axisX = new QDateTimeAxis;
-         axisX->setTickCount(8); // Mniej punktów na osi
-         axisX->setFormat("hh:mm"); // Tylko godzina i minuty
-         axisX->setTitleText("Czas pomiaru");
+    if (measurements.empty()) {
+        QMessageBox::information(this, "Informacja", "Brak danych do wyświetlenia na wykresie");
+        return;
+    }
+    
+    // Pobranie nazwy parametru
+    int sensorIndex = sensorComboBox->currentIndex();
+    if (sensorIndex < 0 || sensorIndex >= static_cast<int>(sensors.size())) {
+        // Zamiast wyświetlać błąd, spróbujmy użyć danych z pliku
+        // który właśnie otworzyliśmy
+        if (sensors.empty()) {
+            QMessageBox::warning(this, "Błąd", "Brak danych o parametrach");
+            return;
+        }
+        
+        // Użyj ostatniego dodanego sensora, który prawdopodobnie pochodzi z wczytanego pliku
+        sensorIndex = sensors.size() - 1;
+        
+        // Debug info
+        qDebug() << "Brak wybranego parametru, używam ostatniego dostępnego:" 
+                 << QString::fromStdString(sensors[sensorIndex].paramName);
+    }
+    
+    // Sprawdź czy chartView jest poprawnie zainicjalizowany
+    if (!chartView) {
+        QMessageBox::critical(this, "Błąd", "Błąd komponentu wykresu");
+        return;
+    }
+    
+    QString paramName = QString::fromUtf8(sensors[sensorIndex].paramName.c_str());
+    QString paramFormula = QString::fromUtf8(sensors[sensorIndex].paramFormula.c_str());
+    
+    // Utwórz wykres
+    QChart *chart = new QChart();
+    
+    try {
+        // Debug info
+        qDebug() << "Tworzenie wykresu dla parametru:" << paramName 
+                << "(" << paramFormula << ")";
+        qDebug() << "Liczba pomiarów:" << measurements.size();
+        
+        // Utworzenie serii danych
+        QLineSeries *series = new QLineSeries();
+        series->setName(paramName);
+        
+        // Wartości min i max do ustalenia zakresu osi Y
+        double minValue = std::numeric_limits<double>::max();
+        double maxValue = std::numeric_limits<double>::lowest();
+        qint64 minTime = std::numeric_limits<qint64>::max();
+        qint64 maxTime = std::numeric_limits<qint64>::lowest();
+        
+        // Wypełnienie serii danymi
+        for (const auto& measurement : measurements) {
+            // Konwersja daty na timestamp
+            QDateTime dateTime = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
+            qint64 timestamp = dateTime.toMSecsSinceEpoch();
+            
+            // Dodanie punktu do serii
+            series->append(timestamp, measurement.value);
+            
+            // Debug info dla pierwszych 5 punktów
+            if (series->count() <= 5) {
+                qDebug() << "Punkt" << series->count() << ":" 
+                        << dateTime.toString("yyyy-MM-dd hh:mm")
+                        << ", wartość:" << measurement.value;
+            }
+            
+            // Aktualizacja wartości min/max
+            minValue = std::min(minValue, measurement.value);
+            maxValue = std::max(maxValue, measurement.value);
+            minTime = std::min(minTime, timestamp);
+            maxTime = std::max(maxTime, timestamp);
+        }
+        
+        if (series->count() == 0) {
+            QMessageBox::warning(this, "Błąd", "Nie udało się utworzyć punktów wykresu");
+            delete series;
+            delete chart;
+            return;
+        }
+        
+        // Dodanie marginesu do zakresu wartości
+        double margin = (maxValue - minValue) * 0.1;
+        if (margin < 0.001) margin = 0.1; // Minimalny margines
+        minValue = minValue - margin;
+        maxValue = maxValue + margin;
+        
+        // Określenie zakresu dat dla tytułu
+        QDateTime minDateTime = QDateTime::fromMSecsSinceEpoch(minTime);
+        QDateTime maxDateTime = QDateTime::fromMSecsSinceEpoch(maxTime);
+        QString dateRangeStr = QString("Okres: %1 - %2").arg(
+            minDateTime.toString("dd.MM.yyyy"),
+            maxDateTime.toString("dd.MM.yyyy")
+        );
+        
+        // Dodanie serii do wykresu
+        chart->addSeries(series);
+        // Połączenie tytułu z zakresem dat
+        chart->setTitle(QString("Pomiary: %1 (%2)\n%3").arg(
+            paramName,
+            paramFormula,
+            dateRangeStr
+        ));
+        
+        // Osie wykresu
+        QDateTimeAxis *axisX = new QDateTimeAxis;
+        axisX->setTickCount(8); // Mniej punktów na osi
+        axisX->setFormat("hh:mm"); // Tylko godzina i minuty
+        axisX->setTitleText("Czas pomiaru");
 
-         QValueAxis *axisY = new QValueAxis;
-         axisY->setLabelFormat("%.2f");
-         axisY->setTitleText(paramFormula);
-         axisY->setRange(minValue, maxValue);
-         
-         chart->addAxis(axisX, Qt::AlignBottom);
-         chart->addAxis(axisY, Qt::AlignLeft);
-         series->attachAxis(axisX);
-         series->attachAxis(axisY);
-         
-         // Ustawienie zakresu czasu
-         axisX->setRange(QDateTime::fromMSecsSinceEpoch(minTime), QDateTime::fromMSecsSinceEpoch(maxTime));
-         
-         // Ustawienie nowego wykresu w widoku
-         chartView->setChart(chart);
-         
-         // Animacja
-         chart->setAnimationOptions(QChart::SeriesAnimations);
-         
-         std::cout << "Wykres utworzony pomyślnie" << std::endl;
-     }
-     catch (const std::exception& e) {
-         QMessageBox::critical(this, "Błąd", QString("Wystąpił błąd podczas tworzenia wykresu: %1").arg(e.what()));
-         delete chart;
-     }
- }
+        QValueAxis *axisY = new QValueAxis;
+        axisY->setLabelFormat("%.2f");
+        axisY->setTitleText(paramFormula);
+        axisY->setRange(minValue, maxValue);
+        
+        chart->addAxis(axisX, Qt::AlignBottom);
+        chart->addAxis(axisY, Qt::AlignLeft);
+        series->attachAxis(axisX);
+        series->attachAxis(axisY);
+        
+        // Ustawienie zakresu czasu
+        axisX->setRange(QDateTime::fromMSecsSinceEpoch(minTime), QDateTime::fromMSecsSinceEpoch(maxTime));
+        
+        // Ustawienie nowego wykresu w widoku
+        chartView->setChart(chart);
+        
+        // Animacja
+        chart->setAnimationOptions(QChart::SeriesAnimations);
+        
+        qDebug() << "Wykres utworzony pomyślnie";
+    }
+    catch (const std::exception& e) {
+        QMessageBox::critical(this, "Błąd", QString("Wystąpił błąd podczas tworzenia wykresu: %1").arg(e.what()));
+        delete chart;
+    }
+}
  
  void MainWindow::showChart() {
     
@@ -472,20 +483,25 @@ bool MainWindow::saveMeasurementsToJSON(const QString& filename) {
         // Przygotowanie obiektu JSON
         json jsonData;
         
-        // Metadane
+        // Funkcja pomocnicza do konwersji QString na UTF-8 std::string
+        auto qstringToUtf8 = [](const QString& str) -> std::string {
+            return str.toUtf8().toStdString();
+        };
+        
+        // Metadane z poprawnym kodowaniem UTF-8
         jsonData["metadata"]["station"]["id"] = stations[stationIndex].id;
-        jsonData["metadata"]["station"]["name"] = stations[stationIndex].name;
-        jsonData["metadata"]["station"]["city"] = stations[stationIndex].city;
-        jsonData["metadata"]["station"]["province"] = stations[stationIndex].province;
+        jsonData["metadata"]["station"]["name"] = qstringToUtf8(QString::fromStdString(stations[stationIndex].name));
+        jsonData["metadata"]["station"]["city"] = qstringToUtf8(QString::fromStdString(stations[stationIndex].city));
+        jsonData["metadata"]["station"]["province"] = qstringToUtf8(QString::fromStdString(stations[stationIndex].province));
         jsonData["metadata"]["station"]["location"]["lat"] = stations[stationIndex].lat;
         jsonData["metadata"]["station"]["location"]["lon"] = stations[stationIndex].lon;
         
         jsonData["metadata"]["sensor"]["id"] = sensors[sensorIndex].id;
-        jsonData["metadata"]["sensor"]["paramName"] = sensors[sensorIndex].paramName;
-        jsonData["metadata"]["sensor"]["paramFormula"] = sensors[sensorIndex].paramFormula;
-        jsonData["metadata"]["sensor"]["paramCode"] = sensors[sensorIndex].paramCode;
+        jsonData["metadata"]["sensor"]["paramName"] = qstringToUtf8(QString::fromStdString(sensors[sensorIndex].paramName));
+        jsonData["metadata"]["sensor"]["paramFormula"] = qstringToUtf8(QString::fromStdString(sensors[sensorIndex].paramFormula));
+        jsonData["metadata"]["sensor"]["paramCode"] = qstringToUtf8(QString::fromStdString(sensors[sensorIndex].paramCode));
         
-        jsonData["metadata"]["exportDate"] = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss").toStdString();
+        jsonData["metadata"]["exportDate"] = qstringToUtf8(QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"));
         
         // Przygotowanie tablicy pomiarów
         json measurementsArray = json::array();
@@ -504,18 +520,25 @@ bool MainWindow::saveMeasurementsToJSON(const QString& filename) {
         QFileInfo fileInfo(filename);
         QDir().mkpath(fileInfo.path());
         
-        // Zapis do pliku
-        std::ofstream file(filename.toStdString());
-        if (!file.is_open()) {
+        // Zapis do pliku z określeniem kodowania UTF-8
+        QFile file(filename);
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
             QMessageBox::critical(this, "Błąd", 
                 QString("Nie można otworzyć pliku do zapisu: %1").arg(filename));
             return false;
         }
         
-        file << jsonData.dump(4); // Pretty print z wcięciem 4 spacji
+        // Zapisanie danych JSON z formatowaniem
+        QTextStream out(&file);
+        out.setCodec("UTF-8");
+        out << QString::fromStdString(jsonData.dump(4));
         file.close();
         
-        std::cout << "Zapisano dane do pliku JSON: " << filename.toStdString() << std::endl;
+        // Poprawny zapis do konsoli z polskimi znakami
+        qDebug() << "Zapisano dane do pliku JSON:" << filename;
+        qDebug() << "Nazwa stacji:" << QString::fromStdString(stations[stationIndex].name);
+        qDebug() << "Miasto:" << QString::fromStdString(stations[stationIndex].city);
+        
         return true;
     }
     catch (const std::exception& e) {
@@ -608,10 +631,25 @@ void MainWindow::loadSavedMeasurement(QListWidgetItem* item) {
         // Ustaw informacje o stacji i czujniku
         statusLabel->setText(QString("Wczytano zapisane dane z pliku: %1").arg(filePath));
         
+        // Ważne: upewnij się, że sensory i stacje są dostępne
+        if (measurements.empty()) {
+            QMessageBox::warning(this, "Ostrzeżenie", "Wczytany plik nie zawiera pomiarów");
+            return;
+        }
+        
+        // Upewnij się, że ComboBox-y pokazują wczytane dane
+        int stationIndex = stationComboBox->currentIndex();
+        int sensorIndex = sensorComboBox->currentIndex();
+        
+        // Debug info
+        qDebug() << "Indeks stacji:" << stationIndex << "z" << stations.size() << "stacji";
+        qDebug() << "Indeks sensora:" << sensorIndex << "z" << sensors.size() << "sensorów";
+        
         // Wypełnij tabelę danymi
         fillDataTable();
         
-        // Utwórz i wyświetl wykres
+        // Utwórz i wyświetl wykres - nawet jeśli nie mamy wybranego sensora,
+        // poprawiona funkcja createChart() powinna sobie poradzić
         createChart();
         
         // Przełącz na zakładkę z wykresem
@@ -628,18 +666,22 @@ void MainWindow::loadSavedMeasurement(QListWidgetItem* item) {
 
 bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
     try {
-        // Odczyt pliku
-        std::ifstream file(filePath.toStdString());
-        if (!file.is_open()) {
+        // Odczyt pliku za pomocą Qt z obsługą UTF-8
+        QFile file(filePath);
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
             QMessageBox::critical(this, "Błąd", 
                 QString("Nie można otworzyć pliku: %1").arg(filePath));
             return false;
         }
         
-        // Parsowanie JSON
-        json jsonData;
-        file >> jsonData;
+        // Odczyt zawartości pliku z poprawnym kodowaniem
+        QTextStream in(&file);
+        in.setCodec("UTF-8");
+        QString jsonString = in.readAll();
         file.close();
+        
+        // Parsowanie JSON
+        json jsonData = json::parse(jsonString.toStdString());
         
         // Pobranie metadanych o stacji
         QString stationName;
@@ -650,9 +692,9 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
         if (jsonData.contains("metadata") && jsonData["metadata"].contains("station")) {
             auto& station = jsonData["metadata"]["station"];
             if (station.contains("id")) stationId = station["id"].get<int>();
-            if (station.contains("name")) stationName = QString::fromStdString(station["name"].get<std::string>());
-            if (station.contains("city")) stationCity = QString::fromStdString(station["city"].get<std::string>());
-            if (station.contains("province")) stationProvince = QString::fromStdString(station["province"].get<std::string>());
+            if (station.contains("name")) stationName = QString::fromUtf8(station["name"].get<std::string>().c_str());
+            if (station.contains("city")) stationCity = QString::fromUtf8(station["city"].get<std::string>().c_str());
+            if (station.contains("province")) stationProvince = QString::fromUtf8(station["province"].get<std::string>().c_str());
         }
         
         // Pobranie metadanych o czujniku
@@ -663,8 +705,8 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
         if (jsonData.contains("metadata") && jsonData["metadata"].contains("sensor")) {
             auto& sensor = jsonData["metadata"]["sensor"];
             if (sensor.contains("id")) sensorId = sensor["id"].get<int>();
-            if (sensor.contains("paramName")) paramName = QString::fromStdString(sensor["paramName"].get<std::string>());
-            if (sensor.contains("paramFormula")) paramFormula = QString::fromStdString(sensor["paramFormula"].get<std::string>());
+            if (sensor.contains("paramName")) paramName = QString::fromUtf8(sensor["paramName"].get<std::string>().c_str());
+            if (sensor.contains("paramFormula")) paramFormula = QString::fromUtf8(sensor["paramFormula"].get<std::string>().c_str());
         }
         
         // Pobranie pomiarów
@@ -684,30 +726,84 @@ bool MainWindow::loadMeasurementsFromJSON(const QString& filePath) {
             return false;
         }
         
+        // Debug - wyświetlenie odczytanych nazw z polskimi znakami
+        qDebug() << "Odczytano stację:" << stationName;
+        qDebug() << "Miasto:" << stationCity;
+        qDebug() << "Województwo:" << stationProvince;
+        
         // Tymczasowa stacja i czujnik do pokazania w interfejsie
         Station tempStation;
         tempStation.id = stationId;
-        tempStation.name = stationName.toStdString();
-        tempStation.city = stationCity.toStdString();
-        tempStation.province = stationProvince.toStdString();
+        tempStation.name = stationName.toUtf8().toStdString();
+        tempStation.city = stationCity.toUtf8().toStdString();
+        tempStation.province = stationProvince.toUtf8().toStdString();
         
         Sensor tempSensor;
         tempSensor.id = sensorId;
-        tempSensor.paramName = paramName.toStdString();
-        tempSensor.paramFormula = paramFormula.toStdString();
+        tempSensor.paramName = paramName.toUtf8().toStdString();
+        tempSensor.paramFormula = paramFormula.toUtf8().toStdString();
         
-        // Tymczasowa zamiana aktualnych danych
-        stations = {tempStation};
-        sensors = {tempSensor};
+        // Dodaj tymczasową stację i czujnik bez usuwania istniejących danych
+        // (zamiast zastępować całe wektory)
+        bool stationExists = false;
+        for (const auto& station : stations) {
+            if (station.id == stationId) {
+                stationExists = true;
+                break;
+            }
+        }
         
-        // Uaktualnij comboBox'y
-        //stationComboBox->clear();
-        stationComboBox->addItem(QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
-            stationName, stationCity, stationProvince));
+        if (!stationExists) {
+            stations.push_back(tempStation);
+        }
         
-        //sensorComboBox->clear();
-        sensorComboBox->addItem(QString("%1 (%2) [WCZYTANE Z PLIKU]").arg(
-            paramName, paramFormula));
+        bool sensorExists = false;
+        for (const auto& sensor : sensors) {
+            if (sensor.id == sensorId) {
+                sensorExists = true;
+                break;
+            }
+        }
+        
+        if (!sensorExists) {
+            sensors.push_back(tempSensor);
+        }
+        
+        // Zapamiętaj indeksy, żeby wybrać te elementy w interfejsie
+        int stationIndex = -1;
+        int sensorIndex = -1;
+        
+        // Znajdź indeksy w ComboBox'ach
+        for (int i = 0; i < stationComboBox->count(); i++) {
+            if (stationComboBox->itemText(i).contains(stationName)) {
+                stationIndex = i;
+                break;
+            }
+        }
+        
+        for (int i = 0; i < sensorComboBox->count(); i++) {
+            if (sensorComboBox->itemText(i).contains(paramName)) {
+                sensorIndex = i;
+                break;
+            }
+        }
+        
+        // Jeśli element nie istnieje, dodaj go do ComboBox'a
+        if (stationIndex == -1) {
+            stationComboBox->addItem(QString("%1 (%2, %3) [WCZYTANE Z PLIKU]").arg(
+                stationName, stationCity, stationProvince));
+            stationIndex = stationComboBox->count() - 1;
+        }
+        
+        if (sensorIndex == -1) {
+            sensorComboBox->addItem(QString("%1 (%2) [WCZYTANE Z PLIKU]").arg(
+                paramName, paramFormula));
+            sensorIndex = sensorComboBox->count() - 1;
+        }
+        
+        // Ustaw aktualnie wybrany element
+        stationComboBox->setCurrentIndex(stationIndex);
+        sensorComboBox->setCurrentIndex(sensorIndex);
         
         // Wypełnienie tabeli danymi
         fillDataTable();
