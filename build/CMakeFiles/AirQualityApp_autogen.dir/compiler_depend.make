@@ -180,12 +180,14 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
   C:/msys64/mingw64/include/QtWidgets/QGroupBox \
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
   C:/msys64/mingw64/include/QtWidgets/QStatusBar \
@@ -200,6 +202,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
   C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
   C:/msys64/mingw64/include/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
@@ -212,6 +215,8 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/QtWidgets/qrubberband.h \
@@ -733,11 +738,11 @@ C:/msys64/mingw64/include/QtCharts/qchart.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
 
+C:/msys64/mingw64/include/sec_api/string_s.h:
+
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:
 
 C:/msys64/mingw64/include/QtWidgets/QGraphicsView:
-
-C:/msys64/mingw64/include/sec_api/string_s.h:
 
 C:/msys64/mingw64/include/QtGui/qwindowdefs.h:
 
@@ -1195,11 +1200,23 @@ C:/msys64/mingw64/include/QtWidgets/QComboBox:
 
 C:/msys64/mingw64/include/QtWidgets/QDateEdit:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
+
+C:/msys64/mingw64/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+
+C:/msys64/mingw64/include/nlohmann/detail/value_t.hpp:
+
+C:/msys64/mingw64/include/QtWidgets/QDialog:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/msys64/mingw64/include/QtWidgets/QGroupBox:
 
 C:/msys64/mingw64/include/QtWidgets/QLabel:
+
+C:/msys64/mingw64/include/QtWidgets/QListWidget:
 
 C:/msys64/mingw64/include/QtWidgets/QPushButton:
 
@@ -1239,6 +1256,8 @@ C:/msys64/mingw64/include/nlohmann/detail/string_escape.hpp:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
+C:/msys64/mingw64/include/QtWidgets/qdialog.h:
+
 C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h:
 
 C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h:
@@ -1258,6 +1277,12 @@ C:/msys64/mingw64/include/QtWidgets/qgroupbox.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h:
 
 C:/msys64/mingw64/include/QtWidgets/qlayout.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/QtWidgets/qlistview.h:
+
+C:/msys64/mingw64/include/QtWidgets/qlistwidget.h:
 
 C:/msys64/mingw64/include/QtWidgets/qmainwindow.h:
 
@@ -1340,8 +1365,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/align.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h:
-
-C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_wait.h:
 
@@ -1466,16 +1489,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
-
-C:/msys64/mingw64/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
-
-C:/msys64/mingw64/include/nlohmann/detail/value_t.hpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h:
 
@@ -1650,6 +1663,8 @@ C:/msys64/mingw64/include/pthread_unistd.h:
 C:/msys64/mingw64/include/sdks/_mingw_ddk.h:
 
 C:/msys64/mingw64/include/sec_api/stdlib_s.h:
+
+C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
 
 C:/msys64/mingw64/include/sec_api/wchar_s.h:
 

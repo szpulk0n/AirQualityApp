@@ -22,6 +22,8 @@
  #include <QtCharts/QLineSeries>
  #include <QtCharts/QDateTimeAxis>
  #include <QtCharts/QValueAxis>
+ #include <QListWidget>
+ #include <QDialog>
  #include <memory>
  
  QT_CHARTS_USE_NAMESPACE
@@ -75,16 +77,9 @@
      void showChart();
 
      /**
-      * @brief Zapisuje dane pomiarowe do pliku
+      * @brief Zapisuje dane pomiarowe do pliku JSON
       */
      void saveMeasurements();
-
-     /**
-      * @brief Zapisuje dane pomiarowe do pliku CSV
-      * @param filename Nazwa pliku
-      * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
-      */
-     bool saveMeasurementsToCSV(const QString& filename);
 
      /**
       * @brief Zapisuje dane pomiarowe do pliku JSON
@@ -92,6 +87,17 @@
       * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
       */
      bool saveMeasurementsToJSON(const QString& filename);
+     
+     /**
+      * @brief Otwiera panel z zapisanymi pomiarami
+      */
+     void openSavedMeasurements();
+     
+     /**
+      * @brief Wczytuje zapisane pomiary z wybranego pliku
+      * @param item Element z listy plików
+      */
+     void loadSavedMeasurement(QListWidgetItem* item);
  
  private:
      // Komponenty UI
@@ -99,6 +105,7 @@
      QComboBox *sensorComboBox;
      QPushButton *refreshButton;
      QPushButton *saveButton;
+     QPushButton *openSavedButton;
      QTableWidget *dataTable;
      QLabel *statusLabel;
      QChartView *chartView;
@@ -109,6 +116,9 @@
      std::vector<Station> stations;
      std::vector<Sensor> sensors;
      std::vector<Measurement> measurements;
+     
+     // Ścieżka do zapisu pomiarów
+     QString exportPath;
      
      /**
       * @brief Inicjalizuje interfejs użytkownika
@@ -124,6 +134,19 @@
       * @brief Tworzy wykres z danych pomiarowych
       */
      void createChart();
+     
+     /**
+      * @brief Tworzy dialog do przeglądania zapisanych pomiarów
+      * @return Dialog z listą zapisanych plików
+      */
+     QDialog* createSavedMeasurementsDialog();
+     
+     /**
+      * @brief Wczytuje pomiary z pliku JSON
+      * @param filePath Ścieżka do pliku
+      * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
+      */
+     bool loadMeasurementsFromJSON(const QString& filePath);
  };
  
  #endif // MAIN_WINDOW_HPP

@@ -35,7 +35,7 @@ set(CMAKE_AUTOUIC ON)
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/data)
 
 # Tworzenie katalogu dla zapisywanych danych
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/export)
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/export)
 
 # Tworzenie pliku wykonalnego
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
@@ -49,9 +49,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     CURL::libcurl
     nlohmann_json::nlohmann_json
 )
-
-# Kopiowanie plików zasobów (jeśli istnieją)
-# file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/resources/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/resources/)
 
 # ======== Konfiguracja Doxygen ========
 

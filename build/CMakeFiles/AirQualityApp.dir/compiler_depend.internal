@@ -181,12 +181,14 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/timestamp
  C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h
  C:/msys64/mingw64/include/QtWidgets/QComboBox
  C:/msys64/mingw64/include/QtWidgets/QDateEdit
+ C:/msys64/mingw64/include/QtWidgets/QDialog
  C:/msys64/mingw64/include/QtWidgets/QGraphicsView
  C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget
  C:/msys64/mingw64/include/QtWidgets/QGroupBox
  C:/msys64/mingw64/include/QtWidgets/QHBoxLayout
  C:/msys64/mingw64/include/QtWidgets/QHeaderView
  C:/msys64/mingw64/include/QtWidgets/QLabel
+ C:/msys64/mingw64/include/QtWidgets/QListWidget
  C:/msys64/mingw64/include/QtWidgets/QMainWindow
  C:/msys64/mingw64/include/QtWidgets/QPushButton
  C:/msys64/mingw64/include/QtWidgets/QStatusBar
@@ -201,6 +203,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/timestamp
  C:/msys64/mingw64/include/QtWidgets/qboxlayout.h
  C:/msys64/mingw64/include/QtWidgets/qcombobox.h
  C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h
+ C:/msys64/mingw64/include/QtWidgets/qdialog.h
  C:/msys64/mingw64/include/QtWidgets/qframe.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h
@@ -213,6 +216,8 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/timestamp
  C:/msys64/mingw64/include/QtWidgets/qlabel.h
  C:/msys64/mingw64/include/QtWidgets/qlayout.h
  C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h
+ C:/msys64/mingw64/include/QtWidgets/qlistview.h
+ C:/msys64/mingw64/include/QtWidgets/qlistwidget.h
  C:/msys64/mingw64/include/QtWidgets/qmainwindow.h
  C:/msys64/mingw64/include/QtWidgets/qpushbutton.h
  C:/msys64/mingw64/include/QtWidgets/qrubberband.h
@@ -712,12 +717,14 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj
  C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h
  C:/msys64/mingw64/include/QtWidgets/QComboBox
  C:/msys64/mingw64/include/QtWidgets/QDateEdit
+ C:/msys64/mingw64/include/QtWidgets/QDialog
  C:/msys64/mingw64/include/QtWidgets/QGraphicsView
  C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget
  C:/msys64/mingw64/include/QtWidgets/QGroupBox
  C:/msys64/mingw64/include/QtWidgets/QHBoxLayout
  C:/msys64/mingw64/include/QtWidgets/QHeaderView
  C:/msys64/mingw64/include/QtWidgets/QLabel
+ C:/msys64/mingw64/include/QtWidgets/QListWidget
  C:/msys64/mingw64/include/QtWidgets/QMainWindow
  C:/msys64/mingw64/include/QtWidgets/QPushButton
  C:/msys64/mingw64/include/QtWidgets/QStatusBar
@@ -732,6 +739,7 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/qboxlayout.h
  C:/msys64/mingw64/include/QtWidgets/qcombobox.h
  C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h
+ C:/msys64/mingw64/include/QtWidgets/qdialog.h
  C:/msys64/mingw64/include/QtWidgets/qframe.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h
@@ -744,6 +752,8 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/qlabel.h
  C:/msys64/mingw64/include/QtWidgets/qlayout.h
  C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h
+ C:/msys64/mingw64/include/QtWidgets/qlistview.h
+ C:/msys64/mingw64/include/QtWidgets/qlistwidget.h
  C:/msys64/mingw64/include/QtWidgets/qmainwindow.h
  C:/msys64/mingw64/include/QtWidgets/qpushbutton.h
  C:/msys64/mingw64/include/QtWidgets/qrubberband.h
@@ -1224,12 +1234,14 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/QApplication
  C:/msys64/mingw64/include/QtWidgets/QComboBox
  C:/msys64/mingw64/include/QtWidgets/QDateEdit
+ C:/msys64/mingw64/include/QtWidgets/QDialog
  C:/msys64/mingw64/include/QtWidgets/QGraphicsView
  C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget
  C:/msys64/mingw64/include/QtWidgets/QGroupBox
  C:/msys64/mingw64/include/QtWidgets/QHBoxLayout
  C:/msys64/mingw64/include/QtWidgets/QHeaderView
  C:/msys64/mingw64/include/QtWidgets/QLabel
+ C:/msys64/mingw64/include/QtWidgets/QListWidget
  C:/msys64/mingw64/include/QtWidgets/QMainWindow
  C:/msys64/mingw64/include/QtWidgets/QPushButton
  C:/msys64/mingw64/include/QtWidgets/QSplashScreen
@@ -1246,6 +1258,7 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/qboxlayout.h
  C:/msys64/mingw64/include/QtWidgets/qcombobox.h
  C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h
+ C:/msys64/mingw64/include/QtWidgets/qdialog.h
  C:/msys64/mingw64/include/QtWidgets/qframe.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h
  C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h
@@ -1258,6 +1271,8 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/qlabel.h
  C:/msys64/mingw64/include/QtWidgets/qlayout.h
  C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h
+ C:/msys64/mingw64/include/QtWidgets/qlistview.h
+ C:/msys64/mingw64/include/QtWidgets/qlistwidget.h
  C:/msys64/mingw64/include/QtWidgets/qmainwindow.h
  C:/msys64/mingw64/include/QtWidgets/qpushbutton.h
  C:/msys64/mingw64/include/QtWidgets/qrubberband.h
@@ -2454,6 +2469,7 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj
  C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h
  C:/msys64/mingw64/include/QtWidgets/QComboBox
  C:/msys64/mingw64/include/QtWidgets/QDateEdit
+ C:/msys64/mingw64/include/QtWidgets/QDialog
  C:/msys64/mingw64/include/QtWidgets/QFileDialog
  C:/msys64/mingw64/include/QtWidgets/QGraphicsView
  C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget
@@ -2461,6 +2477,7 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/QHBoxLayout
  C:/msys64/mingw64/include/QtWidgets/QHeaderView
  C:/msys64/mingw64/include/QtWidgets/QLabel
+ C:/msys64/mingw64/include/QtWidgets/QListWidget
  C:/msys64/mingw64/include/QtWidgets/QMainWindow
  C:/msys64/mingw64/include/QtWidgets/QMessageBox
  C:/msys64/mingw64/include/QtWidgets/QPushButton
@@ -2492,6 +2509,8 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj
  C:/msys64/mingw64/include/QtWidgets/qlabel.h
  C:/msys64/mingw64/include/QtWidgets/qlayout.h
  C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h
+ C:/msys64/mingw64/include/QtWidgets/qlistview.h
+ C:/msys64/mingw64/include/QtWidgets/qlistwidget.h
  C:/msys64/mingw64/include/QtWidgets/qmainwindow.h
  C:/msys64/mingw64/include/QtWidgets/qmessagebox.h
  C:/msys64/mingw64/include/QtWidgets/qpushbutton.h

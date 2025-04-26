@@ -180,12 +180,14 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
   C:/msys64/mingw64/include/QtWidgets/QGroupBox \
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
   C:/msys64/mingw64/include/QtWidgets/QStatusBar \
@@ -200,6 +202,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
   C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
   C:/msys64/mingw64/include/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
@@ -212,6 +215,8 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/QtWidgets/qrubberband.h \
@@ -710,12 +715,14 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj: Air
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
   C:/msys64/mingw64/include/QtWidgets/QGroupBox \
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
   C:/msys64/mingw64/include/QtWidgets/QStatusBar \
@@ -730,6 +737,7 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj: Air
   C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
   C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
   C:/msys64/mingw64/include/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
@@ -742,6 +750,8 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj: Air
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/QtWidgets/qrubberband.h \
@@ -1221,12 +1231,14 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj: C:/Programming/AirQualityApp/main.cpp
   C:/msys64/mingw64/include/QtWidgets/QApplication \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
   C:/msys64/mingw64/include/QtWidgets/QGroupBox \
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
   C:/msys64/mingw64/include/QtWidgets/QSplashScreen \
@@ -1243,6 +1255,7 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj: C:/Programming/AirQualityApp/main.cpp
   C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
   C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
   C:/msys64/mingw64/include/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
@@ -1255,6 +1268,8 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj: C:/Programming/AirQualityApp/main.cpp
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/QtWidgets/qrubberband.h \
@@ -2449,6 +2464,7 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: C:/Programming/AirQualityA
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QFileDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
@@ -2456,6 +2472,7 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: C:/Programming/AirQualityA
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QMessageBox \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
@@ -2487,6 +2504,8 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: C:/Programming/AirQualityA
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qmessagebox.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
@@ -3034,9 +3053,9 @@ C:/msys64/mingw64/include/QtCharts/qchart.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
 
-C:/msys64/mingw64/include/sec_api/string_s.h:
-
 C:/msys64/mingw64/include/QtWidgets/QGraphicsView:
+
+C:/msys64/mingw64/include/sec_api/string_s.h:
 
 C:/msys64/mingw64/include/interlockedapi.h:
 
@@ -3127,8 +3146,6 @@ C:/Programming/AirQualityApp/include/api_client.hpp:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/indirect_array.h:
-
-C:/msys64/mingw64/include/QtCore/qtimezone.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
@@ -3638,6 +3655,16 @@ C:/msys64/mingw64/include/QtCore/qcontiguouscache.h:
 
 C:/msys64/mingw64/include/QtWidgets/QDateEdit:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
+
+C:/msys64/mingw64/include/nlohmann/detail/value_t.hpp:
+
+C:/msys64/mingw64/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+
+C:/msys64/mingw64/include/QtWidgets/QDialog:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
@@ -3645,6 +3672,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
 C:/msys64/mingw64/include/QtWidgets/QGroupBox:
 
 C:/msys64/mingw64/include/QtWidgets/QLabel:
+
+C:/msys64/mingw64/include/QtWidgets/QListWidget:
 
 C:/msys64/mingw64/include/QtWidgets/QPushButton:
 
@@ -3704,6 +3733,10 @@ C:/msys64/mingw64/include/QtCore/qloggingcategory.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
+C:/msys64/mingw64/include/QtWidgets/qdialog.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h:
 
 C:/msys64/mingw64/include/QtCore/qmetaobject.h:
@@ -3731,6 +3764,16 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h:
 C:/msys64/mingw64/include/QtWidgets/qlayout.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h:
+
+C:/msys64/mingw64/include/rpcdcep.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/QtWidgets/qlistview.h:
+
+C:/msys64/mingw64/include/QtWidgets/qlistwidget.h:
+
+C:/msys64/mingw64/include/psdk_inc/_ip_types.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h:
 
@@ -3837,8 +3880,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h:
-
-C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_wait.h:
 
@@ -4009,18 +4050,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h:
-
-C:/msys64/mingw64/include/rpcdcep.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
-
-C:/msys64/mingw64/include/nlohmann/detail/value_t.hpp:
-
-C:/msys64/mingw64/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h:
 
@@ -4230,11 +4259,11 @@ C:/msys64/mingw64/include/QtCore/qarraydatapointer.h:
 
 C:/msys64/mingw64/include/nlohmann/detail/meta/cpp_future.hpp:
 
-C:/msys64/mingw64/include/nlohmann/detail/meta/void_t.hpp:
+C:/msys64/mingw64/include/psdk_inc/_fd_types.h:
 
 C:/msys64/mingw64/include/QtCore/qtimeline.h:
 
-C:/msys64/mingw64/include/psdk_inc/_fd_types.h:
+C:/msys64/mingw64/include/nlohmann/detail/meta/void_t.hpp:
 
 C:/msys64/mingw64/include/nlohmann/detail/output/binary_writer.hpp:
 
@@ -4265,6 +4294,8 @@ C:/msys64/mingw64/include/pthread_unistd.h:
 C:/msys64/mingw64/include/sdks/_mingw_ddk.h:
 
 C:/msys64/mingw64/include/sec_api/stdlib_s.h:
+
+C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
 
 C:/msys64/mingw64/include/sec_api/wchar_s.h:
 
@@ -4594,8 +4625,6 @@ C:/msys64/mingw64/include/QtCore/qmimedatabase.h:
 
 C:/msys64/mingw64/include/psdk_inc/_ip_mreq1.h:
 
-C:/msys64/mingw64/include/psdk_inc/_ip_types.h:
-
 C:/msys64/mingw64/include/rpc.h:
 
 C:/msys64/mingw64/include/psdk_inc/_ws1_undef.h:
@@ -4675,10 +4704,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxcomplexintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
-
-C:/msys64/mingw64/include/QtWidgets/qdialog.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h:
 
 C:/msys64/mingw64/include/QtCore/qjsonvalue.h:
 
@@ -4899,6 +4924,8 @@ C:/msys64/mingw64/include/QtCore/qtemporarydir.h:
 C:/msys64/mingw64/include/QtCore/qtextcodec.h:
 
 C:/msys64/mingw64/include/QtCore/qthreadstorage.h:
+
+C:/msys64/mingw64/include/QtCore/qtimezone.h:
 
 C:/msys64/mingw64/include/QtCore/qtranslator.h:
 

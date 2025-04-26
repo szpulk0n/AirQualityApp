@@ -393,6 +393,11 @@ CMakeFiles/AirQualityApp.dir/AirQualityApp_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/mingw64/include/QtCharts/qdatetimeaxis.h \
  C:/msys64/mingw64/include/QtCharts/QValueAxis \
  C:/msys64/mingw64/include/QtCharts/qvalueaxis.h \
+ C:/msys64/mingw64/include/QtWidgets/QListWidget \
+ C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
+ C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+ C:/msys64/mingw64/include/QtWidgets/QDialog \
+ C:/msys64/mingw64/include/QtWidgets/qdialog.h \
  C:/Programming/AirQualityApp/include/api_client.hpp \
  C:/msys64/mingw64/include/nlohmann/json.hpp \
  C:/msys64/mingw64/include/nlohmann/adl_serializer.hpp \

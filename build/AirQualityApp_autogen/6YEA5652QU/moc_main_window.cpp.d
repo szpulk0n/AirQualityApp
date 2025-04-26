@@ -134,12 +134,14 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtWidgets/QComboBox \
   C:/msys64/mingw64/include/QtWidgets/QDateEdit \
+  C:/msys64/mingw64/include/QtWidgets/QDialog \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsView \
   C:/msys64/mingw64/include/QtWidgets/QGraphicsWidget \
   C:/msys64/mingw64/include/QtWidgets/QGroupBox \
   C:/msys64/mingw64/include/QtWidgets/QHBoxLayout \
   C:/msys64/mingw64/include/QtWidgets/QHeaderView \
   C:/msys64/mingw64/include/QtWidgets/QLabel \
+  C:/msys64/mingw64/include/QtWidgets/QListWidget \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/QPushButton \
   C:/msys64/mingw64/include/QtWidgets/QStatusBar \
@@ -154,6 +156,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtWidgets/qboxlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qcombobox.h \
   C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h \
+  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
   C:/msys64/mingw64/include/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicsitem.h \
   C:/msys64/mingw64/include/QtWidgets/qgraphicslayoutitem.h \
@@ -166,6 +169,8 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtWidgets/qlabel.h \
   C:/msys64/mingw64/include/QtWidgets/qlayout.h \
   C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
+  C:/msys64/mingw64/include/QtWidgets/qlistwidget.h \
   C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/QtWidgets/qrubberband.h \

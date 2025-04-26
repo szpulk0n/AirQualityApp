@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[12];
-    char stringdata0[159];
+    QByteArrayData data[15];
+    char stringdata0[202];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -41,16 +41,20 @@ QT_MOC_LITERAL(5, 49, 16), // "onSensorSelected"
 QT_MOC_LITERAL(6, 66, 11), // "refreshData"
 QT_MOC_LITERAL(7, 78, 9), // "showChart"
 QT_MOC_LITERAL(8, 88, 16), // "saveMeasurements"
-QT_MOC_LITERAL(9, 105, 21), // "saveMeasurementsToCSV"
-QT_MOC_LITERAL(10, 127, 8), // "filename"
-QT_MOC_LITERAL(11, 136, 22) // "saveMeasurementsToJSON"
+QT_MOC_LITERAL(9, 105, 22), // "saveMeasurementsToJSON"
+QT_MOC_LITERAL(10, 128, 8), // "filename"
+QT_MOC_LITERAL(11, 137, 21), // "openSavedMeasurements"
+QT_MOC_LITERAL(12, 159, 20), // "loadSavedMeasurement"
+QT_MOC_LITERAL(13, 180, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(14, 197, 4) // "item"
 
     },
     "MainWindow\0loadStations\0\0onStationSelected\0"
     "index\0onSensorSelected\0refreshData\0"
     "showChart\0saveMeasurements\0"
-    "saveMeasurementsToCSV\0filename\0"
-    "saveMeasurementsToJSON"
+    "saveMeasurementsToJSON\0filename\0"
+    "openSavedMeasurements\0loadSavedMeasurement\0"
+    "QListWidgetItem*\0item"
 };
 #undef QT_MOC_LITERAL
 
@@ -60,7 +64,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -68,14 +72,15 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   54,    2, 0x08 /* Private */,
-       3,    1,   55,    2, 0x08 /* Private */,
-       5,    1,   58,    2, 0x08 /* Private */,
-       6,    0,   61,    2, 0x08 /* Private */,
-       7,    0,   62,    2, 0x08 /* Private */,
-       8,    0,   63,    2, 0x08 /* Private */,
-       9,    1,   64,    2, 0x08 /* Private */,
-      11,    1,   67,    2, 0x08 /* Private */,
+       1,    0,   59,    2, 0x08 /* Private */,
+       3,    1,   60,    2, 0x08 /* Private */,
+       5,    1,   63,    2, 0x08 /* Private */,
+       6,    0,   66,    2, 0x08 /* Private */,
+       7,    0,   67,    2, 0x08 /* Private */,
+       8,    0,   68,    2, 0x08 /* Private */,
+       9,    1,   69,    2, 0x08 /* Private */,
+      11,    0,   72,    2, 0x08 /* Private */,
+      12,    1,   73,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -85,7 +90,8 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Bool, QMetaType::QString,   10,
-    QMetaType::Bool, QMetaType::QString,   10,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 13,   14,
 
        0        // eod
 };
@@ -102,10 +108,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 3: _t->refreshData(); break;
         case 4: _t->showChart(); break;
         case 5: _t->saveMeasurements(); break;
-        case 6: { bool _r = _t->saveMeasurementsToCSV((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 6: { bool _r = _t->saveMeasurementsToJSON((*reinterpret_cast< const QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 7: { bool _r = _t->saveMeasurementsToJSON((*reinterpret_cast< const QString(*)>(_a[1])));
-            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 7: _t->openSavedMeasurements(); break;
+        case 8: _t->loadSavedMeasurement((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -140,13 +146,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

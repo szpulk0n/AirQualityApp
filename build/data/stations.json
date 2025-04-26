@@ -603,15 +603,6 @@
         "province": "WIELKOPOLSKIE"
     },
     {
-        "address": "Złoty Róg",
-        "city": "Kraków",
-        "id": 10123,
-        "lat": 50.081197,
-        "lon": 19.895358,
-        "name": "Kraków, ul. Złoty Róg",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "Biernackiego",
         "city": "Mielec",
         "id": 10438,
@@ -619,15 +610,6 @@
         "lon": 21.440942,
         "name": "Mielec, ul. Biernackiego",
         "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Wadów",
-        "city": "Kraków",
-        "id": 10447,
-        "lat": 50.100569,
-        "lon": 20.122561,
-        "name": "Kraków, os. Wadów",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "ul. Słoneczna 18",
@@ -754,15 +736,6 @@
         "lon": 18.216261,
         "name": "Racibórz, Wojska Polskiego",
         "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "J. Bema",
-        "city": "Oświęcim",
-        "id": 10814,
-        "lat": 50.033083,
-        "lon": 19.245275,
-        "name": "Oświęcim, ul. J. Bema",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "Al. Józefa Piłsudskiego 34",
@@ -898,6 +871,15 @@
         "lon": 20.044386,
         "name": "Kraków, ul. Półłanki",
         "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. gen. J. Hallera 12",
+        "city": "Ostrołęka",
+        "id": 9114,
+        "lat": 53.083736,
+        "lon": 21.579322,
+        "name": "Ostrołęka, ul. Hallera",
+        "province": "MAZOWIECKIE"
     },
     {
         "address": "ul. Żołnierzy AK 9",
@@ -1233,15 +1215,6 @@
         "province": "PODLASKIE"
     },
     {
-        "address": "Pruchnicka",
-        "city": "Jarosław",
-        "id": 631,
-        "lat": 50.012083,
-        "lon": 22.674772,
-        "name": "Jarosław, ul. Pruchnicka",
-        "province": "PODKARPACKIE"
-    },
-    {
         "address": "ul. K.I.Gałczyńskiego 3",
         "city": "Zawiercie",
         "id": 11455,
@@ -1557,15 +1530,6 @@
         "province": "PODKARPACKIE"
     },
     {
-        "address": "os. Piastów",
-        "city": "Kraków",
-        "id": 10139,
-        "lat": 50.098508,
-        "lon": 20.018269,
-        "name": "Kraków, os. Piastów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "Parkowa 5",
         "city": "Rymanów-Zdrój",
         "id": 10414,
@@ -1701,24 +1665,6 @@
         "province": "PODKARPACKIE"
     },
     {
-        "address": "ul. 3 Maja",
-        "city": "Niepołomice",
-        "id": 455,
-        "lat": 50.035117,
-        "lon": 20.212689,
-        "name": "Niepołomice, ul. 3 Maja",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Solidarności 6",
-        "city": "Myślenice",
-        "id": 16753,
-        "lat": 49.831237,
-        "lon": 19.923591,
-        "name": "Myślenice",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "Kampinoski Park Narodowy",
         "city": "Granica",
         "id": 466,
@@ -1755,24 +1701,6 @@
         "province": "ŚLĄSKIE"
     },
     {
-        "address": "Orkana",
-        "city": "Rabka-Zdrój",
-        "id": 10446,
-        "lat": 49.608647,
-        "lon": 19.966008,
-        "name": "Rabka-Zdrój, ul. Orkana",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Wapienna",
-        "city": "Zabierzów",
-        "id": 11434,
-        "lat": 50.116028,
-        "lon": 19.800639,
-        "name": "Zabierzów, ul. Wapienna",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "ul. Chopina 37",
         "city": "Cieszyn",
         "id": 16406,
@@ -1807,15 +1735,6 @@
         "lon": 21.980511,
         "name": "Rzeszów, ul. Starzyńskiego",
         "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Lusińska",
-        "city": "Kraków",
-        "id": 11303,
-        "lat": 49.991442,
-        "lon": 19.936792,
-        "name": "Kraków, os. Swoszowice",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "Miła 17",
@@ -1881,12 +1800,12 @@
         "province": "MAŁOPOLSKIE"
     },
     {
-        "address": " Cegielniana",
-        "city": "Olkusz",
-        "id": 11301,
-        "lat": 50.284,
-        "lon": 19.564044,
-        "name": "Olkusz, ul. Cegielniana",
-        "province": "MAŁOPOLSKIE"
+        "address": "ul. Jurajska 7",
+        "city": "Kielce",
+        "id": 16497,
+        "lat": 50.887606,
+        "lon": 20.579965,
+        "name": "Kielce, ul. Jurajska",
+        "province": "ŚWIĘTOKRZYSKIE"
     }
 ]
