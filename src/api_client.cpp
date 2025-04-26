@@ -88,8 +88,8 @@
      }
      
      // Wyświetlenie odpowiedzi
-     if (verbose) std::cout << COLOR_GREEN << "Otrzymana odpowiedz (pierwsze 200 znakow): " << COLOR_RESET 
-               << readBuffer.substr(0, 200) << "..." << std::endl;
+     if (verbose) std::cout << COLOR_GREEN << "Otrzymana odpowiedz (pierwsze 50 znakow): " << COLOR_RESET 
+               << readBuffer.substr(0, 50) << "..." << std::endl;
      
      // Czyszczenie zasobów
      curl_easy_cleanup(curl);

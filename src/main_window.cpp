@@ -301,7 +301,7 @@
         // Debug info
         qDebug() << "Tworzenie wykresu dla parametru:" << paramName 
                 << "(" << paramFormula << ")";
-        qDebug() << "Liczba pomiarów:" << measurements.size();
+        qDebug() << "Liczba pomiarow:" << measurements.size();
         
         // Utworzenie serii danych
         QLineSeries *series = new QLineSeries();
@@ -322,13 +322,6 @@
             // Dodanie punktu do serii
             series->append(timestamp, measurement.value);
             
-            // Debug info dla pierwszych 5 punktów
-            if (series->count() <= 5) {
-                qDebug() << "Punkt" << series->count() << ":" 
-                        << dateTime.toString("yyyy-MM-dd hh:mm")
-                        << ", wartość:" << measurement.value;
-            }
-            
             // Aktualizacja wartości min/max
             minValue = std::min(minValue, measurement.value);
             maxValue = std::max(maxValue, measurement.value);
@@ -337,7 +330,7 @@
         }
         
         if (series->count() == 0) {
-            QMessageBox::warning(this, "Błąd", "Nie udało się utworzyć punktów wykresu");
+            QMessageBox::warning(this, "Blad", "Nie udalo się utworzyc punktow wykresu");
             delete series;
             delete chart;
             return false;
@@ -404,7 +397,7 @@
         // Wyświetl informację w pasku statusu
         statusLabel->setText("Wykres został zaktualizowany");
         
-        qDebug() << "Wykres utworzony pomyślnie";
+        qDebug() << "Wykres utworzony pomyslnie";
         return true;
     }
     catch (const std::exception& e) {
