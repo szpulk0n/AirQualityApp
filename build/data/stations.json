@@ -819,15 +819,6 @@
         "province": "LUBELSKIE"
     },
     {
-        "address": "Wapienna",
-        "city": "Zabierzów",
-        "id": 11434,
-        "lat": 50.116028,
-        "lon": 19.800639,
-        "name": "Zabierzów, ul. Wapienna",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "Ujęcie Wody",
         "city": "Gołuchów",
         "id": 11754,
@@ -945,6 +936,15 @@
         "province": "ŚWIĘTOKRZYSKIE"
     },
     {
+        "address": "ul. Jurajska 7",
+        "city": "Kielce",
+        "id": 16497,
+        "lat": 50.887606,
+        "lon": 20.579965,
+        "name": "Kielce, ul. Jurajska",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
         "address": "ul. Mickiewicza 10",
         "city": "Kluczbork",
         "id": 577,
@@ -1059,42 +1059,6 @@
         "lat": 50.069308,
         "lon": 20.053492,
         "name": "Kraków, ul. Bulwarowa",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Złoty Róg",
-        "city": "Kraków",
-        "id": 10123,
-        "lat": 50.081197,
-        "lon": 19.895358,
-        "name": "Kraków, ul. Złoty Róg",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "os. Piastów",
-        "city": "Kraków",
-        "id": 10139,
-        "lat": 50.098508,
-        "lon": 20.018269,
-        "name": "Kraków, os. Piastów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Wadów",
-        "city": "Kraków",
-        "id": 10447,
-        "lat": 50.100569,
-        "lon": 20.122561,
-        "name": "Kraków, os. Wadów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Lusińska",
-        "city": "Kraków",
-        "id": 11303,
-        "lat": 49.991442,
-        "lon": 19.936792,
-        "name": "Kraków, os. Swoszowice",
         "province": "MAŁOPOLSKIE"
     },
     {
@@ -1305,15 +1269,6 @@
         "province": "PODKARPACKIE"
     },
     {
-        "address": "Solidarności 6",
-        "city": "Myślenice",
-        "id": 16753,
-        "lat": 49.831237,
-        "lon": 19.923591,
-        "name": "Myślenice",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "ul. Świętego Wawrzyńca",
         "city": "Nakło nad Notecią",
         "id": 9798,
@@ -1321,15 +1276,6 @@
         "lon": 17.591539,
         "name": "Nakło nad Notecią, ul. Św. Wawrzyńca",
         "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. 3 Maja",
-        "city": "Niepołomice",
-        "id": 455,
-        "lat": 50.035117,
-        "lon": 20.212689,
-        "name": "Niepołomice, ul. 3 Maja",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "Szklarniowa",
@@ -1404,15 +1350,6 @@
         "province": "OPOLSKIE"
     },
     {
-        "address": " Cegielniana",
-        "city": "Olkusz",
-        "id": 11301,
-        "lat": 50.284,
-        "lon": 19.564044,
-        "name": "Olkusz, ul. Cegielniana",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
         "address": "ul. Puszkina 16",
         "city": "Olsztyn",
         "id": 877,
@@ -1474,15 +1411,6 @@
         "lon": 19.969041,
         "name": "Ostróda, ul. Piłsudskiego",
         "province": "WARMIŃSKO-MAZURSKIE"
-    },
-    {
-        "address": "J. Bema",
-        "city": "Oświęcim",
-        "id": 10814,
-        "lat": 50.033083,
-        "lon": 19.245275,
-        "name": "Oświęcim, ul. J. Bema",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "ul. Brzozowa 2",
@@ -1600,15 +1528,6 @@
         "lon": 22.756239,
         "name": "Przemyśl, ul. Grunwaldzka",
         "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Orkana",
-        "city": "Rabka-Zdrój",
-        "id": 10446,
-        "lat": 49.608647,
-        "lon": 19.966008,
-        "name": "Rabka-Zdrój, ul. Orkana",
-        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "ul. Wojska Polskiego 8",

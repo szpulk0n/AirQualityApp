@@ -71,68 +71,68 @@
      
      // Stylizacja głównego okna
      setStyleSheet(R"(
-         QMainWindow {
-             background-color: #f5f5f5;
-             border-radius: 15px;
-             border: 1px solid #cccccc;
-         }
-         QWidget#centralWidget {
-             background-color: #ffffff;
-             border-radius: 12px;
-             padding: 10px;
-         }
-         QGroupBox {
-             background-color: #fafafa;
-             border: 1px solid #dddddd;
-             border-radius: 8px;
-             margin-top: 10px;
-             padding: 10px;
-         }
-         QComboBox {
-             background-color: #ffffff;
-             border: 1px solid #cccccc;
-             border-radius: 5px;
-             padding: 5px;
-         }
-         QComboBox:hover {
-             background-color: #f0f0f0;
-         }
-         QPushButton {
-             background-color: #0078d4;
-             color: white;
-             border: none;
-             border-radius: 5px;
-             padding: 8px;
-         }
-         QPushButton:hover {
-             background-color: #005a9e;
-         }
-         QTableWidget {
-             background-color: #ffffff;
-             border: 1px solid #dddddd;
-             border-radius: 8px;
-         }
-         QTabWidget::pane {
-             border: 1px solid #dddddd;
-             border-radius: 8px;
-             background-color: #ffffff;
-         }
-         QTabWidget::tab-bar {
-             alignment: center;
-         }
-         QTabBar::tab {
-             background-color: #f0f0f0;
-             border: 1px solid #dddddd;
-             border-top-left-radius: 5px;
-             border-top-right-radius: 5px;
-             padding: 8px;
-             margin-right: 2px;
-         }
-         QTabBar::tab:selected {
-             background-color: #ffffff;
-             border-bottom: none;
-         }
-     )");
+        QMainWindow {
+            background-color: #b3e5fc;
+            border-radius: 15px;
+            border: 1px solid #81d4fa;
+        }
+        QWidget#centralWidget {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        QGroupBox {
+            background-color: #e0f7fa;
+            border: 1px solid #b0bec5;
+            border-radius: 8px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        QComboBox {
+            background-color: #ffffff;
+            border: 1px solid #b0bec5;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        QComboBox:hover {
+            background-color: #e1f5fe;
+        }
+        QPushButton {
+            background-color: #ffca28;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        QPushButton:hover {
+            background-color: #ffb300;
+        }
+        QTableWidget {
+            background-color: #ffffff;
+            border: 1px solid #b0bec5;
+            border-radius: 8px;
+        }
+        QTabWidget::pane {
+            border: 1px solid #b0bec5;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        QTabWidget::tab-bar {
+            alignment: center;
+        }
+        QTabBar::tab {
+            background-color: #e0f7fa;
+            border: 1px solid #b0bec5;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 8px;
+            margin-right: 2px;
+        }
+        QTabBar::tab:selected {
+            background-color: #ffffff;
+            border-bottom: none;
+        }
+    )");
      
      // Grupa wyboru stacji i czujnika
      QGroupBox *selectionGroup = new QGroupBox("Wybór stacji i parametru", this);
@@ -157,11 +157,11 @@
      
      // Przyciski akcji
      QHBoxLayout *buttonLayout = new QHBoxLayout();
-     refreshButton = new QPushButton("Odśwież dane", this);
+     //refreshButton = new QPushButton("Odśwież dane", this);
      saveButton = new QPushButton("Zapisz dane", this);
      openSavedButton = new QPushButton("Przeglądaj zapisane dane", this);
      saveButton->setEnabled(false);
-     buttonLayout->addWidget(refreshButton);
+     //buttonLayout->addWidget(refreshButton);
      buttonLayout->addWidget(saveButton);
      buttonLayout->addWidget(openSavedButton);
      
@@ -219,7 +219,7 @@
      // Połączenie sygnałów i slotów
      connect(stationComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onStationSelected);
      connect(sensorComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onSensorSelected);
-     connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
+     //connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
      connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveMeasurements);
      connect(openSavedButton, &QPushButton::clicked, this, &MainWindow::openSavedMeasurements);
  }
