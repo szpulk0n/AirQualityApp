@@ -20,34 +20,30 @@
  #define COLOR_CYAN    "\033[36m"
  
  // Funkcja pomocnicza do zapisywania odpowiedzi z libcurl
- static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
+ static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp){
      ((std::string*)userp)->append((char*)contents, size * nmemb);
      return size * nmemb;
  }
  
- ApiClient::ApiClient() : verbose(true) {
-     // Inicjalizacja libcurl
+ ApiClient::ApiClient() : verbose(true){
      curl_global_init(CURL_GLOBAL_DEFAULT);
-     
-     // Używamy tylko podstawowego adresu URL API
      baseUrl = "http://api.gios.gov.pl/pjp-api/rest";
      if (verbose) std::cout << COLOR_CYAN << "Inicjalizacja API z URL: " << baseUrl << COLOR_RESET << std::endl;
  }
  
- ApiClient::~ApiClient() {
-     // Czyszczenie zasobów libcurl
+ ApiClient::~ApiClient(){
      curl_global_cleanup();
  }
 
- void ApiClient::setVerbose(bool enabled) {
+ void ApiClient::setVerbose(bool enabled){
      verbose = enabled;
  }
  
- bool ApiClient::isVerbose() const {
+ bool ApiClient::isVerbose() const{
      return verbose;
  }
  
- json ApiClient::makeRequest(const std::string& endpoint) {
+ json ApiClient::makeRequest(const std::string& endpoint){
      // Sprawdź cache
      auto cacheIt = responseCache.find(endpoint);
      if (cacheIt != responseCache.end()) {

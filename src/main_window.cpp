@@ -12,6 +12,8 @@
  #include <QDateTime>
  #include <QTabWidget>
  #include <QtConcurrent/QtConcurrent>
+ #include <QFileDialog>
+ #include <fstream>
  #include <algorithm>
  #include <iostream>
  
@@ -61,10 +63,13 @@
      QHBoxLayout *buttonLayout = new QHBoxLayout();
      refreshButton = new QPushButton("Odśwież dane", this);
      showChartButton = new QPushButton("Pokaż wykres", this);
+     saveButton = new QPushButton("Zapisz dane", this);
      showChartButton->setEnabled(false);
+     saveButton->setEnabled(false);
      
      buttonLayout->addWidget(refreshButton);
      buttonLayout->addWidget(showChartButton);
+     buttonLayout->addWidget(saveButton);
      
      // Dodanie elementów do grupy wyboru
      selectionLayout->addLayout(stationLayout);
@@ -108,6 +113,7 @@
      connect(sensorComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &MainWindow::onSensorSelected);
      connect(refreshButton, &QPushButton::clicked, this, &MainWindow::refreshData);
      connect(showChartButton, &QPushButton::clicked, this, &MainWindow::showChart);
+     connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveMeasurements);
  }
  
  void MainWindow::loadStations() {
@@ -213,14 +219,16 @@
          dataTable->setRowCount(0);
          statusLabel->setText("Brak danych pomiarowych");
          showChartButton->setEnabled(false);
+         saveButton->setEnabled(false);
          return;
      }
      
      // Wypełnienie tabeli danymi
      fillDataTable();
      
-     // Aktywacja przycisku wykresu
+     // Aktywacja przycisków
      showChartButton->setEnabled(true);
+     saveButton->setEnabled(true);
      
      statusLabel->setText("Gotowy");
  }
@@ -398,3 +406,167 @@
      // Wyświetl informację w pasku statusu
      statusLabel->setText("Wykres został zaktualizowany");
  }
+
+void MainWindow::saveMeasurements() {
+    // Sprawdzenie czy są dane do zapisania
+    if (measurements.empty()) {
+        QMessageBox::warning(this, "Ostrzeżenie", "Brak danych do zapisania");
+        return;
+    }
+    
+    // Pobranie informacji o stacji i czujniku
+    int stationIndex = stationComboBox->currentIndex();
+    int sensorIndex = sensorComboBox->currentIndex();
+    
+    if (stationIndex < 0 || stationIndex >= static_cast<int>(stations.size()) ||
+        sensorIndex < 0 || sensorIndex >= static_cast<int>(sensors.size())) {
+        QMessageBox::warning(this, "Błąd", "Nie wybrano stacji lub czujnika");
+        return;
+    }
+    
+    // Utworzenie sugerowanej nazwy pliku na podstawie stacji i czujnika
+    QString defaultFileName = QString("pomiary_%1_%2_%3")
+        .arg(QString::fromStdString(stations[stationIndex].name).simplified().replace(" ", "_"))
+        .arg(QString::fromStdString(sensors[sensorIndex].paramFormula))
+        .arg(QDateTime::currentDateTime().toString("yyyy-MM-dd"));
+    
+    // Dialog zapisu pliku
+    QString selectedFilter;
+    QString fileName = QFileDialog::getSaveFileName(this,
+        "Zapisz dane pomiarowe",
+        QDir::homePath() + "/" + defaultFileName,
+        "Pliki CSV (*.csv);;Pliki JSON (*.json)",
+        &selectedFilter);
+    
+    if (fileName.isEmpty()) {
+        return; // Użytkownik anulował operację
+    }
+    
+    bool success = false;
+    
+    // Zapisanie w zależności od wybranego formatu
+    if (selectedFilter.contains("CSV")) {
+        if (!fileName.endsWith(".csv", Qt::CaseInsensitive)) {
+            fileName += ".csv";
+        }
+        success = saveMeasurementsToCSV(fileName);
+    }
+    else if (selectedFilter.contains("JSON")) {
+        if (!fileName.endsWith(".json", Qt::CaseInsensitive)) {
+            fileName += ".json";
+        }
+        success = saveMeasurementsToJSON(fileName);
+    }
+    
+    // Informacja o rezultacie
+    if (success) {
+        statusLabel->setText(QString("Zapisano dane do pliku: %1").arg(fileName));
+        QMessageBox::information(this, "Informacja", 
+            QString("Dane zostały zapisane pomyślnie do pliku:\n%1").arg(fileName));
+    }
+    else {
+        statusLabel->setText("Błąd podczas zapisywania danych");
+    }
+}
+
+bool MainWindow::saveMeasurementsToCSV(const QString& filename) {
+    try {
+        std::ofstream file(filename.toStdString());
+        if (!file.is_open()) {
+            QMessageBox::critical(this, "Błąd", 
+                QString("Nie można otworzyć pliku do zapisu: %1").arg(filename));
+            return false;
+        }
+        
+        // Pobranie informacji o stacji i czujniku
+        int stationIndex = stationComboBox->currentIndex();
+        int sensorIndex = sensorComboBox->currentIndex();
+        
+        // Nagłówek z metadanymi
+        file << "# Dane pomiarowe" << std::endl;
+        file << "# Stacja: " << stations[stationIndex].name << " (" 
+             << stations[stationIndex].city << ", " 
+             << stations[stationIndex].province << ")" << std::endl;
+        file << "# Parametr: " << sensors[sensorIndex].paramName << " (" 
+             << sensors[sensorIndex].paramFormula << ")" << std::endl;
+        file << "# Data eksportu: " << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss").toStdString() << std::endl;
+        file << std::endl;
+        
+        // Nagłówek kolumn
+        file << "Data,Wartość" << std::endl;
+        
+        // Dane
+        for (const auto& measurement : measurements) {
+            QDateTime dateTime = QDateTime::fromString(QString::fromStdString(measurement.date), Qt::ISODate);
+            file << dateTime.toString("yyyy-MM-dd hh:mm:ss").toStdString() << "," 
+                 << std::fixed << std::setprecision(2) << measurement.value << std::endl;
+        }
+        
+        file.close();
+        std::cout << "Zapisano dane do pliku CSV: " << filename.toStdString() << std::endl;
+        return true;
+    }
+    catch (const std::exception& e) {
+        QMessageBox::critical(this, "Błąd", 
+            QString("Wystąpił błąd podczas zapisywania do pliku CSV: %1").arg(e.what()));
+        return false;
+    }
+}
+
+bool MainWindow::saveMeasurementsToJSON(const QString& filename) {
+    try {
+        // Pobranie informacji o stacji i czujniku
+        int stationIndex = stationComboBox->currentIndex();
+        int sensorIndex = sensorComboBox->currentIndex();
+        
+        // Przygotowanie obiektu JSON
+        json jsonData;
+        
+        // Metadane
+        jsonData["metadata"]["station"]["id"] = stations[stationIndex].id;
+        jsonData["metadata"]["station"]["name"] = stations[stationIndex].name;
+        jsonData["metadata"]["station"]["city"] = stations[stationIndex].city;
+        jsonData["metadata"]["station"]["province"] = stations[stationIndex].province;
+        jsonData["metadata"]["station"]["location"]["lat"] = stations[stationIndex].lat;
+        jsonData["metadata"]["station"]["location"]["lon"] = stations[stationIndex].lon;
+        
+        jsonData["metadata"]["sensor"]["id"] = sensors[sensorIndex].id;
+        jsonData["metadata"]["sensor"]["paramName"] = sensors[sensorIndex].paramName;
+        jsonData["metadata"]["sensor"]["paramFormula"] = sensors[sensorIndex].paramFormula;
+        jsonData["metadata"]["sensor"]["paramCode"] = sensors[sensorIndex].paramCode;
+        
+        jsonData["metadata"]["exportDate"] = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss").toStdString();
+        
+        // Przygotowanie tablicy pomiarów
+        json measurementsArray = json::array();
+        
+        for (const auto& measurement : measurements) {
+            json item;
+            item["date"] = measurement.date;
+            item["value"] = measurement.value;
+            measurementsArray.push_back(item);
+        }
+        
+        // Dodanie pomiarów do głównego obiektu
+        jsonData["measurements"] = measurementsArray;
+        
+        // Zapis do pliku
+        std::ofstream file(filename.toStdString());
+        if (!file.is_open()) {
+            QMessageBox::critical(this, "Błąd", 
+                QString("Nie można otworzyć pliku do zapisu: %1").arg(filename));
+            return false;
+        }
+        
+        file << jsonData.dump(4); // Pretty print z wcięciem 4 spacji
+        file.close();
+        
+        std::cout << "Zapisano dane do pliku JSON: " << filename.toStdString() << std::endl;
+        return true;
+    }
+    catch (const std::exception& e) {
+        QMessageBox::critical(this, "Błąd", 
+            QString("Wystąpił błąd podczas zapisywania do pliku JSON: %1").arg(e.what()));
+        return false;
+    }
+}

@@ -16,15 +16,15 @@
      QApplication::setApplicationVersion("1.0");
      
      // Ekran powitalny
-     QSplashScreen splash(QPixmap(":/splash.png"));
+     QSplashScreen splash(QPixmap("welcome.png"));
      splash.show();
      
      // Inicjalizacja głównego okna
      MainWindow mainWindow;
      
      // Pokazanie głównego okna po krótkim opóźnieniu
-     //QTimer::singleShot(0, &splash, &QSplashScreen::close);
-     QTimer::singleShot(0, &mainWindow, &MainWindow::show);
+     QTimer::singleShot(1500, &splash, &QSplashScreen::close);
+     QTimer::singleShot(1500, &mainWindow, &MainWindow::show);
      
      return app.exec();
  }

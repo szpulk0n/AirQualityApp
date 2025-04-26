@@ -5,7 +5,7 @@
 
  #ifndef MAIN_WINDOW_HPP
  #define MAIN_WINDOW_HPP
- 
+
  #include <QMainWindow>
  #include <QComboBox>
  #include <QPushButton>
@@ -73,12 +73,32 @@
       * @brief Wyświetla wykres danych
       */
      void showChart();
+
+     /**
+      * @brief Zapisuje dane pomiarowe do pliku
+      */
+     void saveMeasurements();
+
+     /**
+      * @brief Zapisuje dane pomiarowe do pliku CSV
+      * @param filename Nazwa pliku
+      * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
+      */
+     bool saveMeasurementsToCSV(const QString& filename);
+
+     /**
+      * @brief Zapisuje dane pomiarowe do pliku JSON
+      * @param filename Nazwa pliku
+      * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
+      */
+     bool saveMeasurementsToJSON(const QString& filename);
  
  private:
      // Komponenty UI
      QComboBox *stationComboBox;
      QComboBox *sensorComboBox;
      QPushButton *refreshButton;
+     QPushButton *saveButton;
      QTableWidget *dataTable;
      QLabel *statusLabel;
      QChartView *chartView;

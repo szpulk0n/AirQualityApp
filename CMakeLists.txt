@@ -34,6 +34,9 @@ set(CMAKE_AUTOUIC ON)
 # Tworzenie katalogu dla plików danych
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/data)
 
+# Tworzenie katalogu dla zapisywanych danych
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/export)
+
 # Tworzenie pliku wykonalnego
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 

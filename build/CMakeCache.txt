@@ -26,10 +26,6 @@ AirQualityApp_SOURCE_DIR:STATIC=C:/Programming/AirQualityApp
 //Build documentation
 BUILD_DOCS:BOOL=ON
 
-//Create and install the HTML based API documentation (requires
-// Doxygen)
-BUILD_DOCUMENTATION:BOOL=OFF
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/msys64/mingw64/bin/addr2line.exe
 
