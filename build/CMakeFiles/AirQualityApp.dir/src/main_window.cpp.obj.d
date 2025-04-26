@@ -399,6 +399,18 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
  C:/msys64/mingw64/include/QtWidgets/QDialog \
  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
+ C:/msys64/mingw64/include/QtCore/QFutureWatcher \
+ C:/msys64/mingw64/include/QtCore/qfuturewatcher.h \
+ C:/msys64/mingw64/include/QtCore/qfuture.h \
+ C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
+ C:/msys64/mingw64/include/QtCore/qrunnable.h \
+ C:/msys64/mingw64/include/QtCore/qmutex.h \
+ C:/msys64/mingw64/include/QtCore/qtsan_impl.h \
+ C:/msys64/mingw64/include/QtCore/qexception.h \
+ C:/msys64/mingw64/include/QtCore/qresultstore.h \
+ C:/msys64/mingw64/include/QtCore/qdebug.h \
+ C:/msys64/mingw64/include/QtCore/qtextstream.h \
+ C:/msys64/mingw64/include/QtCore/qcontiguouscache.h \
  C:/msys64/mingw64/include/QtGui/QColor \
  C:/msys64/mingw64/include/QtGui/qcolor.h \
  C:/Programming/AirQualityApp/include/api_client.hpp \
@@ -521,15 +533,6 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/QtCore/qfileinfo.h \
  C:/msys64/mingw64/include/QtCore/QFuture \
  C:/msys64/mingw64/include/QtCore/qfuture.h \
- C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
- C:/msys64/mingw64/include/QtCore/qrunnable.h \
- C:/msys64/mingw64/include/QtCore/qmutex.h \
- C:/msys64/mingw64/include/QtCore/qtsan_impl.h \
- C:/msys64/mingw64/include/QtCore/qexception.h \
- C:/msys64/mingw64/include/QtCore/qresultstore.h \
- C:/msys64/mingw64/include/QtCore/qdebug.h \
- C:/msys64/mingw64/include/QtCore/qtextstream.h \
- C:/msys64/mingw64/include/QtCore/qcontiguouscache.h \
  C:/msys64/mingw64/include/QtWidgets/QSplitter \
  C:/msys64/mingw64/include/QtWidgets/qsplitter.h \
  C:/msys64/mingw64/include/QtCore/QDateTime \
@@ -614,8 +617,6 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/QtCore/qflags.h \
  C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
  C:/msys64/mingw64/include/QtCore/qfuturesynchronizer.h \
- C:/msys64/mingw64/include/QtCore/qfuture.h \
- C:/msys64/mingw64/include/QtCore/qfuturewatcher.h \
  C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
  C:/msys64/mingw64/include/QtCore/qglobalstatic.h \
  C:/msys64/mingw64/include/QtCore/qhash.h \
@@ -790,4 +791,6 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fstream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/iostream
+ C:/msys64/mingw64/include/c++/14.2.0/iostream \
+ C:/msys64/mingw64/include/QtWidgets/QGraphicsDropShadowEffect \
+ C:/msys64/mingw64/include/QtWidgets/qgraphicseffect.h

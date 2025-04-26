@@ -25,6 +25,7 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCharts/qlineseries.h
  mdp:C:/msys64/mingw64/include/QtCharts/qvalueaxis.h
  mdp:C:/msys64/mingw64/include/QtCharts/qxyseries.h
+ mdp:C:/msys64/mingw64/include/QtCore/QFutureWatcher
  mdp:C:/msys64/mingw64/include/QtCore/QMargins
  mdp:C:/msys64/mingw64/include/QtCore/QObject
  mdp:C:/msys64/mingw64/include/QtCore/QThread
@@ -44,14 +45,20 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qconfig.h
  mdp:C:/msys64/mingw64/include/QtCore/qcontainerfwd.h
  mdp:C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h
+ mdp:C:/msys64/mingw64/include/QtCore/qcontiguouscache.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreevent.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatastream.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatetime.h
  mdp:C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h
+ mdp:C:/msys64/mingw64/include/QtCore/qdebug.h
  mdp:C:/msys64/mingw64/include/QtCore/qelapsedtimer.h
+ mdp:C:/msys64/mingw64/include/QtCore/qexception.h
  mdp:C:/msys64/mingw64/include/QtCore/qfile.h
  mdp:C:/msys64/mingw64/include/QtCore/qfiledevice.h
  mdp:C:/msys64/mingw64/include/QtCore/qflags.h
+ mdp:C:/msys64/mingw64/include/QtCore/qfuture.h
+ mdp:C:/msys64/mingw64/include/QtCore/qfutureinterface.h
+ mdp:C:/msys64/mingw64/include/QtCore/qfuturewatcher.h
  mdp:C:/msys64/mingw64/include/QtCore/qgenericatomic.h
  mdp:C:/msys64/mingw64/include/QtCore/qglobal.h
  mdp:C:/msys64/mingw64/include/QtCore/qglobalstatic.h
@@ -67,6 +74,7 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qmap.h
  mdp:C:/msys64/mingw64/include/QtCore/qmargins.h
  mdp:C:/msys64/mingw64/include/QtCore/qmetatype.h
+ mdp:C:/msys64/mingw64/include/QtCore/qmutex.h
  mdp:C:/msys64/mingw64/include/QtCore/qnamespace.h
  mdp:C:/msys64/mingw64/include/QtCore/qnumeric.h
  mdp:C:/msys64/mingw64/include/QtCore/qobject.h
@@ -80,6 +88,8 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qrefcount.h
  mdp:C:/msys64/mingw64/include/QtCore/qregexp.h
  mdp:C:/msys64/mingw64/include/QtCore/qregularexpression.h
+ mdp:C:/msys64/mingw64/include/QtCore/qresultstore.h
+ mdp:C:/msys64/mingw64/include/QtCore/qrunnable.h
  mdp:C:/msys64/mingw64/include/QtCore/qscopedpointer.h
  mdp:C:/msys64/mingw64/include/QtCore/qset.h
  mdp:C:/msys64/mingw64/include/QtCore/qshareddata.h
@@ -95,7 +105,9 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qsysinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qsystemdetection.h
  mdp:C:/msys64/mingw64/include/QtCore/qtcore-config.h
+ mdp:C:/msys64/mingw64/include/QtCore/qtextstream.h
  mdp:C:/msys64/mingw64/include/QtCore/qthread.h
+ mdp:C:/msys64/mingw64/include/QtCore/qtsan_impl.h
  mdp:C:/msys64/mingw64/include/QtCore/qtypeinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qurl.h
  mdp:C:/msys64/mingw64/include/QtCore/qvariant.h
@@ -362,6 +374,7 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/c++/14.2.0/locale
  mdp:C:/msys64/mingw64/include/c++/14.2.0/map
  mdp:C:/msys64/mingw64/include/c++/14.2.0/memory
+ mdp:C:/msys64/mingw64/include/c++/14.2.0/mutex
  mdp:C:/msys64/mingw64/include/c++/14.2.0/new
  mdp:C:/msys64/mingw64/include/c++/14.2.0/numbers
  mdp:C:/msys64/mingw64/include/c++/14.2.0/numeric

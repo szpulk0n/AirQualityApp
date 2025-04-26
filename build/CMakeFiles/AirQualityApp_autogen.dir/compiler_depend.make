@@ -67,6 +67,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCharts/qlineseries.h \
   C:/msys64/mingw64/include/QtCharts/qvalueaxis.h \
   C:/msys64/mingw64/include/QtCharts/qxyseries.h \
+  C:/msys64/mingw64/include/QtCore/QFutureWatcher \
   C:/msys64/mingw64/include/QtCore/QMargins \
   C:/msys64/mingw64/include/QtCore/QObject \
   C:/msys64/mingw64/include/QtCore/QThread \
@@ -86,14 +87,20 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qconfig.h \
   C:/msys64/mingw64/include/QtCore/qcontainerfwd.h \
   C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h \
+  C:/msys64/mingw64/include/QtCore/qcontiguouscache.h \
   C:/msys64/mingw64/include/QtCore/qcoreevent.h \
   C:/msys64/mingw64/include/QtCore/qdatastream.h \
   C:/msys64/mingw64/include/QtCore/qdatetime.h \
   C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h \
+  C:/msys64/mingw64/include/QtCore/qdebug.h \
   C:/msys64/mingw64/include/QtCore/qelapsedtimer.h \
+  C:/msys64/mingw64/include/QtCore/qexception.h \
   C:/msys64/mingw64/include/QtCore/qfile.h \
   C:/msys64/mingw64/include/QtCore/qfiledevice.h \
   C:/msys64/mingw64/include/QtCore/qflags.h \
+  C:/msys64/mingw64/include/QtCore/qfuture.h \
+  C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
+  C:/msys64/mingw64/include/QtCore/qfuturewatcher.h \
   C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
   C:/msys64/mingw64/include/QtCore/qglobal.h \
   C:/msys64/mingw64/include/QtCore/qglobalstatic.h \
@@ -109,6 +116,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qmap.h \
   C:/msys64/mingw64/include/QtCore/qmargins.h \
   C:/msys64/mingw64/include/QtCore/qmetatype.h \
+  C:/msys64/mingw64/include/QtCore/qmutex.h \
   C:/msys64/mingw64/include/QtCore/qnamespace.h \
   C:/msys64/mingw64/include/QtCore/qnumeric.h \
   C:/msys64/mingw64/include/QtCore/qobject.h \
@@ -122,6 +130,8 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qrefcount.h \
   C:/msys64/mingw64/include/QtCore/qregexp.h \
   C:/msys64/mingw64/include/QtCore/qregularexpression.h \
+  C:/msys64/mingw64/include/QtCore/qresultstore.h \
+  C:/msys64/mingw64/include/QtCore/qrunnable.h \
   C:/msys64/mingw64/include/QtCore/qscopedpointer.h \
   C:/msys64/mingw64/include/QtCore/qset.h \
   C:/msys64/mingw64/include/QtCore/qshareddata.h \
@@ -137,7 +147,9 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qsysinfo.h \
   C:/msys64/mingw64/include/QtCore/qsystemdetection.h \
   C:/msys64/mingw64/include/QtCore/qtcore-config.h \
+  C:/msys64/mingw64/include/QtCore/qtextstream.h \
   C:/msys64/mingw64/include/QtCore/qthread.h \
+  C:/msys64/mingw64/include/QtCore/qtsan_impl.h \
   C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
   C:/msys64/mingw64/include/QtCore/qurl.h \
   C:/msys64/mingw64/include/QtCore/qvariant.h \
@@ -145,6 +157,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qvector.h \
   C:/msys64/mingw64/include/QtCore/qversiontagging.h \
   C:/msys64/mingw64/include/QtGui/QBrush \
+  C:/msys64/mingw64/include/QtGui/QColor \
   C:/msys64/mingw64/include/QtGui/QFont \
   C:/msys64/mingw64/include/QtGui/QPen \
   C:/msys64/mingw64/include/QtGui/qbrush.h \
@@ -403,6 +416,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
+  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
@@ -622,11 +636,11 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake:
 
 C:/msys64/mingw64/include/QtCore/qtcore-config.h:
 
+C:/msys64/mingw64/include/sec_api/stdio_s.h:
+
 C:/msys64/mingw64/include/QtCharts/QValueAxis:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
-
-C:/msys64/mingw64/include/sec_api/stdio_s.h:
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake:
 
@@ -662,9 +676,9 @@ C:/msys64/mingw64/include/QtWidgets/qframe.h:
 
 C:/msys64/mingw64/include/QtCore/qshareddata.h:
 
-C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake:
-
 C:/msys64/mingw64/include/nlohmann/thirdparty/hedley/hedley.hpp:
+
+C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake:
 
@@ -689,6 +703,8 @@ C:/msys64/mingw64/include/QtCharts/qlegend.h:
 C:/msys64/mingw64/include/nlohmann/detail/string_utils.hpp:
 
 C:/msys64/mingw64/include/QtCharts/QChartGlobal:
+
+C:/msys64/mingw64/include/QtGui/QColor:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -798,6 +814,8 @@ C:/msys64/mingw64/include/QtCharts/qabstractaxis.h:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake:
 
+C:/msys64/mingw64/include/QtCore/qfuturewatcher.h:
+
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake:
@@ -822,11 +840,15 @@ C:/Programming/AirQualityApp/src/main_window.cpp:
 
 C:/msys64/mingw64/include/nlohmann/detail/input/parser.hpp:
 
+C:/msys64/mingw64/include/QtCore/qdebug.h:
+
 C:/msys64/mingw64/include/QtCharts/QAbstractAxis:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h:
 
 C:/msys64/mingw64/include/QtCharts/QAbstractSeries:
+
+C:/msys64/mingw64/include/QtCore/qtextstream.h:
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake:
 
@@ -854,19 +876,25 @@ C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake:
 
 C:/msys64/mingw64/include/QtCharts/qvalueaxis.h:
 
-C:/msys64/mingw64/include/QtCharts/qxyseries.h:
-
-C:/msys64/mingw64/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
-
 C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake:
 
 C:/msys64/mingw64/include/c++/14.2.0/limits:
 
+C:/msys64/mingw64/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
+
+C:/msys64/mingw64/include/QtCharts/qxyseries.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/cstdint:
+
+C:/msys64/mingw64/include/QtCore/QFutureWatcher:
+
 C:/msys64/mingw64/include/QtCore/QMargins:
 
-C:/msys64/mingw64/include/QtCore/QObject:
-
 C:/msys64/mingw64/include/sched.h:
+
+C:/msys64/mingw64/include/QtCore/QObject:
 
 C:/msys64/mingw64/include/QtCore/QThread:
 
@@ -896,6 +924,8 @@ C:/msys64/mingw64/include/QtCore/qarraydata.h:
 
 C:/msys64/mingw64/include/QtCore/qatomic.h:
 
+C:/msys64/mingw64/include/QtCore/qrunnable.h:
+
 C:/msys64/mingw64/include/QtCore/qdatetime.h:
 
 C:/msys64/mingw64/include/QtCore/qatomic_cxx11.h:
@@ -924,6 +954,10 @@ C:/msys64/mingw64/include/QtGui/qcolor.h:
 
 C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h:
 
+C:/msys64/mingw64/include/QtCore/qcontiguouscache.h:
+
+C:/msys64/mingw64/include/QtWidgets/QDateEdit:
+
 C:/msys64/mingw64/include/QtCore/qdatastream.h:
 
 C:/msys64/mingw64/include/QtCore/qsysinfo.h:
@@ -936,6 +970,10 @@ C:/msys64/mingw64/lib/cmake/CURL/CURLConfigVersion.cmake:
 
 C:/msys64/mingw64/include/QtCore/qelapsedtimer.h:
 
+C:/msys64/mingw64/include/QtCore/qexception.h:
+
+C:/msys64/mingw64/include/QtCore/qstring.h:
+
 C:/msys64/mingw64/include/QtCore/qfile.h:
 
 C:/msys64/mingw64/include/QtCore/qfiledevice.h:
@@ -947,6 +985,22 @@ C:/msys64/mingw64/include/QtWidgets/qgraphicsview.h:
 C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake:
 
 C:/msys64/mingw64/include/QtCore/qflags.h:
+
+C:/msys64/mingw64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake:
+
+C:/msys64/mingw64/include/QtCore/qstringalgorithms.h:
+
+C:/msys64/mingw64/include/QtWidgets/qabstractslider.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
+
+C:/msys64/mingw64/include/process.h:
+
+C:/msys64/mingw64/include/QtCore/qfuture.h:
+
+C:/msys64/mingw64/include/QtCore/qfutureinterface.h:
+
+C:/msys64/mingw64/include/QtWidgets/qabstractitemdelegate.h:
 
 C:/msys64/mingw64/include/QtCore/qlist.h:
 
@@ -1002,6 +1056,12 @@ C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake:
 
 C:/msys64/mingw64/include/QtWidgets/qlayoutitem.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
+
+C:/msys64/mingw64/include/QtWidgets/qcombobox.h:
+
+C:/msys64/mingw64/include/QtCore/qmutex.h:
+
 C:/msys64/mingw64/include/QtCore/qnamespace.h:
 
 C:/msys64/mingw64/include/QtCore/qnumeric.h:
@@ -1048,6 +1108,8 @@ C:/msys64/mingw64/include/QtCore/qregularexpression.h:
 
 C:/msys64/mingw64/include/QtWidgets/qlabel.h:
 
+C:/msys64/mingw64/include/QtCore/qresultstore.h:
+
 C:/msys64/mingw64/include/QtCore/qscopedpointer.h:
 
 C:/msys64/mingw64/include/QtCore/qset.h:
@@ -1066,18 +1128,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
 
 C:/msys64/mingw64/include/QtCore/qsize.h:
 
-C:/msys64/mingw64/include/QtCore/qstring.h:
-
-C:/msys64/mingw64/include/process.h:
-
-C:/msys64/mingw64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake:
-
-C:/msys64/mingw64/include/QtCore/qstringalgorithms.h:
-
-C:/msys64/mingw64/include/QtWidgets/qabstractslider.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
-
 C:/msys64/mingw64/include/QtCore/qstringlist.h:
 
 C:/msys64/mingw64/include/QtCore/qstringmatcher.h:
@@ -1091,6 +1141,12 @@ C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake:
 C:/msys64/mingw64/include/QtCore/qsystemdetection.h:
 
 C:/msys64/mingw64/include/QtCore/qthread.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
+
+C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake:
+
+C:/msys64/mingw64/include/QtCore/qtsan_impl.h:
 
 C:/msys64/mingw64/include/QtCore/qtypeinfo.h:
 
@@ -1141,8 +1197,6 @@ C:/msys64/mingw64/include/QtGui/qevent.h:
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake:
 
 C:/msys64/mingw64/include/QtGui/qfont.h:
-
-C:/msys64/mingw64/include/pthread_signal.h:
 
 C:/msys64/mingw64/include/QtGui/qfontinfo.h:
 
@@ -1198,8 +1252,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h:
 
 C:/msys64/mingw64/include/QtWidgets/QComboBox:
 
-C:/msys64/mingw64/include/QtWidgets/QDateEdit:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
 
 C:/msys64/mingw64/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
@@ -1230,8 +1282,6 @@ C:/msys64/mingw64/include/QtWidgets/QVBoxLayout:
 
 C:/msys64/mingw64/include/QtWidgets/qabstractbutton.h:
 
-C:/msys64/mingw64/include/QtWidgets/qabstractitemdelegate.h:
-
 C:/msys64/mingw64/include/QtWidgets/qabstractitemview.h:
 
 C:/msys64/mingw64/include/QtWidgets/qabstractscrollarea.h:
@@ -1245,10 +1295,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
 C:/msys64/mingw64/include/QtWidgets/qabstractspinbox.h:
 
 C:/msys64/mingw64/include/QtWidgets/qboxlayout.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
-
-C:/msys64/mingw64/include/QtWidgets/qcombobox.h:
 
 C:/msys64/mingw64/include/QtWidgets/qdatetimeedit.h:
 
@@ -1426,9 +1472,9 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h:
-
 C:/msys64/mingw64/include/nlohmann/ordered_map.hpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/mask_array.h:
 
@@ -1471,12 +1517,6 @@ C:/msys64/mingw64/include/nlohmann/detail/iterators/primitive_iterator.hpp:
 C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/cstdint:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h:
 
@@ -1556,6 +1596,8 @@ C:/msys64/mingw64/include/c++/14.2.0/map:
 
 C:/msys64/mingw64/include/c++/14.2.0/memory:
 
+C:/msys64/mingw64/include/c++/14.2.0/mutex:
+
 C:/msys64/mingw64/include/c++/14.2.0/ostream:
 
 C:/msys64/mingw64/include/c++/14.2.0/stdexcept:
@@ -1568,9 +1610,9 @@ C:/msys64/mingw64/include/nlohmann/detail/iterators/iter_impl.hpp:
 
 C:/msys64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc:
 
-C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc:
-
 C:/msys64/mingw64/include/pthread_time.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc:
 
@@ -1658,6 +1700,8 @@ C:/msys64/mingw64/include/pthread.h:
 
 C:/msys64/mingw64/include/pthread_compat.h:
 
+C:/msys64/mingw64/include/pthread_signal.h:
+
 C:/msys64/mingw64/include/pthread_unistd.h:
 
 C:/msys64/mingw64/include/sdks/_mingw_ddk.h:
@@ -1729,7 +1773,5 @@ C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake:
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake:
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake:
-
-C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake:
 
 C:/msys64/mingw64/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake:

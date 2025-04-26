@@ -410,6 +410,18 @@ CMakeFiles/AirQualityApp.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/QtWidgets/qlistview.h \
  C:/msys64/mingw64/include/QtWidgets/QDialog \
  C:/msys64/mingw64/include/QtWidgets/qdialog.h \
+ C:/msys64/mingw64/include/QtCore/QFutureWatcher \
+ C:/msys64/mingw64/include/QtCore/qfuturewatcher.h \
+ C:/msys64/mingw64/include/QtCore/qfuture.h \
+ C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
+ C:/msys64/mingw64/include/QtCore/qrunnable.h \
+ C:/msys64/mingw64/include/QtCore/qmutex.h \
+ C:/msys64/mingw64/include/QtCore/qtsan_impl.h \
+ C:/msys64/mingw64/include/QtCore/qexception.h \
+ C:/msys64/mingw64/include/QtCore/qresultstore.h \
+ C:/msys64/mingw64/include/QtCore/qdebug.h \
+ C:/msys64/mingw64/include/QtCore/qtextstream.h \
+ C:/msys64/mingw64/include/QtCore/qcontiguouscache.h \
  C:/msys64/mingw64/include/QtGui/QColor \
  C:/msys64/mingw64/include/QtGui/qcolor.h \
  C:/Programming/AirQualityApp/include/api_client.hpp \

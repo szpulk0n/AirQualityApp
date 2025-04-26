@@ -21,6 +21,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCharts/qlineseries.h \
   C:/msys64/mingw64/include/QtCharts/qvalueaxis.h \
   C:/msys64/mingw64/include/QtCharts/qxyseries.h \
+  C:/msys64/mingw64/include/QtCore/QFutureWatcher \
   C:/msys64/mingw64/include/QtCore/QMargins \
   C:/msys64/mingw64/include/QtCore/QObject \
   C:/msys64/mingw64/include/QtCore/QThread \
@@ -40,14 +41,20 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCore/qconfig.h \
   C:/msys64/mingw64/include/QtCore/qcontainerfwd.h \
   C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h \
+  C:/msys64/mingw64/include/QtCore/qcontiguouscache.h \
   C:/msys64/mingw64/include/QtCore/qcoreevent.h \
   C:/msys64/mingw64/include/QtCore/qdatastream.h \
   C:/msys64/mingw64/include/QtCore/qdatetime.h \
   C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h \
+  C:/msys64/mingw64/include/QtCore/qdebug.h \
   C:/msys64/mingw64/include/QtCore/qelapsedtimer.h \
+  C:/msys64/mingw64/include/QtCore/qexception.h \
   C:/msys64/mingw64/include/QtCore/qfile.h \
   C:/msys64/mingw64/include/QtCore/qfiledevice.h \
   C:/msys64/mingw64/include/QtCore/qflags.h \
+  C:/msys64/mingw64/include/QtCore/qfuture.h \
+  C:/msys64/mingw64/include/QtCore/qfutureinterface.h \
+  C:/msys64/mingw64/include/QtCore/qfuturewatcher.h \
   C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
   C:/msys64/mingw64/include/QtCore/qglobal.h \
   C:/msys64/mingw64/include/QtCore/qglobalstatic.h \
@@ -63,6 +70,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCore/qmap.h \
   C:/msys64/mingw64/include/QtCore/qmargins.h \
   C:/msys64/mingw64/include/QtCore/qmetatype.h \
+  C:/msys64/mingw64/include/QtCore/qmutex.h \
   C:/msys64/mingw64/include/QtCore/qnamespace.h \
   C:/msys64/mingw64/include/QtCore/qnumeric.h \
   C:/msys64/mingw64/include/QtCore/qobject.h \
@@ -76,6 +84,8 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCore/qrefcount.h \
   C:/msys64/mingw64/include/QtCore/qregexp.h \
   C:/msys64/mingw64/include/QtCore/qregularexpression.h \
+  C:/msys64/mingw64/include/QtCore/qresultstore.h \
+  C:/msys64/mingw64/include/QtCore/qrunnable.h \
   C:/msys64/mingw64/include/QtCore/qscopedpointer.h \
   C:/msys64/mingw64/include/QtCore/qset.h \
   C:/msys64/mingw64/include/QtCore/qshareddata.h \
@@ -91,7 +101,9 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCore/qsysinfo.h \
   C:/msys64/mingw64/include/QtCore/qsystemdetection.h \
   C:/msys64/mingw64/include/QtCore/qtcore-config.h \
+  C:/msys64/mingw64/include/QtCore/qtextstream.h \
   C:/msys64/mingw64/include/QtCore/qthread.h \
+  C:/msys64/mingw64/include/QtCore/qtsan_impl.h \
   C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
   C:/msys64/mingw64/include/QtCore/qurl.h \
   C:/msys64/mingw64/include/QtCore/qvariant.h \
@@ -358,6 +370,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
+  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
