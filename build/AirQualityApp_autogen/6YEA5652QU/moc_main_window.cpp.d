@@ -99,6 +99,7 @@ C:/Programming/AirQualityApp/build/AirQualityApp_autogen/6YEA5652QU/moc_main_win
   C:/msys64/mingw64/include/QtCore/qvector.h \
   C:/msys64/mingw64/include/QtCore/qversiontagging.h \
   C:/msys64/mingw64/include/QtGui/QBrush \
+  C:/msys64/mingw64/include/QtGui/QColor \
   C:/msys64/mingw64/include/QtGui/QFont \
   C:/msys64/mingw64/include/QtGui/QPen \
   C:/msys64/mingw64/include/QtGui/qbrush.h \

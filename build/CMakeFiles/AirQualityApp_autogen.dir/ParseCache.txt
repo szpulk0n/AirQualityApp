@@ -103,6 +103,7 @@ C:/Programming/AirQualityApp/include/main_window.hpp
  mdp:C:/msys64/mingw64/include/QtCore/qvector.h
  mdp:C:/msys64/mingw64/include/QtCore/qversiontagging.h
  mdp:C:/msys64/mingw64/include/QtGui/QBrush
+ mdp:C:/msys64/mingw64/include/QtGui/QColor
  mdp:C:/msys64/mingw64/include/QtGui/QFont
  mdp:C:/msys64/mingw64/include/QtGui/QPen
  mdp:C:/msys64/mingw64/include/QtGui/qbrush.h

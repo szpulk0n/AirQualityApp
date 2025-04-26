@@ -23,6 +23,8 @@
 #include <QListWidget>
 #include <QDialog>
 #include <memory>
+#include <map>
+#include <QColor>
 
 QT_CHARTS_USE_NAMESPACE
 
@@ -108,6 +110,7 @@ private:
     std::vector<Station> stations;
     std::vector<Sensor> sensors;
     std::vector<Measurement> measurements;
+    std::map<int, QColor> sensorColors; // Mapa ID czujnika na kolor
     
     // Ścieżka do zapisu pomiarów
     QString exportPath;

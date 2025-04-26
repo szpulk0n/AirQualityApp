@@ -145,6 +145,7 @@ AirQualityApp_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/QtCore/qvector.h \
   C:/msys64/mingw64/include/QtCore/qversiontagging.h \
   C:/msys64/mingw64/include/QtGui/QBrush \
+  C:/msys64/mingw64/include/QtGui/QColor \
   C:/msys64/mingw64/include/QtGui/QFont \
   C:/msys64/mingw64/include/QtGui/QPen \
   C:/msys64/mingw64/include/QtGui/qbrush.h \
@@ -2429,6 +2430,7 @@ CMakeFiles/AirQualityApp.dir/src/main_window.cpp.obj: C:/Programming/AirQualityA
   C:/msys64/mingw64/include/QtCore/qwineventnotifier.h \
   C:/msys64/mingw64/include/QtCore/qxmlstream.h \
   C:/msys64/mingw64/include/QtGui/QBrush \
+  C:/msys64/mingw64/include/QtGui/QColor \
   C:/msys64/mingw64/include/QtGui/QFont \
   C:/msys64/mingw64/include/QtGui/QPen \
   C:/msys64/mingw64/include/QtGui/qbrush.h \
@@ -2905,11 +2907,11 @@ C:/Program\ Files/CMake/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake:
 
 C:/msys64/mingw64/include/QtCore/qtcore-config.h:
 
-C:/msys64/mingw64/include/sec_api/stdio_s.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
 
 C:/msys64/mingw64/include/QtCharts/QValueAxis:
+
+C:/msys64/mingw64/include/sec_api/stdio_s.h:
 
 C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake:
 
@@ -2988,6 +2990,8 @@ C:/msys64/mingw64/include/rpcdce.h:
 C:/msys64/mingw64/include/QtCharts/qlegend.h:
 
 C:/msys64/mingw64/include/nlohmann/detail/string_utils.hpp:
+
+C:/msys64/mingw64/include/QtGui/QColor:
 
 C:/msys64/mingw64/include/QtCharts/QChartGlobal:
 
@@ -3881,9 +3885,9 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_wait.h:
-
 C:/msys64/mingw64/include/QtCore/qthreadpool.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_wait.h:
 
 C:/msys64/mingw64/include/mciapi.h:
 
