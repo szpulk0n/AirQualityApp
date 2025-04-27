@@ -5,10 +5,36 @@ project(AirQualityApp VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Dodanie polityki dla starszych wersji Google Test
+if(POLICY CMP0135)
+  cmake_policy(SET CMP0135 NEW)
+endif()
+
+# Włączenie testowania
+enable_testing()
+
+# Opcja do kompilacji testów
+option(BUILD_TESTS "Build the tests" ON)
+
 # Automatyczne znajdowanie wymaganych pakietów
 find_package(Qt5 COMPONENTS Core Widgets Concurrent Charts REQUIRED)
 find_package(CURL REQUIRED)
 find_package(nlohmann_json 3.9.0 REQUIRED)
+
+# Jeśli włączone testy, znajdź Google Test
+if(BUILD_TESTS)
+    # Dodanie zewnętrznych zależności (Google Test)
+    include(FetchContent)
+    FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG v1.14.0  # Używamy najnowszej wersji
+    )
+    # Ustawienie zmiennych konfiguracyjnych dla Google Test
+    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    set(CMAKE_POLICY_DEFAULT_CMP0048 NEW)
+    FetchContent_MakeAvailable(googletest)
+endif()
 
 # Ścieżki do plików nagłówkowych
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -49,6 +75,14 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     CURL::libcurl
     nlohmann_json::nlohmann_json
 )
+
+# Dodanie katalogu z testami, jeśli są włączone
+if(BUILD_TESTS)
+    add_subdirectory(tests)
+    message(STATUS "Google Tests enabled. Build with -DBUILD_TESTS=OFF to disable.")
+else()
+    message(STATUS "Google Tests disabled. Build with -DBUILD_TESTS=ON to enable.")
+endif()
 
 # ======== Konfiguracja Doxygen ========
 

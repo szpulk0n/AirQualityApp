@@ -1,75 +1,111 @@
 [
     {
-        "address": "ul. Strażacka 7",
-        "city": "Czerniawa",
-        "id": 11,
-        "lat": 50.912475,
-        "lon": 15.31219,
-        "name": "Czerniawa",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "",
+        "city": "Augustów",
+        "id": 11916,
+        "lat": 53.85255,
+        "lon": 22.984686,
+        "name": "Augustów, Uzdrowisko",
+        "province": "PODLASKIE"
     },
     {
-        "address": "ul. Piłsudskiego 26",
-        "city": "Dzierżoniów",
-        "id": 16,
-        "lat": 50.732817,
-        "lon": 16.64805,
-        "name": "Dzierżoniów, ul. Piłsudskiego",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "Osiedle PAN 1",
+        "city": "Belsk Duży",
+        "id": 460,
+        "lat": 51.835242,
+        "lon": 20.791912,
+        "name": "Belsk Duży, IGF PAN",
+        "province": "MAZOWIECKIE"
     },
     {
-        "address": "ul. Szkolna 8",
-        "city": "Kłodzko",
-        "id": 38,
-        "lat": 50.433493,
-        "lon": 16.65366,
-        "name": "Kłodzko, ul. Szkolna",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "ul. Orzechowa",
+        "city": "Biała Podlaska",
+        "id": 236,
+        "lat": 52.029194,
+        "lon": 23.149389,
+        "name": "Biała Podlaska, ul. Orzechowa",
+        "province": "LUBELSKIE"
     },
     {
-        "address": "al. Rzeczypospolitej 10/12",
-        "city": "Legnica",
-        "id": 52,
-        "lat": 51.204503,
-        "lon": 16.180513,
-        "name": "Legnica, al. Rzeczypospolitej",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "ul. Warszawska 75 A",
+        "city": "Białystok",
+        "id": 609,
+        "lat": 53.129306,
+        "lon": 23.181744,
+        "name": "Białystok, ul. Warszawska",
+        "province": "PODLASKIE"
     },
     {
-        "address": "ul. Bartnicza",
-        "city": "Wrocław",
-        "id": 114,
-        "lat": 51.115933,
-        "lon": 17.141125,
-        "name": "Wrocław, ul. Bartnicza",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "ul. 42 Pułku Piechoty 117",
+        "city": "Białystok",
+        "id": 11174,
+        "lat": 53.144122,
+        "lon": 23.216322,
+        "name": "Białystok, ul. 42 Pułku Piechoty",
+        "province": "PODLASKIE"
     },
     {
-        "address": "ul. Wyb. J.Conrada-Korzeniowskiego 18",
-        "city": "Wrocław",
-        "id": 117,
-        "lat": 51.129378,
-        "lon": 17.02925,
-        "name": "Wrocław, wyb. Conrada-Korzeniowskiego",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "Al. Józefa Piłsudskiego 34",
+        "city": "Białystok",
+        "id": 11814,
+        "lat": 53.135286,
+        "lon": 23.161325,
+        "name": "Białystok, al.Piłsudskiego",
+        "province": "PODLASKIE"
     },
     {
-        "address": "al. Wiśniowa/ul. Powst. Śląskich",
-        "city": "Wrocław",
-        "id": 129,
-        "lat": 51.086225,
-        "lon": 17.012689,
-        "name": "Wrocław, al. Wiśniowa",
-        "province": "DOLNOŚLĄSKIE"
+        "address": "ul. Upalna 26",
+        "city": "Białystok",
+        "id": 17658,
+        "lat": 53.129601,
+        "lon": 23.108054,
+        "name": "Białystok, ul. Upalna",
+        "province": "PODLASKIE"
     },
     {
-        "address": "ul. Solankowa",
-        "city": "Inowrocław",
-        "id": 143,
-        "lat": 52.793122,
-        "lon": 18.241044,
-        "name": "Inowrocław, ul. Solankowa",
-        "province": "KUJAWSKO-POMORSKIE"
+        "address": "ul. Kossak-Szczuckiej 19",
+        "city": "Bielsko-Biała",
+        "id": 789,
+        "lat": 49.813464,
+        "lon": 19.027318,
+        "name": "Bielsko-Biała, ul. Kossak-Szczuckiej",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Partyzantów",
+        "city": "Bielsko-Biała",
+        "id": 10158,
+        "lat": 49.802075,
+        "lon": 19.04861,
+        "name": "Bielsko-Biała, ul.Partyzantów",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Drapałka 4",
+        "city": "Borówiec",
+        "id": 950,
+        "lat": 52.27672,
+        "lon": 17.074187,
+        "name": "Borówiec, ul. Drapałka",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "",
+        "city": "Borsukowizna",
+        "id": 612,
+        "lat": 53.215492,
+        "lon": 23.642153,
+        "name": "Borsukowizna, Szkółka Leśna",
+        "province": "PODLASKIE"
+    },
+    {
+        "address": "ul. Poprzeczna 1",
+        "city": "Brzeg",
+        "id": 16413,
+        "lat": 50.849509,
+        "lon": 17.462579,
+        "name": "Brzeg, ul. Poprzeczna",
+        "province": "OPOLSKIE"
     },
     {
         "address": "ul. Warszawska 10",
@@ -81,310 +117,76 @@
         "province": "KUJAWSKO-POMORSKIE"
     },
     {
-        "address": "Pojezierze Chełmińskie",
-        "city": "Koniczynka",
-        "id": 190,
-        "lat": 53.080647,
-        "lon": 18.684258,
-        "name": "Koniczynka, Pojezierze Chełmińskie",
+        "address": "ul. Jeździecka",
+        "city": "Bydgoszcz",
+        "id": 11576,
+        "lat": 53.175214,
+        "lon": 18.044164,
+        "name": "Bydgoszcz, ul. Jeździecka",
         "province": "KUJAWSKO-POMORSKIE"
     },
     {
-        "address": "ul. Dziewulskiego 1",
-        "city": "Toruń",
-        "id": 206,
-        "lat": 53.028647,
-        "lon": 18.666103,
-        "name": "Toruń, ul. Dziewulskiego",
-        "province": "KUJAWSKO-POMORSKIE"
+        "address": "Miła 17",
+        "city": "Bytów",
+        "id": 16270,
+        "lat": 54.1727,
+        "lon": 17.49299,
+        "name": "Bytów, ul. Miła",
+        "province": "POMORSKIE"
     },
     {
-        "address": "ul. Przy Kaszowniku",
-        "city": "Toruń",
-        "id": 208,
-        "lat": 53.017628,
-        "lon": 18.612808,
-        "name": "Toruń, ul. Przy Kaszowniku",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "Bory Tucholskie",
-        "city": "Zielonka",
-        "id": 232,
-        "lat": 53.662117,
-        "lon": 17.934017,
-        "name": "Zielonka, Bory Tucholskie",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Obywatelska 13",
-        "city": "Lublin",
-        "id": 266,
-        "lat": 51.259431,
-        "lon": 22.569133,
-        "name": "Lublin, ul. Obywatelska",
+        "address": "ul. Połaniecka",
+        "city": "Chełm",
+        "id": 11360,
+        "lat": 51.122147,
+        "lon": 23.473075,
+        "name": "Chełm, ul. Połaniecka",
         "province": "LUBELSKIE"
     },
     {
-        "address": "Ujęcie wody",
-        "city": "Gajew",
-        "id": 291,
-        "lat": 52.143258,
-        "lon": 19.233217,
-        "name": "Gajew, Ujęcie Wody",
-        "province": "ŁÓDZKIE"
+        "address": "S. Małachowskiego 7",
+        "city": "Chojnów",
+        "id": 12056,
+        "lat": 51.27428,
+        "lon": 15.929804,
+        "name": "Chojnów, ul. S. Małachowskiego ",
+        "province": "DOLNOŚLĄSKIE"
     },
     {
-        "address": "ul. Czernika 1/3",
-        "city": "Łódź",
-        "id": 295,
-        "lat": 51.75805,
-        "lon": 19.529786,
-        "name": "Łódź, ul. Czernika",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "ul. Gdańska 16",
-        "city": "Łódź",
-        "id": 296,
-        "lat": 51.775378,
-        "lon": 19.450992,
-        "name": "Łódź, ul. Gdańska",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "ul. Konstantynowska",
-        "city": "Pabianice",
-        "id": 314,
-        "lat": 51.667981,
-        "lon": 19.368683,
-        "name": "Pabianice, ul. Konstantynowska",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "Ujęcie wody",
-        "city": "Parzniewice",
-        "id": 319,
-        "lat": 51.291175,
-        "lon": 19.517556,
-        "name": "Parzniewice, Ujęcie Wody",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "ul. Krakowskie Przedmieście 13",
-        "city": "Piotrków Trybunalski",
-        "id": 322,
-        "lat": 51.404406,
-        "lon": 19.696956,
-        "name": "Piotrków Trybunalski, ul. Krakowskie Przedmieście",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "ul. Kosynierów Gdyńskich",
-        "city": "Gorzów Wielkopolski",
-        "id": 361,
-        "lat": 52.738214,
-        "lon": 15.228667,
-        "name": "Gorzów Wlkp. ul. Kosynierów Gdyńskich",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "ul. Dudka",
-        "city": "Sulęcin",
-        "id": 376,
-        "lat": 52.437722,
-        "lon": 15.122444,
-        "name": "Sulęcin ul. Dudka",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "ul. Kazimierza Wielkiego",
-        "city": "Wschowa",
-        "id": 379,
-        "lat": 51.799722,
-        "lon": 16.3175,
-        "name": "Wschowa ul. Kazimierza Wielkiego",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "al. Krasińskiego",
-        "city": "Kraków",
-        "id": 400,
-        "lat": 50.057678,
-        "lon": 19.926189,
-        "name": "Kraków, Aleja Krasińskiego",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Bulwarowa",
-        "city": "Kraków",
-        "id": 402,
-        "lat": 50.069308,
-        "lon": 20.053492,
-        "name": "Kraków, ul. Bulwarowa",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "os. Ogrody",
-        "city": "Skawina",
-        "id": 437,
-        "lat": 49.971047,
-        "lon": 19.830422,
-        "name": "Skawina, os. Ogrody",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Szymbark 430",
-        "city": "Szymbark",
-        "id": 443,
-        "lat": 49.633714,
-        "lon": 21.116833,
-        "name": "Szymbark",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Bitwy pod Studziankami",
-        "city": "Tarnów",
-        "id": 444,
-        "lat": 50.020169,
-        "lon": 21.004167,
-        "name": "Tarnów, ul. Bitwy pod Studziankami",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "os. Widokowe (dawne os. ZWM)",
-        "city": "Trzebinia",
-        "id": 449,
-        "lat": 50.159406,
-        "lon": 19.477464,
-        "name": "Trzebinia, os. Związku Walki Młodych",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Pułaskiego 6/8",
-        "city": "Piastów",
-        "id": 488,
-        "lat": 52.191728,
-        "lon": 20.837489,
-        "name": "Piastów, ul. Pułaskiego",
+        "address": "Kraszewskiego 8",
+        "city": "Ciechanów",
+        "id": 20209,
+        "lat": 52.885541,
+        "lon": 20.602511,
+        "name": "Ciechanów, ul. Kraszewskiego",
         "province": "MAZOWIECKIE"
     },
     {
-        "address": "ul. Mikołaja Reja 28",
-        "city": "Płock",
-        "id": 501,
-        "lat": 52.550938,
-        "lon": 19.709791,
-        "name": "Płock, ul. Reja",
-        "province": "MAZOWIECKIE"
+        "address": "ul. Tężniowa - Park Tężniowy",
+        "city": "Ciechocinek",
+        "id": 164,
+        "lat": 52.888422,
+        "lon": 18.780908,
+        "name": "Ciechocinek, ul. Tężniowa",
+        "province": "KUJAWSKO-POMORSKIE"
     },
     {
-        "address": "ul. Tochtermana 1",
-        "city": "Radom",
-        "id": 515,
-        "lat": 51.399084,
-        "lon": 21.147474,
-        "name": "Radom, ul. Tochtermana",
-        "province": "MAZOWIECKIE"
+        "address": "ul. Chopina 37",
+        "city": "Cieszyn",
+        "id": 16406,
+        "lat": 49.755989,
+        "lon": 18.634075,
+        "name": "Cieszyn, ul. Chopina",
+        "province": "ŚLĄSKIE"
     },
     {
-        "address": "ul. Konarskiego 11",
-        "city": "Siedlce",
-        "id": 517,
-        "lat": 52.172145,
-        "lon": 22.282001,
-        "name": "Siedlce, ul. Konarskiego",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Tołstoja 2",
-        "city": "Warszawa",
-        "id": 538,
-        "lat": 52.285073,
-        "lon": 20.933018,
-        "name": "Warszawa, ul. Tołstoja",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Wokalna 1",
-        "city": "Warszawa",
-        "id": 550,
-        "lat": 52.160772,
-        "lon": 21.033819,
-        "name": "Warszawa, ul. Wokalna",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Kondratowicza 8",
-        "city": "Warszawa",
-        "id": 552,
-        "lat": 52.290864,
-        "lon": 21.042458,
-        "name": "Warszawa, ul. Kondratowicza",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Bolesława Śmiałego 5",
-        "city": "Kędzierzyn-Koźle",
-        "id": 568,
-        "lat": 50.349608,
-        "lon": 18.236575,
-        "name": "Kędzierzyn-Koźle, ul. Śmiałego",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Kniaziewicza 30",
-        "city": "Słupsk",
-        "id": 725,
-        "lat": 54.463611,
-        "lon": 17.046722,
-        "name": "Słupsk, ul. Kniaziewicza",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Powstańców Warszawskich",
-        "city": "Gdańsk",
-        "id": 729,
-        "lat": 54.353196,
-        "lon": 18.635267,
-        "name": "Gdańsk, ul. Powstańców Warszawskich",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Wyzwolenia",
-        "city": "Gdańsk",
-        "id": 731,
-        "lat": 54.400788,
-        "lon": 18.657332,
-        "name": "Gdańsk, ul. Wyzwolenia",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Leczkowa",
-        "city": "Gdańsk",
-        "id": 736,
-        "lat": 54.380139,
-        "lon": 18.619766,
-        "name": "Gdańsk, ul. Leczkowa",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Targowa",
-        "city": "Kościerzyna",
-        "id": 740,
-        "lat": 54.120694,
-        "lon": 17.975861,
-        "name": "Kościerzyna, ul. Targowa",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "",
-        "city": "Liniewko Kościerskie",
-        "id": 743,
-        "lat": 54.104111,
-        "lon": 18.182972,
-        "name": "Liniewko Kościerskie",
-        "province": "POMORSKIE"
+        "address": "ul. Strażacka 7",
+        "city": "Czerniawa",
+        "id": 11,
+        "lat": 50.912475,
+        "lon": 15.31219,
+        "name": "Czerniawa",
+        "province": "DOLNOŚLĄSKIE"
     },
     {
         "address": "ul. Armii Krajowej 2",
@@ -414,21 +216,309 @@
         "province": "ŚLĄSKIE"
     },
     {
-        "address": "ul. Borki 37 d",
-        "city": "Rybnik",
-        "id": 834,
-        "lat": 50.111181,
-        "lon": 18.516139,
-        "name": "Rybnik, ul. Borki",
+        "address": "Grottgera 3",
+        "city": "Dębica",
+        "id": 9173,
+        "lat": 50.054786,
+        "lon": 21.416256,
+        "name": "Dębica, ul.Grottgera",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Diabla Góra",
+        "city": "Diabla Góra",
+        "id": 882,
+        "lat": 54.124819,
+        "lon": 22.038056,
+        "name": "Diabla Góra, Puszcza Borecka",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "Sportowa",
+        "city": "Duszniki-Zdrój",
+        "id": 10093,
+        "lat": 50.402561,
+        "lon": 16.393311,
+        "name": "Duszniki-Zdrój, ul. Sportowa",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Piłsudskiego 26",
+        "city": "Dzierżoniów",
+        "id": 16,
+        "lat": 50.732817,
+        "lon": 16.64805,
+        "name": "Dzierżoniów, ul. Piłsudskiego",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Bażyńskiego 6",
+        "city": "Elbląg",
+        "id": 861,
+        "lat": 54.167847,
+        "lon": 19.410942,
+        "name": "Elbląg, ul. Bażyńskiego",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "ul. Piłsudskiego 27",
+        "city": "Ełk",
+        "id": 10005,
+        "lat": 53.828389,
+        "lon": 22.348338,
+        "name": "Ełk, ul. Piłsudskiego",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "Ujęcie wody",
+        "city": "Gajew",
+        "id": 291,
+        "lat": 52.143258,
+        "lon": 19.233217,
+        "name": "Gajew, Ujęcie Wody",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Powstańców Warszawskich",
+        "city": "Gdańsk",
+        "id": 729,
+        "lat": 54.353196,
+        "lon": 18.635267,
+        "name": "Gdańsk, ul. Powstańców Warszawskich",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Wyzwolenia",
+        "city": "Gdańsk",
+        "id": 731,
+        "lat": 54.400788,
+        "lon": 18.657332,
+        "name": "Gdańsk, ul. Wyzwolenia",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Leczkowa",
+        "city": "Gdańsk",
+        "id": 736,
+        "lat": 54.380139,
+        "lon": 18.619766,
+        "name": "Gdańsk, ul. Leczkowa",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "al. Grunwaldzka 127",
+        "city": "Gdańsk",
+        "id": 16180,
+        "lat": 54.380682,
+        "lon": 18.601559,
+        "name": "Gdańsk, Al. Grunwaldzka",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "Lawendowe Wzgórze",
+        "city": "Gdańsk",
+        "id": 20347,
+        "lat": 54.328833,
+        "lon": 18.568819,
+        "name": "Gdańsk, ul. Lawendowe Wzgórze",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Porębskiego",
+        "city": "Gdynia",
+        "id": 732,
+        "lat": 54.560836,
+        "lon": 18.493331,
+        "name": "Gdynia, ul. Porębskiego",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "Wodociągowa",
+        "city": "Giżycko",
+        "id": 20447,
+        "lat": 54.04321,
+        "lon": 21.784858,
+        "name": "Giżycko, ul. Wodociągowa",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "ul. Mewy 34",
+        "city": "Gliwice",
+        "id": 809,
+        "lat": 50.279481,
+        "lon": 18.655736,
+        "name": "Gliwice, ul. Mewy",
         "province": "ŚLĄSKIE"
     },
     {
-        "address": "ul. Lubelska 51",
-        "city": "Sosnowiec",
-        "id": 837,
-        "lat": 50.285956,
-        "lon": 19.184399,
-        "name": "Sosnowiec, ul. Lubelska",
+        "address": "ul. Ratuszowa 9",
+        "city": "Głubczyce",
+        "id": 10018,
+        "lat": 50.200778,
+        "lon": 17.83051,
+        "name": "Głubczyce, ul. Ratuszowa",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Jaćwieska 17",
+        "city": "Gołdap",
+        "id": 870,
+        "lat": 54.305908,
+        "lon": 22.307681,
+        "name": "Gołdap, ul. Jaćwieska",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "ul. Kosynierów Gdyńskich",
+        "city": "Gorzów Wielkopolski",
+        "id": 361,
+        "lat": 52.738214,
+        "lon": 15.228667,
+        "name": "Gorzów Wlkp. ul. Kosynierów Gdyńskich",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "Kampinoski Park Narodowy",
+        "city": "Granica",
+        "id": 466,
+        "lat": 52.285858,
+        "lon": 20.454653,
+        "name": "Granica, KPN",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Piłsudskiego 51",
+        "city": "Grudziądz",
+        "id": 142,
+        "lat": 53.49355,
+        "lon": 18.762139,
+        "name": "Grudziądz, ul. Piłsudskiego",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "ul. Solankowa",
+        "city": "Inowrocław",
+        "id": 143,
+        "lat": 52.793122,
+        "lon": 18.241044,
+        "name": "Inowrocław, ul. Solankowa",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "Sikorskiego",
+        "city": "Jasło",
+        "id": 638,
+        "lat": 49.744886,
+        "lon": 21.454617,
+        "name": "Jaslo, ul. Sikorskiego",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Aleja Józefa Piłsudskiego/Harcerska 3",
+        "city": "Jastrzębie-Zdrój",
+        "id": 11855,
+        "lat": 49.952544,
+        "lon": 18.607953,
+        "name": "Jastrzębie-Zdrój, Al.J.Piłsudskiego/Harcerska",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Ogińskiego 6",
+        "city": "Jelenia Góra",
+        "id": 9153,
+        "lat": 50.913433,
+        "lon": 15.765608,
+        "name": "Jelenia Góra, ul. Ogińskiego",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "Marii Dąbrowskiej",
+        "city": "Tarnobrzeg",
+        "id": 684,
+        "lat": 50.575742,
+        "lon": 21.688367,
+        "name": "Tarnobrzeg, ul. Dąbrowskiej",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "ul. Bitwy pod Studziankami",
+        "city": "Tarnów",
+        "id": 444,
+        "lat": 50.020169,
+        "lon": 21.004167,
+        "name": "Tarnów, ul. Bitwy pod Studziankami",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Ks. Romana Sitko",
+        "city": "Tarnów",
+        "id": 10120,
+        "lat": 50.018253,
+        "lon": 20.992578,
+        "name": "Tarnów, ul. Ks. Romana Sitko",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Janusza Petera 7",
+        "city": "Tomaszów Lubelski",
+        "id": 20277,
+        "lat": 50.444128,
+        "lon": 23.421553,
+        "name": "Tomaszów Lubelski, ul. Janusza Petera",
+        "province": "LUBELSKIE"
+    },
+    {
+        "address": "ul. Wały Gen. Sikorskiego 12",
+        "city": "Toruń",
+        "id": 145,
+        "lat": 53.012475,
+        "lon": 18.605681,
+        "name": "Toruń, ul. Wały gen. Sikorskiego",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "ul. Dziewulskiego 1",
+        "city": "Toruń",
+        "id": 206,
+        "lat": 53.028647,
+        "lon": 18.666103,
+        "name": "Toruń, ul. Dziewulskiego",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "ul. Przy Kaszowniku",
+        "city": "Toruń",
+        "id": 208,
+        "lat": 53.017628,
+        "lon": 18.612808,
+        "name": "Toruń, ul. Przy Kaszowniku",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "os. Widokowe (dawne os. ZWM)",
+        "city": "Trzebinia",
+        "id": 449,
+        "lat": 50.159406,
+        "lon": 19.477464,
+        "name": "Trzebinia, os. Związku Walki Młodych",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. 3 Maja",
+        "city": "Trzebnica",
+        "id": 11934,
+        "lat": 51.304817,
+        "lon": 17.071367,
+        "name": "Trzebnica, ul. 3 Maja",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Tołstoja 1",
+        "city": "Tychy",
+        "id": 841,
+        "lat": 50.099903,
+        "lon": 18.990236,
+        "name": "Tychy, ul. Tołstoja",
         "province": "ŚLĄSKIE"
     },
     {
@@ -441,6 +531,114 @@
         "province": "ŚLĄSKIE"
     },
     {
+        "address": "Wysowa",
+        "city": "Uście Gorlickie Wysowa",
+        "id": 17118,
+        "lat": 49.440175,
+        "lon": 21.178087,
+        "name": "Wysowa-Zdrój, Park Zdrojowy",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Wysockiego 11",
+        "city": "Wałbrzych",
+        "id": 109,
+        "lat": 50.768729,
+        "lon": 16.269677,
+        "name": "Wałbrzych, ul. Wysockiego",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "al. Niepodległości 227/233",
+        "city": "Warszawa",
+        "id": 530,
+        "lat": 52.219298,
+        "lon": 21.004724,
+        "name": "Warszawa, al. Niepodległości",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Wokalna 1",
+        "city": "Warszawa",
+        "id": 550,
+        "lat": 52.160772,
+        "lon": 21.033819,
+        "name": "Warszawa, ul. Wokalna",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Kondratowicza 8",
+        "city": "Warszawa",
+        "id": 552,
+        "lat": 52.290864,
+        "lon": 21.042458,
+        "name": "Warszawa, ul. Kondratowicza",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Chrościckiego 16/18",
+        "city": "Warszawa",
+        "id": 10955,
+        "lat": 52.207742,
+        "lon": 20.906073,
+        "name": "Warszawa, ul. Chrościckiego",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Bajkowa 17/21",
+        "city": "Warszawa",
+        "id": 10956,
+        "lat": 52.188474,
+        "lon": 21.176233,
+        "name": "Warszawa, ul. Bajkowa",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Podleśna 61",
+        "city": "Warszawa",
+        "id": 16533,
+        "lat": 52.281304,
+        "lon": 20.963383,
+        "name": "Warszawa, IMGW",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Bulwary Rybackie 1",
+        "city": "Widuchowa",
+        "id": 961,
+        "lat": 53.122325,
+        "lon": 14.382245,
+        "name": "Widuchowa",
+        "province": "ZACHODNIOPOMORSKIE"
+    },
+    {
+        "address": "",
+        "city": "Wilczopole",
+        "id": 282,
+        "lat": 51.163542,
+        "lon": 22.598608,
+        "name": "Wilczopole",
+        "province": "LUBELSKIE"
+    },
+    {
+        "address": "ul. Okrzei",
+        "city": "Włocławek",
+        "id": 225,
+        "lat": 52.658467,
+        "lon": 19.059314,
+        "name": "Włocławek, ul. Okrzei",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
+        "address": "ul. Kaliska 108 A",
+        "city": "Włocławek",
+        "id": 9791,
+        "lat": 52.637394,
+        "lon": 19.044486,
+        "name": "Włocławek, ul. Kaliska",
+        "province": "KUJAWSKO-POMORSKIE"
+    },
+    {
         "address": "ul. Gałczyńskiego 1",
         "city": "Wodzisław Śląski",
         "id": 845,
@@ -448,6 +646,114 @@
         "lon": 18.455548,
         "name": "Wodzisław Śląski, ul. Gałczyńskiego",
         "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Bartnicza",
+        "city": "Wrocław",
+        "id": 114,
+        "lat": 51.115933,
+        "lon": 17.141125,
+        "name": "Wrocław, ul. Bartnicza",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Wyb. J.Conrada-Korzeniowskiego 18",
+        "city": "Wrocław",
+        "id": 117,
+        "lat": 51.129378,
+        "lon": 17.02925,
+        "name": "Wrocław, wyb. Conrada-Korzeniowskiego",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "al. Wiśniowa/ul. Powst. Śląskich",
+        "city": "Wrocław",
+        "id": 129,
+        "lat": 51.086225,
+        "lon": 17.012689,
+        "name": "Wrocław, al. Wiśniowa",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Kazimierza Wielkiego",
+        "city": "Wschowa",
+        "id": 379,
+        "lat": 51.799722,
+        "lon": 16.3175,
+        "name": "Wschowa ul. Kazimierza Wielkiego",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "ul. M. Skłodowskiej-Curie 34",
+        "city": "Zabrze",
+        "id": 17880,
+        "lat": 50.317072,
+        "lon": 18.771258,
+        "name": "Zabrze, ul. M. Skłodowskiej-Curie",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Sienkiewicza",
+        "city": "Zakopane",
+        "id": 459,
+        "lat": 49.293564,
+        "lon": 19.960083,
+        "name": "Zakopane, ul. Sienkiewicza",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Hrubieszowska 69A",
+        "city": "Zamość",
+        "id": 285,
+        "lat": 50.716628,
+        "lon": 23.290247,
+        "name": "Zamość, ul. Hrubieszowska",
+        "province": "LUBELSKIE"
+    },
+    {
+        "address": "ul. K.I.Gałczyńskiego 3",
+        "city": "Zawiercie",
+        "id": 11455,
+        "lat": 50.493045,
+        "lon": 19.439012,
+        "name": "Zawiercie, ul. K.I.Gałczyńskiego",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Piastów 6",
+        "city": "Zdzieszowice",
+        "id": 600,
+        "lat": 50.423533,
+        "lon": 18.120739,
+        "name": "Zdzieszowice, ul. Piastów",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Krótka",
+        "city": "Zielona Góra",
+        "id": 387,
+        "lat": 51.939783,
+        "lon": 15.518861,
+        "name": "Zielona Góra ul. Krótka",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "Wyszyńskiego",
+        "city": "Zielona Góra",
+        "id": 11294,
+        "lat": 51.936249,
+        "lon": 15.481077,
+        "name": "Zielona Góra,ul.Wyszyńskiego",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "Bory Tucholskie",
+        "city": "Zielonka",
+        "id": 232,
+        "lat": 53.662117,
+        "lon": 17.934017,
+        "name": "Zielonka, Bory Tucholskie",
+        "province": "KUJAWSKO-POMORSKIE"
     },
     {
         "address": "Leśniczówka Kamienna Góra",
@@ -459,31 +765,238 @@
         "province": "ŚLĄSKIE"
     },
     {
-        "address": "ul. Bażyńskiego 6",
-        "city": "Elbląg",
-        "id": 861,
-        "lat": 54.167847,
-        "lon": 19.410942,
-        "name": "Elbląg, ul. Bażyńskiego",
-        "province": "WARMIŃSKO-MAZURSKIE"
+        "address": "ul. Szymanowskiego 8",
+        "city": "Żary",
+        "id": 382,
+        "lat": 51.642656,
+        "lon": 15.127808,
+        "name": "Żary, ul. Szymanowskiego ",
+        "province": "LUBUSKIE"
     },
     {
-        "address": "ul. Jaćwieska 17",
-        "city": "Gołdap",
-        "id": 870,
-        "lat": 54.305908,
-        "lon": 22.307681,
-        "name": "Gołdap, ul. Jaćwieska",
-        "province": "WARMIŃSKO-MAZURSKIE"
+        "address": "ul. Roosevelta 2",
+        "city": "Żyrardów",
+        "id": 562,
+        "lat": 52.053811,
+        "lon": 20.429892,
+        "name": "Żyrardów, ul. Roosevelta",
+        "province": "MAZOWIECKIE"
     },
     {
-        "address": "ul. Puszkina 16",
-        "city": "Olsztyn",
-        "id": 877,
-        "lat": 53.789233,
-        "lon": 20.486075,
-        "name": "Olsztyn, ul. Puszkina",
-        "province": "WARMIŃSKO-MAZURSKIE"
+        "address": "ul. Kopernika 83 a",
+        "city": "Żywiec",
+        "id": 856,
+        "lat": 49.671602,
+        "lon": 19.234446,
+        "name": "Żywiec, ul. Kopernika",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "Bory",
+        "city": "Kaszów",
+        "id": 10119,
+        "lat": 50.025028,
+        "lon": 19.726833,
+        "name": "Kaszów",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "osiedle Leśne 22",
+        "city": "Koziegłowy",
+        "id": 10834,
+        "lat": 52.449295,
+        "lon": 16.999634,
+        "name": "Koziegłowy, os.Leśne",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "",
+        "city": "Florianka",
+        "id": 10874,
+        "lat": 50.551894,
+        "lon": 22.982861,
+        "name": "Florianka, RPN",
+        "province": "LUBELSKIE"
+    },
+    {
+        "address": "Wapienna",
+        "city": "Zabierzów",
+        "id": 11434,
+        "lat": 50.116028,
+        "lon": 19.800639,
+        "name": "Zabierzów, ul. Wapienna",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Ujęcie Wody",
+        "city": "Gołuchów",
+        "id": 11754,
+        "lat": 50.621482,
+        "lon": 20.614057,
+        "name": "Gołuchów, Ujęcie Wody",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Zapłotnia 2",
+        "city": "Łagów",
+        "id": 12138,
+        "lat": 50.778479,
+        "lon": 21.081224,
+        "name": "Łagów, ul. Zapłotnia",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "Złockie 79",
+        "city": "Złockie",
+        "id": 10817,
+        "lat": 49.374147,
+        "lon": 20.879581,
+        "name": "Złockie, szkoła podstawowa",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Guty Duże 4",
+        "city": "Guty Duże",
+        "id": 9913,
+        "lat": 52.943172,
+        "lon": 21.288167,
+        "name": "Guty Duże",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Parkowa",
+        "city": "Goczałkowice-Zdrój",
+        "id": 11457,
+        "lat": 49.93785,
+        "lon": 18.975594,
+        "name": "Goczałkowice Zdrój, ul. Parkowa",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Andrzeja Kmicica 33",
+        "city": "Biała",
+        "id": 11358,
+        "lat": 52.602534,
+        "lon": 19.6451,
+        "name": "Biała, ul. Kmicica",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Czereśniowa 4",
+        "city": "Mosina",
+        "id": 16495,
+        "lat": 52.241497,
+        "lon": 16.865125,
+        "name": "Mosina, ul. Czereśniowa",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Wyszyńskiego",
+        "city": "Kalisz",
+        "id": 952,
+        "lat": 51.74795,
+        "lon": 18.049063,
+        "name": "Kalisz, ul. Wyszyńskiego",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Kossutha 6",
+        "city": "Katowice",
+        "id": 814,
+        "lat": 50.264611,
+        "lon": 18.975028,
+        "name": "Katowice, ul. Kossutha",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "Jerzego Dudy-Gracza",
+        "city": "Katowice",
+        "id": 17318,
+        "lat": 50.258483,
+        "lon": 19.036217,
+        "name": "Katowice, ul. Dudy-Gracza",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Bolesława Śmiałego 5",
+        "city": "Kędzierzyn-Koźle",
+        "id": 568,
+        "lat": 50.349608,
+        "lon": 18.236575,
+        "name": "Kędzierzyn-Koźle, ul. Śmiałego",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Targowa 3",
+        "city": "Kielce",
+        "id": 11195,
+        "lat": 50.878998,
+        "lon": 20.633692,
+        "name": "Kielce, ul. Targowa",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Warszawska 108",
+        "city": "Kielce",
+        "id": 16196,
+        "lat": 50.886014,
+        "lon": 20.642858,
+        "name": "Kielce, ul. Warszawska 108",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Jurajska 7",
+        "city": "Kielce",
+        "id": 16497,
+        "lat": 50.887606,
+        "lon": 20.579965,
+        "name": "Kielce, ul. Jurajska",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Mickiewicza 10",
+        "city": "Kluczbork",
+        "id": 577,
+        "lat": 50.972181,
+        "lon": 18.207575,
+        "name": "Kluczbork, ul. Mickiewicza",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Szkolna 8",
+        "city": "Kłodzko",
+        "id": 38,
+        "lat": 50.433493,
+        "lon": 16.65366,
+        "name": "Kłodzko, ul. Szkolna",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "Jana Pawła II ",
+        "city": "Kolbuszowa",
+        "id": 20200,
+        "lat": 50.245897,
+        "lon": 21.769494,
+        "name": "Kolbuszowa, ul. Jana Pawła II",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "ul. Żółkiewskiego",
+        "city": "Kołobrzeg",
+        "id": 10934,
+        "lat": 54.179381,
+        "lon": 15.596347,
+        "name": "Kołobrzeg, ul. Żółkiewskiego",
+        "province": "ZACHODNIOPOMORSKIE"
+    },
+    {
+        "address": "Pojezierze Chełmińskie",
+        "city": "Koniczynka",
+        "id": 190,
+        "lat": 53.080647,
+        "lon": 18.684258,
+        "name": "Koniczynka, Pojezierze Chełmińskie",
+        "province": "KUJAWSKO-POMORSKIE"
     },
     {
         "address": "ul. Wyszyńskiego 3",
@@ -495,6 +1008,573 @@
         "province": "WIELKOPOLSKIE"
     },
     {
+        "address": "ul. Żeromskiego",
+        "city": "Konstancin-Jeziorna",
+        "id": 16271,
+        "lat": 52.082277,
+        "lon": 21.124598,
+        "name": "Konstancin-Jeziorna, ul. Żeromskiego",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Armii Krajowej",
+        "city": "Koszalin",
+        "id": 966,
+        "lat": 54.193986,
+        "lon": 16.172544,
+        "name": "Koszalin, ul. Armii Krajowej",
+        "province": "ZACHODNIOPOMORSKIE"
+    },
+    {
+        "address": "ul. Chopina 42",
+        "city": "Koszalin",
+        "id": 11336,
+        "lat": 54.194114,
+        "lon": 16.211672,
+        "name": "Koszalin, ul. Chopina",
+        "province": "ZACHODNIOPOMORSKIE"
+    },
+    {
+        "address": "ul. Targowa",
+        "city": "Kościerzyna",
+        "id": 740,
+        "lat": 54.120694,
+        "lon": 17.975861,
+        "name": "Kościerzyna, ul. Targowa",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "al. Krasińskiego",
+        "city": "Kraków",
+        "id": 400,
+        "lat": 50.057678,
+        "lon": 19.926189,
+        "name": "Kraków, Aleja Krasińskiego",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Bujaka",
+        "city": "Kraków",
+        "id": 401,
+        "lat": 50.010575,
+        "lon": 19.949189,
+        "name": "Kraków, ul. Bujaka",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Bulwarowa",
+        "city": "Kraków",
+        "id": 402,
+        "lat": 50.069308,
+        "lon": 20.053492,
+        "name": "Kraków, ul. Bulwarowa",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Złoty Róg",
+        "city": "Kraków",
+        "id": 10123,
+        "lat": 50.081197,
+        "lon": 19.895358,
+        "name": "Kraków, ul. Złoty Róg",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "os. Piastów",
+        "city": "Kraków",
+        "id": 10139,
+        "lat": 50.098508,
+        "lon": 20.018269,
+        "name": "Kraków, os. Piastów",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Wadów",
+        "city": "Kraków",
+        "id": 10447,
+        "lat": 50.100569,
+        "lon": 20.122561,
+        "name": "Kraków, os. Wadów",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Lusińska",
+        "city": "Kraków",
+        "id": 11303,
+        "lat": 49.991442,
+        "lon": 19.936792,
+        "name": "Kraków, os. Swoszowice",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Kamieńskiego",
+        "city": "Kraków",
+        "id": 16896,
+        "lat": 50.024605,
+        "lon": 19.97846,
+        "name": "Kraków, ul. Kamieńskiego",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Półłanki 76",
+        "city": "Kraków",
+        "id": 20367,
+        "lat": 50.034702,
+        "lon": 20.044386,
+        "name": "Kraków, ul. Półłanki",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. 3 Maja 17",
+        "city": "Krapkowice",
+        "id": 16913,
+        "lat": 50.486194,
+        "lon": 17.97477,
+        "name": "Krapkowice, ul. 3 Maja",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "59",
+        "city": "Krempna",
+        "id": 9175,
+        "lat": 49.511297,
+        "lon": 21.498606,
+        "name": "Krempna, Ośrodek edukacyjno-muzealny MPN",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Kletówki",
+        "city": "Krosno",
+        "id": 646,
+        "lat": 49.690169,
+        "lon": 21.7497,
+        "name": "Krosno, ul. Kletówki",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Olimpijska 10",
+        "city": "Krotoszyn",
+        "id": 20307,
+        "lat": 51.697308,
+        "lon": 17.441263,
+        "name": "Krotoszyn, ul. Olimpijska",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "Piaski 10",
+        "city": "Krzyżówka",
+        "id": 946,
+        "lat": 52.501318,
+        "lon": 17.773175,
+        "name": "Piaski, Krzyżówka",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Zegrzyńska 38",
+        "city": "Legionowo",
+        "id": 471,
+        "lat": 52.407578,
+        "lon": 20.955928,
+        "name": "Legionowo, ul. Zegrzyńska",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "al. Rzeczypospolitej 10/12",
+        "city": "Legnica",
+        "id": 52,
+        "lat": 51.204503,
+        "lon": 16.180513,
+        "name": "Legnica, al. Rzeczypospolitej",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Malczewskiego",
+        "city": "Lębork",
+        "id": 742,
+        "lat": 54.546167,
+        "lon": 17.746194,
+        "name": "Lębork, ul. Malczewskiego",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "",
+        "city": "Liniewko Kościerskie",
+        "id": 743,
+        "lat": 54.104111,
+        "lon": 18.182972,
+        "name": "Liniewko Kościerskie",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "Ludowa",
+        "city": "Lubań",
+        "id": 20468,
+        "lat": 51.120091,
+        "lon": 15.298189,
+        "name": "Lubań, ul. Ludowa",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. Obywatelska 13",
+        "city": "Lublin",
+        "id": 266,
+        "lat": 51.259431,
+        "lon": 22.569133,
+        "name": "Lublin, ul. Obywatelska",
+        "province": "LUBELSKIE"
+    },
+    {
+        "address": "ul. Ks. Płk. Jana Szymały 3",
+        "city": "Lubliniec",
+        "id": 11278,
+        "lat": 50.675693,
+        "lon": 18.682065,
+        "name": "Lubliniec, ul. ks. Szymały",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Narutowicza 28",
+        "city": "Łask",
+        "id": 11554,
+        "lat": 51.589208,
+        "lon": 19.131433,
+        "name": "Łask, ul. Narutowicza",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Rąbka 1A",
+        "city": "Łeba",
+        "id": 750,
+        "lat": 54.754139,
+        "lon": 17.534528,
+        "name": "Łeba, IMGW",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Sikorskiego 48/94",
+        "city": "Łomża",
+        "id": 618,
+        "lat": 53.181394,
+        "lon": 22.054381,
+        "name": "Łomża, ul. Sikorskiego",
+        "province": "PODLASKIE"
+    },
+    {
+        "address": "ul. Czernika 1/3",
+        "city": "Łódź",
+        "id": 295,
+        "lat": 51.75805,
+        "lon": 19.529786,
+        "name": "Łódź, ul. Czernika",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Gdańska 16",
+        "city": "Łódź",
+        "id": 296,
+        "lat": 51.775378,
+        "lon": 19.450992,
+        "name": "Łódź, ul. Gdańska",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "al. Jana Pawła II 15",
+        "city": "Łódź",
+        "id": 10058,
+        "lat": 51.754613,
+        "lon": 19.434925,
+        "name": "Łódź, al. Jana Pawła II",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Mickiewicza",
+        "city": "Malbork",
+        "id": 741,
+        "lat": 54.031247,
+        "lon": 19.032899,
+        "name": "Malbork, ul. Mickiewicza",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Słoneczna 18",
+        "city": "Małogoszcz",
+        "id": 10794,
+        "lat": 50.80961,
+        "lon": 20.266032,
+        "name": "Małogoszcz, ul. Słoneczna",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "Biernackiego",
+        "city": "Mielec",
+        "id": 10438,
+        "lat": 50.299128,
+        "lon": 21.440942,
+        "name": "Mielec, ul. Biernackiego",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Solidarności 6",
+        "city": "Myślenice",
+        "id": 16753,
+        "lat": 49.831237,
+        "lon": 19.923591,
+        "name": "Myślenice",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. 3 Maja",
+        "city": "Niepołomice",
+        "id": 455,
+        "lat": 50.035117,
+        "lon": 20.212689,
+        "name": "Niepołomice, ul. 3 Maja",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Szklarniowa",
+        "city": "Nisko",
+        "id": 659,
+        "lat": 50.529892,
+        "lon": 22.112467,
+        "name": "Nisko, ul. Szklarniowa",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "ul. Jeziorna 19",
+        "city": "Nowa Ruda",
+        "id": 11254,
+        "lat": 50.581492,
+        "lon": 16.498245,
+        "name": "Nowa Ruda, ul. Jeziorna",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "T. Kościuszki",
+        "city": "Nowa Sól",
+        "id": 16613,
+        "lat": 51.809103,
+        "lon": 15.708042,
+        "name": "Nowa Sól",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "ul. Parkowa",
+        "city": "Nowiny",
+        "id": 769,
+        "lat": 50.823108,
+        "lon": 20.533506,
+        "name": "Nowiny, ul. Parkowa",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Nadbrzeżna",
+        "city": "Nowy Sącz",
+        "id": 426,
+        "lat": 49.619281,
+        "lon": 20.714403,
+        "name": "Nowy Sącz, ul. Nadbrzeżna",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "al. Tysiąclecia",
+        "city": "Nowy Targ",
+        "id": 16894,
+        "lat": 49.476675,
+        "lon": 20.034878,
+        "name": "Nowy Targ, al. Tysiąclecia ",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Rodziewiczówny 1",
+        "city": "Nysa",
+        "id": 20387,
+        "lat": 50.460992,
+        "lon": 17.331499,
+        "name": "Nysa, ul. Rodziewiczówny 1",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Słowackiego",
+        "city": "Olesno",
+        "id": 584,
+        "lat": 50.876983,
+        "lon": 18.416878,
+        "name": "Olesno, ul. Słowackiego",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": " Cegielniana",
+        "city": "Olkusz",
+        "id": 11301,
+        "lat": 50.284,
+        "lon": 19.564044,
+        "name": "Olkusz, ul. Cegielniana",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Puszkina 16",
+        "city": "Olsztyn",
+        "id": 877,
+        "lat": 53.789233,
+        "lon": 20.486075,
+        "name": "Olsztyn, ul. Puszkina",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "ul. Żołnierzy AK 9",
+        "city": "Oława",
+        "id": 70,
+        "lat": 50.942073,
+        "lon": 17.291333,
+        "name": "Oława, ul. Żołnierzy Armii Krajowej",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "os. Armii Krajowej",
+        "city": "Opole",
+        "id": 590,
+        "lat": 50.676856,
+        "lon": 17.950278,
+        "name": "Opole, os. Armii Krajowej",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": "ul. Koszyka 21",
+        "city": "Opole",
+        "id": 10374,
+        "lat": 50.666736,
+        "lon": 17.899137,
+        "name": "Opole, ul. Koszyka",
+        "province": "OPOLSKIE"
+    },
+    {
+        "address": " ",
+        "city": "Osieczów",
+        "id": 74,
+        "lat": 51.31763,
+        "lon": 15.431719,
+        "name": "Osieczów",
+        "province": "DOLNOŚLĄSKIE"
+    },
+    {
+        "address": "ul. gen. J. Hallera 12",
+        "city": "Ostrołęka",
+        "id": 9114,
+        "lat": 53.083736,
+        "lon": 21.579322,
+        "name": "Ostrołęka, ul. Hallera",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "Piłsudskiego 4",
+        "city": "Ostróda",
+        "id": 10030,
+        "lat": 53.694587,
+        "lon": 19.969041,
+        "name": "Ostróda, ul. Piłsudskiego",
+        "province": "WARMIŃSKO-MAZURSKIE"
+    },
+    {
+        "address": "J. Bema",
+        "city": "Oświęcim",
+        "id": 10814,
+        "lat": 50.033083,
+        "lon": 19.245275,
+        "name": "Oświęcim, ul. J. Bema",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Brzozowa 2",
+        "city": "Otwock",
+        "id": 485,
+        "lat": 52.115725,
+        "lon": 21.237297,
+        "name": "Otwock, ul. Brzozowa",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Konstantynowska",
+        "city": "Pabianice",
+        "id": 314,
+        "lat": 51.667981,
+        "lon": 19.368683,
+        "name": "Pabianice, ul. Konstantynowska",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "Ujęcie wody",
+        "city": "Parzniewice",
+        "id": 319,
+        "lat": 51.291175,
+        "lon": 19.517556,
+        "name": "Parzniewice, Ujęcie Wody",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Pułaskiego 6/8",
+        "city": "Piastów",
+        "id": 488,
+        "lat": 52.191728,
+        "lon": 20.837489,
+        "name": "Piastów, ul. Pułaskiego",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Kusocińskiego 10A",
+        "city": "Piła",
+        "id": 920,
+        "lat": 53.154408,
+        "lon": 16.759572,
+        "name": "Pila, ul. Kusocińskiego",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Krakowskie Przedmieście 13",
+        "city": "Piotrków Trybunalski",
+        "id": 322,
+        "lat": 51.404406,
+        "lon": 19.696956,
+        "name": "Piotrków Trybunalski, ul. Krakowskie Przedmieście",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "al. Mickiewicza",
+        "city": "Pleszew",
+        "id": 9218,
+        "lat": 51.884922,
+        "lon": 17.791106,
+        "name": "Pleszew, Al. Mickiewicza",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Królowej Jadwigi 4",
+        "city": "Płock",
+        "id": 497,
+        "lat": 52.556279,
+        "lon": 19.687672,
+        "name": "Płock, ul. Królowej Jadwigi",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Mikołaja Reja 28",
+        "city": "Płock",
+        "id": 501,
+        "lat": 52.550938,
+        "lon": 19.709791,
+        "name": "Płock, ul. Reja",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Ruszczańska 23",
+        "city": "Połaniec",
+        "id": 778,
+        "lat": 50.429014,
+        "lon": 21.277367,
+        "name": "Połaniec, ul. Ruszczańska",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
         "address": "ul. Dąbrowskiego 169",
         "city": "Poznań",
         "id": 944,
@@ -502,6 +1582,240 @@
         "lon": 16.877289,
         "name": "Poznań, ul. Dąbrowskiego",
         "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "ul. Szwajcarska",
+        "city": "Poznań",
+        "id": 16493,
+        "lat": 52.390879,
+        "lon": 16.998053,
+        "name": "Poznań ul. Szwajcarska",
+        "province": "WIELKOPOLSKIE"
+    },
+    {
+        "address": "Grunwaldzka",
+        "city": "Przemyśl",
+        "id": 665,
+        "lat": 49.784339,
+        "lon": 22.756239,
+        "name": "Przemyśl, ul. Grunwaldzka",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Orkana",
+        "city": "Rabka-Zdrój",
+        "id": 10446,
+        "lat": 49.608647,
+        "lon": 19.966008,
+        "name": "Rabka-Zdrój, ul. Orkana",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Wojska Polskiego 8",
+        "city": "Racibórz",
+        "id": 11794,
+        "lat": 50.091142,
+        "lon": 18.216261,
+        "name": "Racibórz, Wojska Polskiego",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Tochtermana 1",
+        "city": "Radom",
+        "id": 515,
+        "lat": 51.399084,
+        "lon": 21.147474,
+        "name": "Radom, ul. Tochtermana",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. Rolna 2",
+        "city": "Radomsko",
+        "id": 331,
+        "lat": 51.067417,
+        "lon": 19.448714,
+        "name": "Radomsko, ul. Rolna",
+        "province": "ŁÓDZKIE"
+    },
+    {
+        "address": "ul. Borki 37 d",
+        "city": "Rybnik",
+        "id": 834,
+        "lat": 50.111181,
+        "lon": 18.516139,
+        "name": "Rybnik, ul. Borki",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "Parkowa 5",
+        "city": "Rymanów-Zdrój",
+        "id": 10414,
+        "lat": 49.546539,
+        "lon": 21.851006,
+        "name": "Rymanów Zdrój, ul. Parkowa",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Rejtana",
+        "city": "Rzeszów",
+        "id": 671,
+        "lat": 50.024242,
+        "lon": 22.010575,
+        "name": "Rzeszów, ul. Rejtana",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Piłsudskiego",
+        "city": "Rzeszów",
+        "id": 10125,
+        "lat": 50.040675,
+        "lon": 22.004656,
+        "name": "Rzeszów, ul. Piłsudskiego",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Starzyńskiego 17",
+        "city": "Rzeszów",
+        "id": 17179,
+        "lat": 50.060381,
+        "lon": 21.980511,
+        "name": "Rzeszów, ul. Starzyńskiego",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Kwiatkowskiego",
+        "city": "Rzeszów",
+        "id": 20201,
+        "lat": 49.998408,
+        "lon": 21.992183,
+        "name": "Rzeszów, ul. Kwiatkowskiego",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "Sadowa",
+        "city": "Sanok",
+        "id": 678,
+        "lat": 49.571731,
+        "lon": 22.195892,
+        "name": "Sanok, ul. Sadowa",
+        "province": "PODKARPACKIE"
+    },
+    {
+        "address": "ul. Konarskiego 11",
+        "city": "Siedlce",
+        "id": 517,
+        "lat": 52.172145,
+        "lon": 22.282001,
+        "name": "Siedlce, ul. Konarskiego",
+        "province": "MAZOWIECKIE"
+    },
+    {
+        "address": "ul. 1 Maja 82",
+        "city": "Skarżysko-Kamienna",
+        "id": 17758,
+        "lat": 51.115842,
+        "lon": 20.891593,
+        "name": "Skarżysko-Kamienna, ul. 1 Maja",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "os. Ogrody",
+        "city": "Skawina",
+        "id": 437,
+        "lat": 49.971047,
+        "lon": 19.830422,
+        "name": "Skawina, os. Ogrody",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "ul. Kniaziewicza 30",
+        "city": "Słupsk",
+        "id": 725,
+        "lat": 54.463611,
+        "lon": 17.046722,
+        "name": "Słupsk, ul. Kniaziewicza",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "Smolary Bytnickie 45A",
+        "city": "Smolary Bytnickie",
+        "id": 374,
+        "lat": 52.172222,
+        "lon": 15.206667,
+        "name": "Smolary Bytnickie",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "ul. Bitwy pod Płowcami",
+        "city": "Sopot",
+        "id": 16242,
+        "lat": 54.43451,
+        "lon": 18.57884,
+        "name": "Sopot, ul. Bitwy Pod Płowcami",
+        "province": "POMORSKIE"
+    },
+    {
+        "address": "ul. Lubelska 51",
+        "city": "Sosnowiec",
+        "id": 837,
+        "lat": 50.285956,
+        "lon": 19.184399,
+        "name": "Sosnowiec, ul. Lubelska",
+        "province": "ŚLĄSKIE"
+    },
+    {
+        "address": "ul. Złota",
+        "city": "Starachowice",
+        "id": 785,
+        "lat": 51.050611,
+        "lon": 21.084175,
+        "name": "Starachowice, ul. Złota",
+        "province": "ŚWIĘTOKRZYSKIE"
+    },
+    {
+        "address": "ul. Nieszczyńskiej",
+        "city": "Sucha Beskidzka",
+        "id": 10124,
+        "lat": 49.743131,
+        "lon": 19.600339,
+        "name": "Sucha Beskidzka, ul. Nieszczyńskiej",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
+        "address": "Licealna 10b",
+        "city": "Sulechów",
+        "id": 16238,
+        "lat": 52.084833,
+        "lon": 15.63325,
+        "name": "Sulechów, ul. Licealna",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "ul. Dudka",
+        "city": "Sulęcin",
+        "id": 376,
+        "lat": 52.437722,
+        "lon": 15.122444,
+        "name": "Sulęcin ul. Dudka",
+        "province": "LUBUSKIE"
+    },
+    {
+        "address": "ul. Pułaskiego 26",
+        "city": "Suwałki",
+        "id": 11154,
+        "lat": 54.115897,
+        "lon": 22.938464,
+        "name": "Suwałki, ul. Pułaskiego 26",
+        "province": "PODLASKIE"
+    },
+    {
+        "address": "ul. Spokojna",
+        "city": "Szarów",
+        "id": 9179,
+        "lat": 50.0075,
+        "lon": 20.259167,
+        "name": "Szarów, ul. Spokojna",
+        "province": "MAŁOPOLSKIE"
     },
     {
         "address": "ul. Andrzejewskiego 23",
@@ -522,616 +1836,13 @@
         "province": "ZACHODNIOPOMORSKIE"
     },
     {
-        "address": "ul. Szymanowskiego 8",
-        "city": "Żary",
-        "id": 382,
-        "lat": 51.642656,
-        "lon": 15.127808,
-        "name": "Żary, ul. Szymanowskiego ",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "ul. Ogińskiego 6",
-        "city": "Jelenia Góra",
-        "id": 9153,
-        "lat": 50.913433,
-        "lon": 15.765608,
-        "name": "Jelenia Góra, ul. Ogińskiego",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Piastów 6",
-        "city": "Zdzieszowice",
-        "id": 600,
-        "lat": 50.423533,
-        "lon": 18.120739,
-        "name": "Zdzieszowice, ul. Piastów",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Roosevelta 2",
-        "city": "Żyrardów",
-        "id": 562,
-        "lat": 52.053811,
-        "lon": 20.429892,
-        "name": "Żyrardów, ul. Roosevelta",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Wyszyńskiego",
-        "city": "Kalisz",
-        "id": 952,
-        "lat": 51.74795,
-        "lon": 18.049063,
-        "name": "Kalisz, ul. Wyszyńskiego",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Orzechowa",
-        "city": "Biała Podlaska",
-        "id": 236,
-        "lat": 52.029194,
-        "lon": 23.149389,
-        "name": "Biała Podlaska, ul. Orzechowa",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "ul. Kaliska 108 A",
-        "city": "Włocławek",
-        "id": 9791,
-        "lat": 52.637394,
-        "lon": 19.044486,
-        "name": "Włocławek, ul. Kaliska",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "Piłsudskiego 4",
-        "city": "Ostróda",
-        "id": 10030,
-        "lat": 53.694587,
-        "lon": 19.969041,
-        "name": "Ostróda, ul. Piłsudskiego",
-        "province": "WARMIŃSKO-MAZURSKIE"
-    },
-    {
-        "address": "Bory",
-        "city": "Kaszów",
-        "id": 10119,
-        "lat": 50.025028,
-        "lon": 19.726833,
-        "name": "Kaszów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Drapałka 4",
-        "city": "Borówiec",
-        "id": 950,
-        "lat": 52.27672,
-        "lon": 17.074187,
-        "name": "Borówiec, ul. Drapałka",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "Złoty Róg",
-        "city": "Kraków",
-        "id": 10123,
-        "lat": 50.081197,
-        "lon": 19.895358,
-        "name": "Kraków, ul. Złoty Róg",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Biernackiego",
-        "city": "Mielec",
-        "id": 10438,
-        "lat": 50.299128,
-        "lon": 21.440942,
-        "name": "Mielec, ul. Biernackiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Wadów",
-        "city": "Kraków",
-        "id": 10447,
-        "lat": 50.100569,
-        "lon": 20.122561,
-        "name": "Kraków, os. Wadów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Słoneczna 18",
-        "city": "Małogoszcz",
-        "id": 10794,
-        "lat": 50.80961,
-        "lon": 20.266032,
-        "name": "Małogoszcz, ul. Słoneczna",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "osiedle Leśne 22",
-        "city": "Koziegłowy",
-        "id": 10834,
-        "lat": 52.449295,
-        "lon": 16.999634,
-        "name": "Koziegłowy, os.Leśne",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Okrzei",
-        "city": "Włocławek",
-        "id": 225,
-        "lat": 52.658467,
-        "lon": 19.059314,
-        "name": "Włocławek, ul. Okrzei",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Słowackiego",
-        "city": "Olesno",
-        "id": 584,
-        "lat": 50.876983,
-        "lon": 18.416878,
-        "name": "Olesno, ul. Słowackiego",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. 42 Pułku Piechoty 117",
-        "city": "Białystok",
-        "id": 11174,
-        "lat": 53.144122,
-        "lon": 23.216322,
-        "name": "Białystok, ul. 42 Pułku Piechoty",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. Targowa 3",
-        "city": "Kielce",
-        "id": 11195,
-        "lat": 50.878998,
-        "lon": 20.633692,
-        "name": "Kielce, ul. Targowa",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "ul. Andrzeja Kmicica 33",
-        "city": "Biała",
-        "id": 11358,
-        "lat": 52.602534,
-        "lon": 19.6451,
-        "name": "Biała, ul. Kmicica",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Chrościckiego 16/18",
-        "city": "Warszawa",
-        "id": 10955,
-        "lat": 52.207742,
-        "lon": 20.906073,
-        "name": "Warszawa, ul. Chrościckiego",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "os. Armii Krajowej",
-        "city": "Opole",
-        "id": 590,
-        "lat": 50.676856,
-        "lon": 17.950278,
-        "name": "Opole, os. Armii Krajowej",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Chopina 42",
-        "city": "Koszalin",
-        "id": 11336,
-        "lat": 54.194114,
-        "lon": 16.211672,
-        "name": "Koszalin, ul. Chopina",
+        "address": "ul. Łączna",
+        "city": "Szczecin",
+        "id": 989,
+        "lat": 53.470889,
+        "lon": 14.55625,
+        "name": "Szczecin, ul. Łączna",
         "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. Armii Krajowej",
-        "city": "Koszalin",
-        "id": 966,
-        "lat": 54.193986,
-        "lon": 16.172544,
-        "name": "Koszalin, ul. Armii Krajowej",
-        "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. Narutowicza 28",
-        "city": "Łask",
-        "id": 11554,
-        "lat": 51.589208,
-        "lon": 19.131433,
-        "name": "Łask, ul. Narutowicza",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "Ujęcie Wody",
-        "city": "Gołuchów",
-        "id": 11754,
-        "lat": 50.621482,
-        "lon": 20.614057,
-        "name": "Gołuchów, Ujęcie Wody",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "ul. Wojska Polskiego 8",
-        "city": "Racibórz",
-        "id": 11794,
-        "lat": 50.091142,
-        "lon": 18.216261,
-        "name": "Racibórz, Wojska Polskiego",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "J. Bema",
-        "city": "Oświęcim",
-        "id": 10814,
-        "lat": 50.033083,
-        "lon": 19.245275,
-        "name": "Oświęcim, ul. J. Bema",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Al. Józefa Piłsudskiego 34",
-        "city": "Białystok",
-        "id": 11814,
-        "lat": 53.135286,
-        "lon": 23.161325,
-        "name": "Białystok, al.Piłsudskiego",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "",
-        "city": "Augustów",
-        "id": 11916,
-        "lat": 53.85255,
-        "lon": 22.984686,
-        "name": "Augustów, Uzdrowisko",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. Świętego Wawrzyńca",
-        "city": "Nakło nad Notecią",
-        "id": 9798,
-        "lat": 53.136681,
-        "lon": 17.591539,
-        "name": "Nakło nad Notecią, ul. Św. Wawrzyńca",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Koszyka 21",
-        "city": "Opole",
-        "id": 10374,
-        "lat": 50.666736,
-        "lon": 17.899137,
-        "name": "Opole, ul. Koszyka",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Warszawska 108",
-        "city": "Kielce",
-        "id": 16196,
-        "lat": 50.886014,
-        "lon": 20.642858,
-        "name": "Kielce, ul. Warszawska 108",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "al. Grunwaldzka 127",
-        "city": "Gdańsk",
-        "id": 16180,
-        "lat": 54.380682,
-        "lon": 18.601559,
-        "name": "Gdańsk, Al. Grunwaldzka",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Bitwy pod Płowcami",
-        "city": "Sopot",
-        "id": 16242,
-        "lat": 54.43451,
-        "lon": 18.57884,
-        "name": "Sopot, ul. Bitwy Pod Płowcami",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Ratuszowa 9",
-        "city": "Głubczyce",
-        "id": 10018,
-        "lat": 50.200778,
-        "lon": 17.83051,
-        "name": "Głubczyce, ul. Ratuszowa",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Poprzeczna 1",
-        "city": "Brzeg",
-        "id": 16413,
-        "lat": 50.849509,
-        "lon": 17.462579,
-        "name": "Brzeg, ul. Poprzeczna",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "Diabla Góra",
-        "city": "Diabla Góra",
-        "id": 882,
-        "lat": 54.124819,
-        "lon": 22.038056,
-        "name": "Diabla Góra, Puszcza Borecka",
-        "province": "WARMIŃSKO-MAZURSKIE"
-    },
-    {
-        "address": "ul. Piłsudskiego 27",
-        "city": "Ełk",
-        "id": 10005,
-        "lat": 53.828389,
-        "lon": 22.348338,
-        "name": "Ełk, ul. Piłsudskiego",
-        "province": "WARMIŃSKO-MAZURSKIE"
-    },
-    {
-        "address": "ul. Kamieńskiego",
-        "city": "Kraków",
-        "id": 16896,
-        "lat": 50.024605,
-        "lon": 19.97846,
-        "name": "Kraków, ul. Kamieńskiego",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Jerzego Dudy-Gracza",
-        "city": "Katowice",
-        "id": 17318,
-        "lat": 50.258483,
-        "lon": 19.036217,
-        "name": "Katowice, ul. Dudy-Gracza",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. M. Skłodowskiej-Curie 34",
-        "city": "Zabrze",
-        "id": 17880,
-        "lat": 50.317072,
-        "lon": 18.771258,
-        "name": "Zabrze, ul. M. Skłodowskiej-Curie",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "Półłanki 76",
-        "city": "Kraków",
-        "id": 20367,
-        "lat": 50.034702,
-        "lon": 20.044386,
-        "name": "Kraków, ul. Półłanki",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. gen. J. Hallera 12",
-        "city": "Ostrołęka",
-        "id": 9114,
-        "lat": 53.083736,
-        "lon": 21.579322,
-        "name": "Ostrołęka, ul. Hallera",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Żołnierzy AK 9",
-        "city": "Oława",
-        "id": 70,
-        "lat": 50.942073,
-        "lon": 17.291333,
-        "name": "Oława, ul. Żołnierzy Armii Krajowej",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": " ",
-        "city": "Osieczów",
-        "id": 74,
-        "lat": 51.31763,
-        "lon": 15.431719,
-        "name": "Osieczów",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Wysockiego 11",
-        "city": "Wałbrzych",
-        "id": 109,
-        "lat": 50.768729,
-        "lon": 16.269677,
-        "name": "Wałbrzych, ul. Wysockiego",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Wały Gen. Sikorskiego 12",
-        "city": "Toruń",
-        "id": 145,
-        "lat": 53.012475,
-        "lon": 18.605681,
-        "name": "Toruń, ul. Wały gen. Sikorskiego",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Hrubieszowska 69A",
-        "city": "Zamość",
-        "id": 285,
-        "lat": 50.716628,
-        "lon": 23.290247,
-        "name": "Zamość, ul. Hrubieszowska",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "Smolary Bytnickie 45A",
-        "city": "Smolary Bytnickie",
-        "id": 374,
-        "lat": 52.172222,
-        "lon": 15.206667,
-        "name": "Smolary Bytnickie",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "ul. Krótka",
-        "city": "Zielona Góra",
-        "id": 387,
-        "lat": 51.939783,
-        "lon": 15.518861,
-        "name": "Zielona Góra ul. Krótka",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "ul. Bujaka",
-        "city": "Kraków",
-        "id": 401,
-        "lat": 50.010575,
-        "lon": 19.949189,
-        "name": "Kraków, ul. Bujaka",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Nadbrzeżna",
-        "city": "Nowy Sącz",
-        "id": 426,
-        "lat": 49.619281,
-        "lon": 20.714403,
-        "name": "Nowy Sącz, ul. Nadbrzeżna",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Sienkiewicza",
-        "city": "Zakopane",
-        "id": 459,
-        "lat": 49.293564,
-        "lon": 19.960083,
-        "name": "Zakopane, ul. Sienkiewicza",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Osiedle PAN 1",
-        "city": "Belsk Duży",
-        "id": 460,
-        "lat": 51.835242,
-        "lon": 20.791912,
-        "name": "Belsk Duży, IGF PAN",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Zegrzyńska 38",
-        "city": "Legionowo",
-        "id": 471,
-        "lat": 52.407578,
-        "lon": 20.955928,
-        "name": "Legionowo, ul. Zegrzyńska",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Królowej Jadwigi 4",
-        "city": "Płock",
-        "id": 497,
-        "lat": 52.556279,
-        "lon": 19.687672,
-        "name": "Płock, ul. Królowej Jadwigi",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "al. Niepodległości 227/233",
-        "city": "Warszawa",
-        "id": 530,
-        "lat": 52.219298,
-        "lon": 21.004724,
-        "name": "Warszawa, al. Niepodległości",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "Sikorskiego",
-        "city": "Jasło",
-        "id": 638,
-        "lat": 49.744886,
-        "lon": 21.454617,
-        "name": "Jaslo, ul. Sikorskiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Szklarniowa",
-        "city": "Nisko",
-        "id": 659,
-        "lat": 50.529892,
-        "lon": 22.112467,
-        "name": "Nisko, ul. Szklarniowa",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "ul. Porębskiego",
-        "city": "Gdynia",
-        "id": 732,
-        "lat": 54.560836,
-        "lon": 18.493331,
-        "name": "Gdynia, ul. Porębskiego",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Parkowa",
-        "city": "Nowiny",
-        "id": 769,
-        "lat": 50.823108,
-        "lon": 20.533506,
-        "name": "Nowiny, ul. Parkowa",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "ul. Ruszczańska 23",
-        "city": "Połaniec",
-        "id": 778,
-        "lat": 50.429014,
-        "lon": 21.277367,
-        "name": "Połaniec, ul. Ruszczańska",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "ul. Kossak-Szczuckiej 19",
-        "city": "Bielsko-Biała",
-        "id": 789,
-        "lat": 49.813464,
-        "lon": 19.027318,
-        "name": "Bielsko-Biała, ul. Kossak-Szczuckiej",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Mewy 34",
-        "city": "Gliwice",
-        "id": 809,
-        "lat": 50.279481,
-        "lon": 18.655736,
-        "name": "Gliwice, ul. Mewy",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Kossutha 6",
-        "city": "Katowice",
-        "id": 814,
-        "lat": 50.264611,
-        "lon": 18.975028,
-        "name": "Katowice, ul. Kossutha",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Tołstoja 1",
-        "city": "Tychy",
-        "id": 841,
-        "lat": 50.099903,
-        "lon": 18.990236,
-        "name": "Tychy, ul. Tołstoja",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Kusocińskiego 10A",
-        "city": "Piła",
-        "id": 920,
-        "lat": 53.154408,
-        "lon": 16.759572,
-        "name": "Pila, ul. Kusocińskiego",
-        "province": "WIELKOPOLSKIE"
     },
     {
         "address": "ul. Przemysłowa 5",
@@ -1143,148 +1854,13 @@
         "province": "ZACHODNIOPOMORSKIE"
     },
     {
-        "address": "ul. Spokojna",
-        "city": "Szarów",
-        "id": 9179,
-        "lat": 50.0075,
-        "lon": 20.259167,
-        "name": "Szarów, ul. Spokojna",
+        "address": "Szymbark 430",
+        "city": "Szymbark",
+        "id": 443,
+        "lat": 49.633714,
+        "lon": 21.116833,
+        "name": "Szymbark",
         "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Guty Duże 4",
-        "city": "Guty Duże",
-        "id": 9913,
-        "lat": 52.943172,
-        "lon": 21.288167,
-        "name": "Guty Duże",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Brzozowa 2",
-        "city": "Otwock",
-        "id": 485,
-        "lat": 52.115725,
-        "lon": 21.237297,
-        "name": "Otwock, ul. Brzozowa",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "al. Jana Pawła II 15",
-        "city": "Łódź",
-        "id": 10058,
-        "lat": 51.754613,
-        "lon": 19.434925,
-        "name": "Łódź, al. Jana Pawła II",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "Piłsudskiego",
-        "city": "Rzeszów",
-        "id": 10125,
-        "lat": 50.040675,
-        "lon": 22.004656,
-        "name": "Rzeszów, ul. Piłsudskiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Sportowa",
-        "city": "Duszniki-Zdrój",
-        "id": 10093,
-        "lat": 50.402561,
-        "lon": 16.393311,
-        "name": "Duszniki-Zdrój, ul. Sportowa",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Ks. Romana Sitko",
-        "city": "Tarnów",
-        "id": 10120,
-        "lat": 50.018253,
-        "lon": 20.992578,
-        "name": "Tarnów, ul. Ks. Romana Sitko",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Partyzantów",
-        "city": "Bielsko-Biała",
-        "id": 10158,
-        "lat": 49.802075,
-        "lon": 19.04861,
-        "name": "Bielsko-Biała, ul.Partyzantów",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Rolna 2",
-        "city": "Radomsko",
-        "id": 331,
-        "lat": 51.067417,
-        "lon": 19.448714,
-        "name": "Radomsko, ul. Rolna",
-        "province": "ŁÓDZKIE"
-    },
-    {
-        "address": "ul. Bajkowa 17/21",
-        "city": "Warszawa",
-        "id": 10956,
-        "lat": 52.188474,
-        "lon": 21.176233,
-        "name": "Warszawa, ul. Bajkowa",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "",
-        "city": "Borsukowizna",
-        "id": 612,
-        "lat": 53.215492,
-        "lon": 23.642153,
-        "name": "Borsukowizna, Szkółka Leśna",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. Pułaskiego 26",
-        "city": "Suwałki",
-        "id": 11154,
-        "lat": 54.115897,
-        "lon": 22.938464,
-        "name": "Suwałki, ul. Pułaskiego 26",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. K.I.Gałczyńskiego 3",
-        "city": "Zawiercie",
-        "id": 11455,
-        "lat": 50.493045,
-        "lon": 19.439012,
-        "name": "Zawiercie, ul. K.I.Gałczyńskiego",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Parkowa",
-        "city": "Goczałkowice-Zdrój",
-        "id": 11457,
-        "lat": 49.93785,
-        "lon": 18.975594,
-        "name": "Goczałkowice Zdrój, ul. Parkowa",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Jeździecka",
-        "city": "Bydgoszcz",
-        "id": 11576,
-        "lat": 53.175214,
-        "lon": 18.044164,
-        "name": "Bydgoszcz, ul. Jeździecka",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. 3 Maja",
-        "city": "Trzebnica",
-        "id": 11934,
-        "lat": 51.304817,
-        "lon": 17.071367,
-        "name": "Trzebnica, ul. 3 Maja",
-        "province": "DOLNOŚLĄSKIE"
     },
     {
         "address": "al. Jana Pawła II 8",
@@ -1296,312 +1872,6 @@
         "province": "KUJAWSKO-POMORSKIE"
     },
     {
-        "address": "al. Mickiewicza",
-        "city": "Pleszew",
-        "id": 9218,
-        "lat": 51.884922,
-        "lon": 17.791106,
-        "name": "Pleszew, Al. Mickiewicza",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Malczewskiego",
-        "city": "Lębork",
-        "id": 742,
-        "lat": 54.546167,
-        "lon": 17.746194,
-        "name": "Lębork, ul. Malczewskiego",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "Licealna 10b",
-        "city": "Sulechów",
-        "id": 16238,
-        "lat": 52.084833,
-        "lon": 15.63325,
-        "name": "Sulechów, ul. Licealna",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "Marii Dąbrowskiej",
-        "city": "Tarnobrzeg",
-        "id": 684,
-        "lat": 50.575742,
-        "lon": 21.688367,
-        "name": "Tarnobrzeg, ul. Dąbrowskiej",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "ul. Szwajcarska",
-        "city": "Poznań",
-        "id": 16493,
-        "lat": 52.390879,
-        "lon": 16.998053,
-        "name": "Poznań ul. Szwajcarska",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Upalna 26",
-        "city": "Białystok",
-        "id": 17658,
-        "lat": 53.129601,
-        "lon": 23.108054,
-        "name": "Białystok, ul. Upalna",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. Żółkiewskiego",
-        "city": "Kołobrzeg",
-        "id": 10934,
-        "lat": 54.179381,
-        "lon": 15.596347,
-        "name": "Kołobrzeg, ul. Żółkiewskiego",
-        "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. 1 Maja 82",
-        "city": "Skarżysko-Kamienna",
-        "id": 17758,
-        "lat": 51.115842,
-        "lon": 20.891593,
-        "name": "Skarżysko-Kamienna, ul. 1 Maja",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "ul. Złota",
-        "city": "Starachowice",
-        "id": 785,
-        "lat": 51.050611,
-        "lon": 21.084175,
-        "name": "Starachowice, ul. Złota",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
-        "address": "Kwiatkowskiego",
-        "city": "Rzeszów",
-        "id": 20201,
-        "lat": 49.998408,
-        "lon": 21.992183,
-        "name": "Rzeszów, ul. Kwiatkowskiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Kraszewskiego 8",
-        "city": "Ciechanów",
-        "id": 20209,
-        "lat": 52.885541,
-        "lon": 20.602511,
-        "name": "Ciechanów, ul. Kraszewskiego",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "Janusza Petera 7",
-        "city": "Tomaszów Lubelski",
-        "id": 20277,
-        "lat": 50.444128,
-        "lon": 23.421553,
-        "name": "Tomaszów Lubelski, ul. Janusza Petera",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "Lawendowe Wzgórze",
-        "city": "Gdańsk",
-        "id": 20347,
-        "lat": 54.328833,
-        "lon": 18.568819,
-        "name": "Gdańsk, ul. Lawendowe Wzgórze",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "Ludowa",
-        "city": "Lubań",
-        "id": 20468,
-        "lat": 51.120091,
-        "lon": 15.298189,
-        "name": "Lubań, ul. Ludowa",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Piłsudskiego 51",
-        "city": "Grudziądz",
-        "id": 142,
-        "lat": 53.49355,
-        "lon": 18.762139,
-        "name": "Grudziądz, ul. Piłsudskiego",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Tężniowa - Park Tężniowy",
-        "city": "Ciechocinek",
-        "id": 164,
-        "lat": 52.888422,
-        "lon": 18.780908,
-        "name": "Ciechocinek, ul. Tężniowa",
-        "province": "KUJAWSKO-POMORSKIE"
-    },
-    {
-        "address": "ul. Mickiewicza",
-        "city": "Malbork",
-        "id": 741,
-        "lat": 54.031247,
-        "lon": 19.032899,
-        "name": "Malbork, ul. Mickiewicza",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "Piaski 10",
-        "city": "Krzyżówka",
-        "id": 946,
-        "lat": 52.501318,
-        "lon": 17.773175,
-        "name": "Piaski, Krzyżówka",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "59",
-        "city": "Krempna",
-        "id": 9175,
-        "lat": 49.511297,
-        "lon": 21.498606,
-        "name": "Krempna, Ośrodek edukacyjno-muzealny MPN",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "ul. Kopernika 83 a",
-        "city": "Żywiec",
-        "id": 856,
-        "lat": 49.671602,
-        "lon": 19.234446,
-        "name": "Żywiec, ul. Kopernika",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "Aleja Józefa Piłsudskiego/Harcerska 3",
-        "city": "Jastrzębie-Zdrój",
-        "id": 11855,
-        "lat": 49.952544,
-        "lon": 18.607953,
-        "name": "Jastrzębie-Zdrój, Al.J.Piłsudskiego/Harcerska",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "ul. Żeromskiego",
-        "city": "Konstancin-Jeziorna",
-        "id": 16271,
-        "lat": 52.082277,
-        "lon": 21.124598,
-        "name": "Konstancin-Jeziorna, ul. Żeromskiego",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Czereśniowa 4",
-        "city": "Mosina",
-        "id": 16495,
-        "lat": 52.241497,
-        "lon": 16.865125,
-        "name": "Mosina, ul. Czereśniowa",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Podleśna 61",
-        "city": "Warszawa",
-        "id": 16533,
-        "lat": 52.281304,
-        "lon": 20.963383,
-        "name": "Warszawa, IMGW",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. 3 Maja 17",
-        "city": "Krapkowice",
-        "id": 16913,
-        "lat": 50.486194,
-        "lon": 17.97477,
-        "name": "Krapkowice, ul. 3 Maja",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "Jana Pawła II ",
-        "city": "Kolbuszowa",
-        "id": 20200,
-        "lat": 50.245897,
-        "lon": 21.769494,
-        "name": "Kolbuszowa, ul. Jana Pawła II",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "",
-        "city": "Wilczopole",
-        "id": 282,
-        "lat": 51.163542,
-        "lon": 22.598608,
-        "name": "Wilczopole",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "Grunwaldzka",
-        "city": "Przemyśl",
-        "id": 665,
-        "lat": 49.784339,
-        "lon": 22.756239,
-        "name": "Przemyśl, ul. Grunwaldzka",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Rejtana",
-        "city": "Rzeszów",
-        "id": 671,
-        "lat": 50.024242,
-        "lon": 22.010575,
-        "name": "Rzeszów, ul. Rejtana",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "os. Piastów",
-        "city": "Kraków",
-        "id": 10139,
-        "lat": 50.098508,
-        "lon": 20.018269,
-        "name": "Kraków, os. Piastów",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Parkowa 5",
-        "city": "Rymanów-Zdrój",
-        "id": 10414,
-        "lat": 49.546539,
-        "lon": 21.851006,
-        "name": "Rymanów Zdrój, ul. Parkowa",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "",
-        "city": "Florianka",
-        "id": 10874,
-        "lat": 50.551894,
-        "lon": 22.982861,
-        "name": "Florianka, RPN",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "S. Małachowskiego 7",
-        "city": "Chojnów",
-        "id": 12056,
-        "lat": 51.27428,
-        "lon": 15.929804,
-        "name": "Chojnów, ul. S. Małachowskiego ",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Zapłotnia 2",
-        "city": "Łagów",
-        "id": 12138,
-        "lat": 50.778479,
-        "lon": 21.081224,
-        "name": "Łagów, ul. Zapłotnia",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
         "address": "ul. Białoruska",
         "city": "Świnoujście",
         "id": 20160,
@@ -1609,293 +1879,5 @@
         "lon": 14.279628,
         "name": "Świnoujście, ul. Białoruska",
         "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "Wodociągowa",
-        "city": "Giżycko",
-        "id": 20447,
-        "lat": 54.04321,
-        "lon": 21.784858,
-        "name": "Giżycko, ul. Wodociągowa",
-        "province": "WARMIŃSKO-MAZURSKIE"
-    },
-    {
-        "address": "ul. Sikorskiego 48/94",
-        "city": "Łomża",
-        "id": 618,
-        "lat": 53.181394,
-        "lon": 22.054381,
-        "name": "Łomża, ul. Sikorskiego",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "ul. Rąbka 1A",
-        "city": "Łeba",
-        "id": 750,
-        "lat": 54.754139,
-        "lon": 17.534528,
-        "name": "Łeba, IMGW",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "ul. Bulwary Rybackie 1",
-        "city": "Widuchowa",
-        "id": 961,
-        "lat": 53.122325,
-        "lon": 14.382245,
-        "name": "Widuchowa",
-        "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. Łączna",
-        "city": "Szczecin",
-        "id": 989,
-        "lat": 53.470889,
-        "lon": 14.55625,
-        "name": "Szczecin, ul. Łączna",
-        "province": "ZACHODNIOPOMORSKIE"
-    },
-    {
-        "address": "ul. Nieszczyńskiej",
-        "city": "Sucha Beskidzka",
-        "id": 10124,
-        "lat": 49.743131,
-        "lon": 19.600339,
-        "name": "Sucha Beskidzka, ul. Nieszczyńskiej",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Warszawska 75 A",
-        "city": "Białystok",
-        "id": 609,
-        "lat": 53.129306,
-        "lon": 23.181744,
-        "name": "Białystok, ul. Warszawska",
-        "province": "PODLASKIE"
-    },
-    {
-        "address": "Wyszyńskiego",
-        "city": "Zielona Góra",
-        "id": 11294,
-        "lat": 51.936249,
-        "lon": 15.481077,
-        "name": "Zielona Góra,ul.Wyszyńskiego",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "Grottgera 3",
-        "city": "Dębica",
-        "id": 9173,
-        "lat": 50.054786,
-        "lon": 21.416256,
-        "name": "Dębica, ul.Grottgera",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Kletówki",
-        "city": "Krosno",
-        "id": 646,
-        "lat": 49.690169,
-        "lon": 21.7497,
-        "name": "Krosno, ul. Kletówki",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "ul. 3 Maja",
-        "city": "Niepołomice",
-        "id": 455,
-        "lat": 50.035117,
-        "lon": 20.212689,
-        "name": "Niepołomice, ul. 3 Maja",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Solidarności 6",
-        "city": "Myślenice",
-        "id": 16753,
-        "lat": 49.831237,
-        "lon": 19.923591,
-        "name": "Myślenice",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Kampinoski Park Narodowy",
-        "city": "Granica",
-        "id": 466,
-        "lat": 52.285858,
-        "lon": 20.454653,
-        "name": "Granica, KPN",
-        "province": "MAZOWIECKIE"
-    },
-    {
-        "address": "ul. Jeziorna 19",
-        "city": "Nowa Ruda",
-        "id": 11254,
-        "lat": 50.581492,
-        "lon": 16.498245,
-        "name": "Nowa Ruda, ul. Jeziorna",
-        "province": "DOLNOŚLĄSKIE"
-    },
-    {
-        "address": "ul. Połaniecka",
-        "city": "Chełm",
-        "id": 11360,
-        "lat": 51.122147,
-        "lon": 23.473075,
-        "name": "Chełm, ul. Połaniecka",
-        "province": "LUBELSKIE"
-    },
-    {
-        "address": "ul. Ks. Płk. Jana Szymały 3",
-        "city": "Lubliniec",
-        "id": 11278,
-        "lat": 50.675693,
-        "lon": 18.682065,
-        "name": "Lubliniec, ul. ks. Szymały",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "Orkana",
-        "city": "Rabka-Zdrój",
-        "id": 10446,
-        "lat": 49.608647,
-        "lon": 19.966008,
-        "name": "Rabka-Zdrój, ul. Orkana",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Wapienna",
-        "city": "Zabierzów",
-        "id": 11434,
-        "lat": 50.116028,
-        "lon": 19.800639,
-        "name": "Zabierzów, ul. Wapienna",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Chopina 37",
-        "city": "Cieszyn",
-        "id": 16406,
-        "lat": 49.755989,
-        "lon": 18.634075,
-        "name": "Cieszyn, ul. Chopina",
-        "province": "ŚLĄSKIE"
-    },
-    {
-        "address": "Sadowa",
-        "city": "Sanok",
-        "id": 678,
-        "lat": 49.571731,
-        "lon": 22.195892,
-        "name": "Sanok, ul. Sadowa",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Wysowa",
-        "city": "Uście Gorlickie Wysowa",
-        "id": 17118,
-        "lat": 49.440175,
-        "lon": 21.178087,
-        "name": "Wysowa-Zdrój, Park Zdrojowy",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Starzyńskiego 17",
-        "city": "Rzeszów",
-        "id": 17179,
-        "lat": 50.060381,
-        "lon": 21.980511,
-        "name": "Rzeszów, ul. Starzyńskiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Lusińska",
-        "city": "Kraków",
-        "id": 11303,
-        "lat": 49.991442,
-        "lon": 19.936792,
-        "name": "Kraków, os. Swoszowice",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Miła 17",
-        "city": "Bytów",
-        "id": 16270,
-        "lat": 54.1727,
-        "lon": 17.49299,
-        "name": "Bytów, ul. Miła",
-        "province": "POMORSKIE"
-    },
-    {
-        "address": "T. Kościuszki",
-        "city": "Nowa Sól",
-        "id": 16613,
-        "lat": 51.809103,
-        "lon": 15.708042,
-        "name": "Nowa Sól",
-        "province": "LUBUSKIE"
-    },
-    {
-        "address": "al. Tysiąclecia",
-        "city": "Nowy Targ",
-        "id": 16894,
-        "lat": 49.476675,
-        "lon": 20.034878,
-        "name": "Nowy Targ, al. Tysiąclecia ",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "Olimpijska 10",
-        "city": "Krotoszyn",
-        "id": 20307,
-        "lat": 51.697308,
-        "lon": 17.441263,
-        "name": "Krotoszyn, ul. Olimpijska",
-        "province": "WIELKOPOLSKIE"
-    },
-    {
-        "address": "ul. Mickiewicza 10",
-        "city": "Kluczbork",
-        "id": 577,
-        "lat": 50.972181,
-        "lon": 18.207575,
-        "name": "Kluczbork, ul. Mickiewicza",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "ul. Rodziewiczówny 1",
-        "city": "Nysa",
-        "id": 20387,
-        "lat": 50.460992,
-        "lon": 17.331499,
-        "name": "Nysa, ul. Rodziewiczówny 1",
-        "province": "OPOLSKIE"
-    },
-    {
-        "address": "Złockie 79",
-        "city": "Złockie",
-        "id": 10817,
-        "lat": 49.374147,
-        "lon": 20.879581,
-        "name": "Złockie, szkoła podstawowa",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": " Cegielniana",
-        "city": "Olkusz",
-        "id": 11301,
-        "lat": 50.284,
-        "lon": 19.564044,
-        "name": "Olkusz, ul. Cegielniana",
-        "province": "MAŁOPOLSKIE"
-    },
-    {
-        "address": "ul. Jurajska 7",
-        "city": "Kielce",
-        "id": 16497,
-        "lat": 50.887606,
-        "lon": 20.579965,
-        "name": "Kielce, ul. Jurajska",
-        "province": "ŚWIĘTOKRZYSKIE"
     }
 ]
