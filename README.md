@@ -22,14 +22,6 @@ Aplikacja desktopowa do monitorowania jakości powietrza w oparciu o dane z API 
 - System operacyjny: Windows, Linux lub macOS
 - Wymagane biblioteki: Qt 5, CURL, nlohmann_json
 
-## Instrukcja instalacji
-
-[Tutaj umieść instrukcję instalacji]
-
-## Uruchamianie
-
-[Tutaj umieść instrukcję uruchomienia]
-
 ## Autorzy
 
 Konrad Szpulecki

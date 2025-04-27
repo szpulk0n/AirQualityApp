@@ -432,15 +432,6 @@
         "province": "DOLNOŚLĄSKIE"
     },
     {
-        "address": "Marii Dąbrowskiej",
-        "city": "Tarnobrzeg",
-        "id": 684,
-        "lat": 50.575742,
-        "lon": 21.688367,
-        "name": "Tarnobrzeg, ul. Dąbrowskiej",
-        "province": "PODKARPACKIE"
-    },
-    {
         "address": "ul. Bitwy pod Studziankami",
         "city": "Tarnów",
         "id": 444,
@@ -936,15 +927,6 @@
         "province": "ŚWIĘTOKRZYSKIE"
     },
     {
-        "address": "ul. Jurajska 7",
-        "city": "Kielce",
-        "id": 16497,
-        "lat": 50.887606,
-        "lon": 20.579965,
-        "name": "Kielce, ul. Jurajska",
-        "province": "ŚWIĘTOKRZYSKIE"
-    },
-    {
         "address": "ul. Mickiewicza 10",
         "city": "Kluczbork",
         "id": 577,
@@ -1278,6 +1260,15 @@
         "province": "KUJAWSKO-POMORSKIE"
     },
     {
+        "address": "ul. 3 Maja",
+        "city": "Niepołomice",
+        "id": 455,
+        "lat": 50.035117,
+        "lon": 20.212689,
+        "name": "Niepołomice, ul. 3 Maja",
+        "province": "MAŁOPOLSKIE"
+    },
+    {
         "address": "Szklarniowa",
         "city": "Nisko",
         "id": 659,
@@ -1608,15 +1599,6 @@
         "lat": 49.998408,
         "lon": 21.992183,
         "name": "Rzeszów, ul. Kwiatkowskiego",
-        "province": "PODKARPACKIE"
-    },
-    {
-        "address": "Sadowa",
-        "city": "Sanok",
-        "id": 678,
-        "lat": 49.571731,
-        "lon": 22.195892,
-        "name": "Sanok, ul. Sadowa",
         "province": "PODKARPACKIE"
     },
     {
