@@ -1,0 +1,26 @@
+digraph "MainWindow::MainWindow"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="MainWindow::MainWindow",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Konstruktor."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="MainWindow::initUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a9388168e83016e31d2668a501450bcac",tooltip="Inicjalizuje interfejs użytkownika."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="MainWindow::onSensorSelected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a90f3bfead49040b54ddd4a3d43eecbfc",tooltip="Slot wywoływany po wybraniu czujnika."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="MainWindow::fillDataTable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a13c092905d507965cf15d31c5d969cd2",tooltip="Wypełnia tabelę danymi pomiarowymi."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="MainWindow::onStationSelected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#aaf6eca17ca1d13add63fcc853d3f16cd",tooltip="Slot wywoływany po wybraniu stacji."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="MainWindow::refreshData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a5eac5a4179901db5313ace7cc9f34076",tooltip="Odświeża dane pomiarowe."];
+  Node6 -> Node3 [id="edge6_Node000006_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node7 [id="edge7_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="MainWindow::showChart",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a985c951f47c1bcbb88af43c1ab4b4fd7",tooltip="Wyświetla wykres danych."];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="MainWindow::createChart",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#a5bf72c652108554493460d02a8a99d5b",tooltip="Tworzy wykres z danych pomiarowych."];
+  Node1 -> Node9 [id="edge9_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="MainWindow::loadStations",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_main_window.html#acacfa9bb4814ee9a259452621647393f",tooltip="Wczytuje stacje pomiarowe."];
+}

@@ -17,7 +17,7 @@ cmake_install.cmake
 Makefile
 
 #Ignoruj doxygen
-docs/
+#docs/
 Doxyfile
-Doxygen.lnk
+#Doxygen.lnk
 Doxyfile.in
