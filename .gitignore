@@ -15,3 +15,6 @@ CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+
+#Ignoruj doxygen
+docs/
