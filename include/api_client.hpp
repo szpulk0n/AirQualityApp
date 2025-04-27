@@ -73,14 +73,14 @@ public:
      * @param filename Nazwa pliku
      * @return true jeśli operacja się powiodła, false w przeciwnym wypadku
      */
-    bool saveStationsToFile(const std::string& filename = "data/stations.json");
+    bool saveStationsToFile(const std::string& filename = "../data/stations.json");
     
     /**
      * @brief Wczytuje stacje z pliku JSON
      * @param filename Nazwa pliku
      * @return Wektor struktur Station
      */
-    std::vector<Station> loadStationsFromFile(const std::string& filename = "data/stations.json");
+    std::vector<Station> loadStationsFromFile(const std::string& filename = "../data/stations.json");
     
     /**
      * @brief Pobiera listę czujników dla danej stacji

@@ -224,76 +224,75 @@
  }
  
  bool ApiClient::saveStationsToFile(const std::string& filename) {
-     try {
-         std::vector<Station> stations = getAllStations();
-         json stationsJson = json::array();
-         
-         for (const auto& station : stations) {
-             json stationJson;
-             stationJson["id"] = station.id;
-             stationJson["name"] = station.name;
-             stationJson["lat"] = station.lat;
-             stationJson["lon"] = station.lon;
-             stationJson["city"] = station.city;
-             stationJson["address"] = station.address;
-             stationJson["province"] = station.province;
-             
-             stationsJson.push_back(stationJson);
-         }
-         
-         std::ofstream file(filename);
-         if (!file.is_open()) {
-             std::cerr << COLOR_RED << "Nie mozna otworzyc pliku do zapisu: " << filename << COLOR_RESET << std::endl;
-             return false;
-         }
-         
-         file << stationsJson.dump(4); // Pretty print z wcięciem 4 spacji
-         file.close();
-         
-         std::cout << COLOR_GREEN << "Zapisano dane stacji do pliku: " << filename << COLOR_RESET << std::endl;
-         return true;
-     } catch (const std::exception& e) {
-         std::cerr << COLOR_RED << "Blad podczas zapisywania stacji do pliku: " << e.what() << COLOR_RESET << std::endl;
-         return false;
-     }
- }
- 
- std::vector<Station> ApiClient::loadStationsFromFile(const std::string& filename) {
-     std::vector<Station> stations;
-     
-     try {
-         std::ifstream file(filename);
-         if (!file.is_open()) {
-             std::cerr << COLOR_RED << "Nie mozna otworzyc pliku: " << filename << COLOR_RESET << std::endl;
-             return stations;
-         }
-         
-         json stationsJson;
-         file >> stationsJson;
-         
-         for (const auto& item : stationsJson) {
-             Station station;
-             station.id = item["id"];
-             station.name = item["name"];
-             station.lat = item["lat"];
-             station.lon = item["lon"];
-             station.city = item["city"];
-             station.address = item["address"];
-             station.province = item["province"];
-             
-             stations.push_back(station);
-         }
-         
-         // Zapisz wczytane stacje do cache
-         cachedStations = stations;
-         
-         std::cout << COLOR_GREEN << "Wczytano " << stations.size() << " stacji z pliku: " << filename << COLOR_RESET << std::endl;
-     } catch (const std::exception& e) {
-         std::cerr << COLOR_RED << "Blad podczas wczytywania stacji z pliku: " << e.what() << COLOR_RESET << std::endl;
-     }
-     
-     return stations;
- }
+    try {
+        std::vector<Station> stations = getAllStations();
+        json stationsJson = json::array();
+        
+        for (const auto& station : stations) {
+            json stationJson;
+            stationJson["id"] = station.id;
+            stationJson["name"] = station.name;
+            stationJson["lat"] = station.lat;
+            stationJson["lon"] = station.lon;
+            stationJson["city"] = station.city;
+            stationJson["address"] = station.address;
+            stationJson["province"] = station.province;
+            
+            stationsJson.push_back(stationJson);
+        }
+        
+        std::ofstream file(filename.empty() ? "../data/stations.json" : filename); // Zmiana ścieżki
+        if (!file.is_open()) {
+            std::cerr << COLOR_RED << "Nie mozna otworzyc pliku do zapisu: " << filename << COLOR_RESET << std::endl;
+            return false;
+        }
+        
+        file << stationsJson.dump(4);
+        file.close();
+        
+        std::cout << COLOR_GREEN << "Zapisano dane stacji do pliku: " << (filename.empty() ? "../data/stations.json" : filename) << COLOR_RESET << std::endl;
+        return true;
+    } catch (const std::exception& e) {
+        std::cerr << COLOR_RED << "Blad podczas zapisywania stacji do pliku: " << e.what() << COLOR_RESET << std::endl;
+        return false;
+    }
+}
+
+std::vector<Station> ApiClient::loadStationsFromFile(const std::string& filename) {
+    std::vector<Station> stations;
+    
+    try {
+        std::ifstream file(filename.empty() ? "../data/stations.json" : filename); // Zmiana ścieżki
+        if (!file.is_open()) {
+            std::cerr << COLOR_RED << "Nie mozna otworzyc pliku: " << filename << COLOR_RESET << std::endl;
+            return stations;
+        }
+        
+        json stationsJson;
+        file >> stationsJson;
+        
+        for (const auto& item : stationsJson) {
+            Station station;
+            station.id = item["id"];
+            station.name = item["name"];
+            station.lat = item["lat"];
+            station.lon = item["lon"];
+            station.city = item["city"];
+            station.address = item["address"];
+            station.province = item["province"];
+            
+            stations.push_back(station);
+        }
+        
+        cachedStations = stations;
+        
+        std::cout << COLOR_GREEN << "Wczytano " << stations.size() << " stacji z pliku: " << (filename.empty() ? "../data/stations.json" : filename) << COLOR_RESET << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << COLOR_RED << "Blad podczas wczytywania stacji z pliku: " << e.what() << COLOR_RESET << std::endl;
+    }
+    
+    return stations;
+}
  
  std::vector<Sensor> ApiClient::getSensors(int stationId) {
      // Sprawdź cache

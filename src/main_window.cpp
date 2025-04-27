@@ -229,31 +229,31 @@
   * Uruchamia asynchroniczne pobieranie stacji z API lub lokalnego pliku JSON.
   */
  void MainWindow::loadStations() {
-     statusLabel->setText("Ładowanie stacji...");
-     
-     // Funkcja do asynchronicznego wczytywania stacji
-     auto loadStationsAsync = [this]() -> std::vector<Station> {
-         if (!apiClient->isApiAvailable()) {
-             QFileInfo checkFile("data/stations.json");
-             if (checkFile.exists() && checkFile.isFile()) {
-                 return apiClient->loadStationsFromFile();
-             }
-             return {};
-         }
-         
-         // Pobranie stacji z API
-         auto stations = apiClient->getAllStations();
-         if (!stations.empty()) {
-             QDir().mkpath("data");
-             apiClient->saveStationsToFile();
-         }
-         return stations;
-     };
-     
-     // Uruchomienie asynchronicznej operacji
-     QFuture<std::vector<Station>> future = QtConcurrent::run(loadStationsAsync);
-     stationsWatcher.setFuture(future);
- }
+    statusLabel->setText("Ładowanie stacji...");
+    
+    // Funkcja do asynchronicznego wczytywania stacji
+    auto loadStationsAsync = [this]() -> std::vector<Station> {
+        if (!apiClient->isApiAvailable()) {
+            QFileInfo checkFile("../data/stations.json"); // Zmiana ścieżki
+            if (checkFile.exists() && checkFile.isFile()) {
+                return apiClient->loadStationsFromFile();
+            }
+            return {};
+        }
+        
+        // Pobranie stacji z API
+        auto stations = apiClient->getAllStations();
+        if (!stations.empty()) {
+            QDir().mkpath("../data"); // Zmiana ścieżki
+            apiClient->saveStationsToFile();
+        }
+        return stations;
+    };
+    
+    // Uruchomienie asynchronicznej operacji
+    QFuture<std::vector<Station>> future = QtConcurrent::run(loadStationsAsync);
+    stationsWatcher.setFuture(future);
+}
  
  /**
   * @brief Obsługuje zakończenie asynchronicznego wczytywania stacji
