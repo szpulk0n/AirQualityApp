@@ -16,7 +16,7 @@
      QApplication::setApplicationVersion("1.0");
      
      // Ekran powitalny
-     QSplashScreen splash(QPixmap("welcome.png"));
+     QSplashScreen splash(QPixmap("../welcome.png"));
      splash.show();
      
      // Inicjalizacja głównego okna
