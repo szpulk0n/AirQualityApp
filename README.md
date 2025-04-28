@@ -6,7 +6,7 @@ Aplikacja desktopowa do monitorowania jakości powietrza wykorzystująca API Gł
 
 Monitor Jakości Powietrza to aplikacja, która umożliwia użytkownikowi przeglądanie danych o jakości powietrza z różnych stacji pomiarowych w Polsce. Aplikacja pobiera dane z oficjalnego API GIOŚ, prezentuje je w formie tabel i wykresów oraz umożliwia zapisywanie danych do plików JSON w celu późniejszej analizy.
 
-![Screenshot aplikacji](../welcome.png)
+![Screenshot aplikacji](welcome.png)
 
 ## Funkcje
 
