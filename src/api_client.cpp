@@ -67,12 +67,10 @@
      curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
      curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
      curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
-     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10); // Timeout 10 sekund
-     
-     // Dodanie User-Agent
+     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10);
      curl_easy_setopt(curl, CURLOPT_USERAGENT, "AirQualityApp/1.0");
      
-     // Opcjonalnie wyłączenie weryfikacji SSL, jeśli używamy HTTPS
+     // Opcjonalnie wyłączenie weryfikacji SSL bo do raspberry
      curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
      curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
      
