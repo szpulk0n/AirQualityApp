@@ -16,17 +16,15 @@ Monitor Jakości Powietrza to aplikacja, która umożliwia użytkownikowi przegl
 - Wizualizacja danych w formie tabeli i wykresów
 - Eksport danych do plików JSON
 - Import wcześniej zapisanych danych
-- Obsługa trybu offline dzięki mechanizmom cachowania
 - Kolorystyczne rozróżnianie parametrów na wykresach
-- Elegancki interfejs użytkownika z efektami wizualnymi (cienie, zaokrąglone rogi)
 
 ## Wymagania systemowe
 
-- System operacyjny: Windows, Linux lub macOS
+- System operacyjny: Windows, Linux
 - Procesor: 1 GHz lub szybszy
 - Pamięć RAM: minimum 512 MB
 - Miejsce na dysku: minimum 50 MB
-- Połączenie internetowe (opcjonalnie - dla pobierania danych na żywo)
+- Połączenie internetowe 
 
 ## Wymagania techniczne
 
